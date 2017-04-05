@@ -1,0 +1,165 @@
+body {
+  text-align: center;
+  vertical-align: top;
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+  background-color: #fefefe;
+}
+
+.topbanner {
+    background-color: #F8F8F8;
+    color: #1ed6b3;
+    font-size: 12px;
+    width: 100%;
+    padding: 5px 0px;
+    font-family: 'Signika', sans-serif;
+    z-index: 100;
+    text-align: center;
+}
+
+#logo_gp {
+  margin-right: 50px;
+}
+
+#navigation li a:hover {
+    /*border-bottom: thick solid #1ed6b3;*/
+    color: #1ed6b3;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#navigation li a {
+    display: block;
+    padding: 10px 1em;
+    font-size: 18px;
+    background: #FFFFFF;
+    color: #9b9691;
+    text-decoration: none;
+}
+
+.navbar {
+  border: none !important;
+}
+
+.nav > li {
+  margin-right: 37px;
+}
+
+.hvr-underline-from-center {
+  display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #1ed6b3;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+#icon-face {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+    background: url(../../img/icon-facebook1.svg) no-repeat;
+  }
+
+
+#icon-ig {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  display: inline-block;
+  background: url(../../img/icon-ig1.svg) no-repeat;
+}
+
+#icon-ig:hover {
+  background: url(../../img/icon-ig2.svg) no-repeat;
+}
+#icon-carrito:hover {
+  background: url(../../img/icon-carrito2.svg) no-repeat;
+}
+#icon-face:hover {
+  background: url(../../img/icon-facebook2.svg) no-repeat;
+}
+
+
+#icon-carrito {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+    background: url(../../img/icon-carrito1.svg) no-repeat;
+  }
+
+
+
+  #header .header-box {
+    padding-top: 13px;
+  }
+
+
+  #my_acc {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    display: inline-block;
+
+  }

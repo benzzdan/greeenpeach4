@@ -1,0 +1,580 @@
+oxSystemComponentException-oxException (time: 2017-03-30 19:56:14): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 19:56:14): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:01:39): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:01:39): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:01:44): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_address')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_address')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_address', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_address', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_address
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:01:44): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_address')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_address')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_address', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_address', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_address
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:02:31): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_phone')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_phone')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_phone', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_phone', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_phone
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:02:31): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_phone')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_phone')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_phone', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_phone', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_phone
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:58:21): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:58:21): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:58:29): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:58:29): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:59:57): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-30 21:59:57): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:08:30): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%36^366^366ECF91%%page.tpl.php(54): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%26^26B^26B31126%%dashboard.tpl.php(247): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/account/da...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Account))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 /opt/lampp/htdocs/oxid_greenpeach/oxseo.php(44): require('/opt/lampp/htdo...')
+#24 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:08:30): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%36^366^366ECF91%%page.tpl.php(54): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%26^26B^26B31126%%dashboard.tpl.php(247): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/account/da...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Account))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 /opt/lampp/htdocs/oxid_greenpeach/oxseo.php(44): require('/opt/lampp/htdo...')
+#24 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:08:36): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%36^366^366ECF91%%page.tpl.php(54): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%26^26B^26B31126%%dashboard.tpl.php(247): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/account/da...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Account))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 /opt/lampp/htdocs/oxid_greenpeach/oxseo.php(44): require('/opt/lampp/htdo...')
+#24 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:08:36): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%36^366^366ECF91%%page.tpl.php(54): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%26^26B^26B31126%%dashboard.tpl.php(247): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/account/da...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Account))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('account', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 /opt/lampp/htdocs/oxid_greenpeach/oxseo.php(44): require('/opt/lampp/htdo...')
+#24 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:22:40): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%36^366^366ECF91%%page.tpl.php(88): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%40^405^405277AF%%start.tpl.php(67): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:22:40): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%36^366^366ECF91%%page.tpl.php(88): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%40^405^405277AF%%start.tpl.php(67): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:22:41): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%36^366^366ECF91%%page.tpl.php(88): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%40^405^405277AF%%start.tpl.php(67): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:22:41): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%F5^F5E^F5EE4DF7%%sidebar.tpl.php(35): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%36^366^366ECF91%%page.tpl.php(88): Smarty->_smarty_include(Array)
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/1164d62c1826e261d6886d7b676ed86b^%%40^405^405277AF%%start.tpl.php(67): Smarty->_smarty_include(Array)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#18 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#19 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#20 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#21 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#22 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#23 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:44:19): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%40^405^405277AF%%start.tpl.php(38): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#16 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#18 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#19 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:44:19): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%40^405^405277AF%%start.tpl.php(38): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#16 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#18 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#19 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:44:36): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%40^405^405277AF%%start.tpl.php(38): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#16 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#18 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#19 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-03-31 00:44:36): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('greenpeachwtwit...')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('greenpeachwtwit...')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(143): oxShopControl->_initializeViewObject('greenpeachwtwit...', NULL, Array)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxWidgetControl->_initializeViewObject('greenpeachwtwit...', NULL, Array, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('greenpeachwtwit...', NULL, Array, NULL)
+#10 /opt/lampp/htdocs/oxid_greenpeach/core/oxwidgetcontrol.php(73): oxShopControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#11 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('greenpeachwtwit...', NULL, Array, NULL)
+#12 /opt/lampp/htdocs/oxid_greenpeach/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%40^405^405277AF%%start.tpl.php(38): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#13 /opt/lampp/htdocs/oxid_greenpeach/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#14 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|3|0|0')
+#15 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#16 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#17 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#18 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#19 {main}
+
+ Faulty component --> greenpeachwtwitterfeed
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-04 04:58:43): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('checkout')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('checkout')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('checkout', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('checkout', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> checkout
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-04 04:58:43): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/oxid_greenpeach/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('checkout')
+#5 /opt/lampp/htdocs/oxid_greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(404): oxNew('checkout')
+#7 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('checkout', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/oxid_greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('checkout', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/oxid_greenpeach/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/oxid_greenpeach/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> checkout
+---------------------------------------------
