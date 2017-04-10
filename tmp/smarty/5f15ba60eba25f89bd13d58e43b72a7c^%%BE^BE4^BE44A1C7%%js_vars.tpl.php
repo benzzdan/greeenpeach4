@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-05 06:42:46
+<?php /* Smarty version 2.6.28, created on 2017-04-10 04:32:53
          compiled from i18n/js_vars.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'i18n/js_vars.tpl', 5, false),)), $this); ?>

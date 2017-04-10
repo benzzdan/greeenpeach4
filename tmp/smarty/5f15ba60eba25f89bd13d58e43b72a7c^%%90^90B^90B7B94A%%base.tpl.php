@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-05 06:42:46
+<?php /* Smarty version 2.6.28, created on 2017-04-10 05:10:02
          compiled from layout/base.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 12, false),array('modifier', 'oxaddparams', 'layout/base.tpl', 68, false),array('modifier', 'cat', 'layout/base.tpl', 191, false),array('function', 'oxstyle', 'layout/base.tpl', 144, false),array('function', 'oxscript', 'layout/base.tpl', 244, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 258, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags', 'layout/base.tpl', 12, false),array('modifier', 'oxaddparams', 'layout/base.tpl', 68, false),array('modifier', 'cat', 'layout/base.tpl', 191, false),array('function', 'oxstyle', 'layout/base.tpl', 144, false),array('function', 'oxscript', 'layout/base.tpl', 276, false),array('function', 'oxid_include_dynamic', 'layout/base.tpl', 290, false),)), $this); ?>
 <?php ob_start(); ?>
     <?php echo '<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" id="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><meta http-equiv="Content-Type" content="text/html; charset='; ?><?php echo $this->_tpl_vars['oView']->getCharSet(); ?><?php echo '">'; ?><?php $this->assign('_sMetaTitlePrefix', $this->_tpl_vars['oView']->getTitlePrefix()); ?><?php echo ''; ?><?php $this->assign('_sMetaTitleSuffix', $this->_tpl_vars['oView']->getTitleSuffix()); ?><?php echo ''; ?><?php $this->assign('_sMetaTitlePageSuffix', $this->_tpl_vars['oView']->getTitlePageSuffix()); ?><?php echo ''; ?><?php $this->assign('_sMetaTitle', $this->_tpl_vars['oView']->getTitle()); ?><?php echo ''; ?><?php ob_start(); ?><?php echo ''; ?><?php echo $this->_tpl_vars['_sMetaTitlePrefix']; ?><?php echo ''; ?><?php if ($this->_tpl_vars['_sMetaTitlePrefix'] && $this->_tpl_vars['_sMetaTitle']): ?><?php echo ' | '; ?><?php endif; ?><?php echo ''; ?><?php echo ((is_array($_tmp=$this->_tpl_vars['_sMetaTitle'])) ? $this->_run_mod_handler('strip_tags', true, $_tmp) : smarty_modifier_strip_tags($_tmp)); ?><?php echo ''; ?><?php if ($this->_tpl_vars['_sMetaTitleSuffix'] && ( $this->_tpl_vars['_sMetaTitlePrefix'] || $this->_tpl_vars['_sMetaTitle'] )): ?><?php echo ' | '; ?><?php endif; ?><?php echo ''; ?><?php echo $this->_tpl_vars['_sMetaTitleSuffix']; ?><?php echo ' '; ?><?php if ($this->_tpl_vars['_sMetaTitlePageSuffix']): ?><?php echo ' | '; ?><?php echo $this->_tpl_vars['_sMetaTitlePageSuffix']; ?><?php echo ''; ?><?php endif; ?><?php echo ''; ?><?php $this->_smarty_vars['capture']['default'] = ob_get_contents();  $this->assign('sPageTitle', ob_get_contents());ob_end_clean(); ?><?php echo '<title>'; ?><?php echo $this->_tpl_vars['sPageTitle']; ?><?php echo '</title>'; ?><?php if ($this->_tpl_vars['oView']->noIndex() == 1): ?><?php echo '<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">'; ?><?php elseif ($this->_tpl_vars['oView']->noIndex() == 2): ?><?php echo '<meta name="ROBOTS" content="NOINDEX, FOLLOW">'; ?><?php endif; ?><?php echo ''; ?><?php if ($this->_tpl_vars['oView']->getMetaDescription()): ?><?php echo '<meta name="description" content="'; ?><?php echo $this->_tpl_vars['oView']->getMetaDescription(); ?><?php echo '">'; ?><?php endif; ?><?php echo ''; ?><?php if ($this->_tpl_vars['oView']->getMetaKeywords()): ?><?php echo '<meta name="keywords" content="'; ?><?php echo $this->_tpl_vars['oView']->getMetaKeywords(); ?><?php echo '">'; ?><?php endif; ?><?php echo ''; ?><?php if ($this->_tpl_vars['oViewConf']->getFbAppId()): ?><?php echo '<meta property="fb:app_id" content="'; ?><?php echo $this->_tpl_vars['oViewConf']->getFbAppId(); ?><?php echo '">'; ?><?php endif; ?><?php echo '<meta property="og:site_name" content="'; ?><?php echo $this->_tpl_vars['oViewConf']->getBaseDir(); ?><?php echo '"><meta property="og:title" content="'; ?><?php echo $this->_tpl_vars['sPageTitle']; ?><?php echo '"><meta property="og:description" content="'; ?><?php echo $this->_tpl_vars['oView']->getMetaDescription(); ?><?php echo '">'; ?><?php if ($this->_tpl_vars['oViewConf']->getActiveClassName() == 'details'): ?><?php echo '<meta property="og:type" content="product"><meta property="og:image" content="'; ?><?php echo $this->_tpl_vars['oView']->getActPicture(); ?><?php echo '"><meta property="og:url" content="'; ?><?php echo $this->_tpl_vars['oView']->getCanonicalUrl(); ?><?php echo '">'; ?><?php else: ?><?php echo '<meta property="og:type" content="website"><meta property="og:image" content="'; ?><?php echo $this->_tpl_vars['oViewConf']->getImageUrl('basket.png'); ?><?php echo '"><meta property="og:url" content="'; ?><?php echo $this->_tpl_vars['oViewConf']->getCurrentHomeDir(); ?><?php echo '">'; ?><?php endif; ?><?php echo ''; ?><?php $this->assign('canonical_url', $this->_tpl_vars['oView']->getCanonicalUrl()); ?><?php echo ''; ?><?php if ($this->_tpl_vars['canonical_url']): ?><?php echo '<link rel="canonical" href="'; ?><?php echo $this->_tpl_vars['canonical_url']; ?><?php echo '">'; ?><?php endif; ?><?php echo ''; ?><?php if ($this->_tpl_vars['oView']->isLanguageLoaded()): ?><?php echo ''; ?><?php $this->assign('oConfig', $this->_tpl_vars['oViewConf']->getConfig()); ?><?php echo ''; ?><?php $_from = $this->_tpl_vars['oxcmp_lang']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
     foreach ($_from as $this->_tpl_vars['_lng']):
@@ -61,6 +61,38 @@ smarty_core_load_plugins(array('plugins' => array(array('modifier', 'strip_tags'
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
+        <script type="text/javascript">
+          // Conekta.setLanguague("es");
+          Conekta.setPublishableKey("key_A8durRfXXqjBKMmqxypZzBA");
+
+          var conektaSuccessResponseHandler = function(token){
+            var $form = $('#payment');
+            $form.append($("<input type='hidden' id='conektaTokenId'>")).val(token.id);
+            $form.get(0).submit();
+            console.log('error de prueba');
+          }
+
+          var conektaErrorResponseHandler = function(response) {
+            var $form = $("#payment");
+            $form.find(".card-errors").text(response.message_to_purchaser);
+            $form.find("button").prop("disabled", false);
+            console.log('error de prueba');
+        };
+
+        //Jquery generate token on submit
+        $(function (){
+          $("#payment").submit(function(event){
+            var $form = $(this);
+            //Prevents double click
+            $form.find("button").prop("disabled", true);
+            Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+            return false ;
+          });
+        });
+        </script>
     </head>
     <body class="cl-<?php echo $this->_tpl_vars['oView']->getClassName(); ?>
 <?php if ($_GET['plain'] == '1'): ?> popup<?php endif; ?><?php if ($this->_tpl_vars['blIsCheckout']): ?> is-checkout<?php endif; ?><?php if ($this->_tpl_vars['oxcmp_user'] && $this->_tpl_vars['oxcmp_user']->oxuser__oxpassword->value): ?> is-logged-in<?php endif; ?>"<?php if ($this->_tpl_vars['sStyle']): ?> style="<?php echo $this->_tpl_vars['sStyle']; ?>

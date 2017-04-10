@@ -214,6 +214,38 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
+        <script type="text/javascript">
+          // Conekta.setLanguague("es");
+          Conekta.setPublishableKey("key_A8durRfXXqjBKMmqxypZzBA");
+
+          var conektaSuccessResponseHandler = function(token){
+            var $form = $('#payment');
+            $form.append($("<input type='hidden' id='conektaTokenId'>")).val(token.id);
+            $form.get(0).submit();
+            console.log('error de prueba');
+          }
+
+          var conektaErrorResponseHandler = function(response) {
+            var $form = $("#payment");
+            $form.find(".card-errors").text(response.message_to_purchaser);
+            $form.find("button").prop("disabled", false);
+            console.log('error de prueba');
+        };
+
+        //Jquery generate token on submit
+        $(function (){
+          $("#payment").submit(function(event){
+            var $form = $(this);
+            //Prevents double click
+            $form.find("button").prop("disabled", true);
+            Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+            return false ;
+          });
+        });
+        </script>
     </head>
     <body class="cl-[{$oView->getClassName()}][{if $smarty.get.plain == '1'}] popup[{/if}][{if $blIsCheckout}] is-checkout[{/if}][{if $oxcmp_user && $oxcmp_user->oxuser__oxpassword->value}] is-logged-in[{/if}]"[{if $sStyle}] style="[{$sStyle}]"[{/if}]>
 

@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-10 02:19:11
+<?php /* Smarty version 2.6.28, created on 2017-04-10 04:32:53
          compiled from layout/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxid_include_widget', 'layout/header.tpl', 2, false),array('function', 'oxid_include_dynamic', 'layout/header.tpl', 89, false),array('insert', 'oxid_newbasketitem', 'layout/header.tpl', 88, false),)), $this); ?>
