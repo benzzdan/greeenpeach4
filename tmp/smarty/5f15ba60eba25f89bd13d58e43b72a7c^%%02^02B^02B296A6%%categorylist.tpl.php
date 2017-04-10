@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-05 02:43:28
+<?php /* Smarty version 2.6.28, created on 2017-04-05 06:48:11
          compiled from widget/footer/categorylist.tpl */ ?>
 <?php if ($this->_tpl_vars['oxcmp_categories']): ?>
     <?php $this->assign('categories', $this->_tpl_vars['oxcmp_categories']); ?>

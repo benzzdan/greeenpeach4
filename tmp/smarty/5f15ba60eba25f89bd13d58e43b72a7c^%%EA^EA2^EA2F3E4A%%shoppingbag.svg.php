@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-05 02:43:25
+<?php /* Smarty version 2.6.28, created on 2017-04-05 06:42:46
          compiled from layout/svg/shoppingbag.svg */ ?>
 <?php echo '<?xml'; ?>
  version="1.0" encoding="utf-8"<?php echo '?>'; ?>

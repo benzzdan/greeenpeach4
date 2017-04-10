@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-05 06:03:08
+<?php /* Smarty version 2.6.28, created on 2017-04-10 02:19:11
          compiled from layout/header.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxid_include_widget', 'layout/header.tpl', 2, false),array('function', 'oxid_include_dynamic', 'layout/header.tpl', 89, false),array('insert', 'oxid_newbasketitem', 'layout/header.tpl', 88, false),)), $this); ?>
@@ -86,11 +86,11 @@ unset($_smarty_tpl_vars);
                     </div> -->
                 </div>
 
-                
-                <?php echo smarty_function_oxid_include_widget(array('cl' => 'oxwCategoryTree','cnid' => $this->_tpl_vars['oView']->getCategoryId(),'sWidgetType' => 'header','_parent' => $this->_tpl_vars['oView']->getClassName(),'nocookie' => 1), $this);?>
 
-                
+                    
+                        <?php echo smarty_function_oxid_include_widget(array('cl' => 'oxwCategoryTree','cnid' => $this->_tpl_vars['oView']->getCategoryId(),'sWidgetType' => 'header','_parent' => $this->_tpl_vars['oView']->getClassName(),'nocookie' => 1), $this);?>
 
+                    
 
 
             </div>

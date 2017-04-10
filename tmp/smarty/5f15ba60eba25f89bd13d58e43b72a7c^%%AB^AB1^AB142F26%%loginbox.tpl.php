@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.28, created on 2017-04-05 02:43:25
+<?php /* Smarty version 2.6.28, created on 2017-04-05 06:42:45
          compiled from widget/header/loginbox.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('function', 'oxmultilang', 'widget/header/loginbox.tpl', 24, false),array('function', 'oxgetseourl', 'widget/header/loginbox.tpl', 34, false),array('modifier', 'cat', 'widget/header/loginbox.tpl', 34, false),)), $this); ?>

@@ -71,9 +71,11 @@
                     </div> -->
                 </div>
 
-                [{block name="layout_header_bottom"}]
-                  [{oxid_include_widget cl="oxwCategoryTree" cnid=$oView->getCategoryId() sWidgetType="header" _parent=$oView->getClassName() nocookie=1}]
-                [{/block}]
+
+                    [{block name="layout_header_bottom"}]
+                        [{oxid_include_widget cl="oxwCategoryTree" cnid=$oView->getCategoryId() sWidgetType="header" _parent=$oView->getClassName() nocookie=1}]
+                    [{/block}]
+
 
             </div>
 

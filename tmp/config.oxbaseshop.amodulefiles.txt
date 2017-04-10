@@ -1,0 +1,1 @@
+a:1:{s:10:"invoicepdf";a:2:{s:15:"invoicepdfblock";s:40:"oe/invoicepdf/models/invoicepdfblock.php";s:24:"invoicepdfarticlesummary";s:49:"oe/invoicepdf/models/invoicepdfarticlesummary.php";}}
