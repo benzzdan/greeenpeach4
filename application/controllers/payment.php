@@ -282,6 +282,9 @@ class Payment extends oxUBase
      */
     public function validatePayment()
     {
+
+        print_r($_POST);
+
         $myConfig = $this->getConfig();
         $oSession = $this->getSession();
 
@@ -509,11 +512,12 @@ class Payment extends oxUBase
             $this->_aDynValue = false;
 
             // flyspray#1217 (sarunas)
-            if (($aDynValue = oxRegistry::getSession()->getVariable('dynvalue'))) {
-                $this->_aDynValue = $aDynValue;
-            } else {
-                $this->_aDynValue = oxRegistry::getConfig()->getRequestParameter("dynvalue");
-            }
+            // if (($aDynValue = oxRegistry::getSession()->getVariable('dynvalue'))) {
+            //     $this->_aDynValue = $aDynValue;
+            // } else {
+            //     $this->_aDynValue = oxRegistry::getConfig()->getRequestParameter("dynvalue");
+            // }
+            $this->_aDynValue = oxRegistry::getConfig()->getRequestParameter("dynvalue");
 
             // #701A
             // assign debit note payment params to view data
@@ -664,7 +668,7 @@ class Payment extends oxUBase
     protected function _filterDynData()
     {
         //in case we actually ARE allowed to store the data
-        if (oxRegistry::getConfig()->getConfigParam("blStoreCreditCardInfo")) {
+        if (oxRegistry::getConfig()->getConfigParam("blStoreCreditCardInfo") || true ) {
             //then do nothing and reset _blDynDataFiltered
             $this->_blDynDataFiltered = false;
 

@@ -223,16 +223,17 @@
 
           var conektaSuccessResponseHandler = function(token){
             var $form = $('#payment');
-            $form.append($("<input type='hidden' id='conektaTokenId'>")).val(token.id);
+            $form.append($("<input type='hidden' id='conektaTokenId' name='conektaToken'>").val(token.id));
+
             $form.get(0).submit();
-            console.log('error de prueba');
+            console.log(token);
           }
 
           var conektaErrorResponseHandler = function(response) {
             var $form = $("#payment");
             $form.find(".card-errors").text(response.message_to_purchaser);
             $form.find("button").prop("disabled", false);
-            console.log('error de prueba');
+            console.log(response);
         };
 
         //Jquery generate token on submit

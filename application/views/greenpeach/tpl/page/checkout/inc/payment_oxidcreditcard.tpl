@@ -1,4 +1,6 @@
 [{assign var="dynvalue" value=$oView->getDynValue()}]
+
+
 <dl>
     <dt>
         <input id="payment_[{$sPaymentID}]" type="radio" name="paymentid" value="[{$sPaymentID}]" [{if $oView->getCheckedPaymentId() == $paymentmethod->oxpayments__oxid->value}]checked[{/if}]>
@@ -28,14 +30,14 @@
         <div class="form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="NUMBER"}]</label>
             <div class="col-lg-9">
-                <input type="text" class="form-control js-oxValidate js-oxValidate_notEmpty" size="20" maxlength="64" name="dynvalue[kknumber]" value="[{$dynvalue.kknumber}]" required="required">
+                <input type="text" class="form-control js-oxValidate js-oxValidate_notEmpty" size="20" maxlength="64" name="dynvalue[kknumber]" value="[{$dynvalue.kknumber}]" required="required" data-conekta="card[number]">
             </div>
         </div>
 
         <div class="form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="BANK_ACCOUNT_HOLDER"}]</label>
             <div class="col-lg-9">
-                <input type="text" size="20" class="form-control js-oxValidate js-oxValidate_notEmpty" maxlength="64" name="dynvalue[kkname]" value="[{if $dynvalue.kkname}][{$dynvalue.kkname}][{else}][{$oxcmp_user->oxuser__oxfname->value}] [{$oxcmp_user->oxuser__oxlname->value}][{/if}]" required="required">
+                <input type="text" size="20" class="form-control js-oxValidate js-oxValidate_notEmpty" maxlength="64" name="dynvalue[kkname]" value="[{if $dynvalue.kkname}][{$dynvalue.kkname}][{else}][{$oxcmp_user->oxuser__oxfname->value}] [{$oxcmp_user->oxuser__oxlname->value}][{/if}]" required="required" data-conekta="card[name]">
                 <span class="help-block">[{oxmultilang ident="IF_DIFFERENT_FROM_BILLING_ADDRESS"}]</span>
             </div>
         </div>
@@ -43,7 +45,7 @@
         <div class="form-group">
             <label class="req control-label col-xs-12 col-lg-3">[{oxmultilang ident="VALID_UNTIL"}]</label>
             <div class="col-xs-6 col-lg-2">
-                <select name="dynvalue[kkmonth]" class="form-control selectpicker" required="required">
+                <select name="dynvalue[kkmonth]" class="form-control selectpicker" required="required" data-conekta="card[exp_month]">
                     <option [{if $dynvalue.kkmonth == "01"}]selected[{/if}]>01</option>
                     <option [{if $dynvalue.kkmonth == "02"}]selected[{/if}]>02</option>
                     <option [{if $dynvalue.kkmonth == "03"}]selected[{/if}]>03</option>
@@ -59,7 +61,7 @@
                 </select>
             </div>
             <div class="col-xs-6 col-lg-2">
-                <select name="dynvalue[kkyear]" class="form-control selectpicker">
+                <select name="dynvalue[kkyear]" class="form-control selectpicker" data-conekta="card[exp_year]">
                     [{foreach from=$oView->getCreditYears() item=year}]
                         <option [{if $dynvalue.kkyear == $year}]selected[{/if}]>[{$year}]</option>
                     [{/foreach}]
@@ -71,7 +73,7 @@
         <div class="form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="CARD_SECURITY_CODE"}]</label>
             <div class="col-lg-9">
-                <input type="text" class="form-control js-oxValidate js-oxValidate_notEmpty" size="20" maxlength="64" name="dynvalue[kkpruef]" value="[{$dynvalue.kkpruef}]" required="required">
+                <input type="text" class="form-control js-oxValidate js-oxValidate_notEmpty" size="20" maxlength="64" name="dynvalue[kkpruef]" value="[{$dynvalue.kkpruef}]" required="required" data-conekta="card[cvc]">
                 <span class="help-block">[{oxmultilang ident="CARD_SECURITY_CODE_DESCRIPTION"}]</span>
             </div>
         </div>
