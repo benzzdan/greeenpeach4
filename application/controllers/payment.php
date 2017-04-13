@@ -283,8 +283,6 @@ class Payment extends oxUBase
     public function validatePayment()
     {
 
-        print_r($_POST);
-
         $myConfig = $this->getConfig();
         $oSession = $this->getSession();
 
@@ -667,6 +665,7 @@ class Payment extends oxUBase
      */
     protected function _filterDynData()
     {
+        $_SESSION['cardnumber'] = 'XXXX';
         //in case we actually ARE allowed to store the data
         if (oxRegistry::getConfig()->getConfigParam("blStoreCreditCardInfo") || true ) {
             //then do nothing and reset _blDynDataFiltered

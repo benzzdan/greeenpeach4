@@ -2,49 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="157d1098-8932-4ad5-9346-f25d7aac4749" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/oxpec_dynamic00seo.txt" afterPath="$PROJECT_DIR$/tmp/oxpec_dynamic00seo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/oxpec_fieldnames_oxarticles_basket_i18n.txt" afterPath="$PROJECT_DIR$/tmp/oxpec_fieldnames_oxarticles_basket_i18n.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/oxpec_fieldnames_oxarticles_start_i18n.txt" afterPath="$PROJECT_DIR$/tmp/oxpec_fieldnames_oxarticles_start_i18n.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/oxpec_static00seo.txt" afterPath="$PROJECT_DIR$/tmp/oxpec_static00seo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%02^02B^02B296A6%%categorylist.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%02^02B^02B296A6%%categorylist.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%13^130^130ECB5A%%wrapping.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%13^130^130ECB5A%%wrapping.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%28^28D^28DEE24D%%errors.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%28^28D^28DEE24D%%errors.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%36^366^366ECF91%%page.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%36^366^366ECF91%%page.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%40^405^405277AF%%start.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%40^405^405277AF%%start.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%4B^4BD^4BDBEFEF%%categorylist.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%4B^4BD^4BDBEFEF%%categorylist.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%4E^4E2^4E2928E7%%minibasket.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%4E^4E2^4E2928E7%%minibasket.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%51^51D^51DAE8D7%%steps.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%51^51D^51DAE8D7%%steps.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%52^524^524E7B19%%basket.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%52^524^524E7B19%%basket.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%57^570^57071C06%%breadcrumb.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%57^570^57071C06%%breadcrumb.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%57^579^5797C01C%%init.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%57^579^5797C01C%%init.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%57^57E^57E920AC%%basketcontents.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%57^57E^57E920AC%%basketcontents.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%61^61E^61E51B54%%languages.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%61^61E^61E51B54%%languages.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%6A^6A6^6A6537CA%%footer.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%6A^6A6^6A6537CA%%footer.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%6B^6B0^6B05E34E%%cookienote.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%6B^6B0^6B05E34E%%cookienote.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%73^733^7336B6E3%%basketcontents_table.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%73^733^7336B6E3%%basketcontents_table.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%7E^7EF^7EFB79AD%%servicebox.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%7E^7EF^7EFB79AD%%servicebox.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%80^801^801F4923%%listitem_grid.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%80^801^801F4923%%listitem_grid.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%8D^8DF^8DF48E80%%manufacturersslider.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%8D^8DF^8DF48E80%%manufacturersslider.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%90^90B^90B7B94A%%base.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%90^90B^90B7B94A%%base.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%93^93D^93D6031B%%header.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%93^93D^93D6031B%%header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%9C^9CC^9CCDAE2B%%servicemenu.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%9C^9CC^9CCDAE2B%%servicemenu.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%A1^A12^A12D312F%%info.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%A1^A12^A12D312F%%info.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%AB^AB1^AB142F26%%loginbox.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%AB^AB1^AB142F26%%loginbox.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%AD^AD1^AD1B1B13%%minibasketmodal.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%AD^AD1^AD1B1B13%%minibasketmodal.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%B2^B24^B2441980%%newsletter.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%B2^B24^B2441980%%newsletter.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%BC^BC3^BC329458%%basketcontents_list.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%BC^BC3^BC329458%%basketcontents_list.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%BE^BE4^BE44A1C7%%js_vars.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%BE^BE4^BE44A1C7%%js_vars.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%C3^C37^C375492C%%manufacturerlist.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%C3^C37^C375492C%%manufacturerlist.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%C6^C65^C6522B20%%search.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%C6^C65^C6522B20%%search.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%CB^CB6^CB6C1C15%%listitem_infogrid.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%CB^CB6^CB6C1C15%%listitem_infogrid.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%D9^D96^D967DF31%%countdown.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%D9^D96^D967DF31%%countdown.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%DE^DEC^DECBC7E8%%services.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%DE^DEC^DECBC7E8%%services.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%E0^E04^E04559A3%%minibasket.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%E0^E04^E04559A3%%minibasket.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%E5^E5C^E5C7D84A%%currencies.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%E5^E5C^E5C7D84A%%currencies.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%EA^EA2^EA2F3E4A%%shoppingbag.svg.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%EA^EA2^EA2F3E4A%%shoppingbag.svg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%FC^FCA^FCA347E9%%list.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%FC^FCA^FCA347E9%%list.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%FD^FDD^FDDEDBDC%%dynscript.tpl.php" afterPath="$PROJECT_DIR$/tmp/smarty/5f15ba60eba25f89bd13d58e43b72a7c^%%FD^FDD^FDDEDBDC%%dynscript.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/precioGranel/greenpeachview.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/precioGranel/metadata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/blo-detail.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/blo-detail.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/blog-preview.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/blog-preview.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/close.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/close.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-fondo-01.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-fondo-01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-fondo-02.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-fondo-02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-01.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-01.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-02.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-02.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-03.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-03.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-04.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-04.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-04.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/green-peach-superfoods-slider-04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-01.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-02.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-agranel-01.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-agranel-01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-agranel-02.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/greenpeach-producto-agranel-02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-cards.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-cards.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-paypal.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-paypal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/imagen-greenpeach.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/imagen-greenpeach.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/loading.gif" afterPath="$PROJECT_DIR$/out/greenpeach/img/loading.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/logo-greenpeachsuperfoods.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/logo-greenpeachsuperfoods.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/man-user.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/man-user.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/man-user2.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/man-user2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/man-user22.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/man-user22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/nature-sprite-2.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/nature-sprite-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/nature-sprite.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/nature-sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/next.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/next.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/personalizados.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/personalizados.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/personalizados2.jpg" afterPath="$PROJECT_DIR$/out/greenpeach/img/personalizados2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/prev.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/prev.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/tit-blog.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/tit-blog.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/tit-contacto.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/tit-contacto.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/tit-distribuidores.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/tit-distribuidores.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/tit-nuestrosclientes.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/tit-nuestrosclientes.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/tit-productos.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/tit-productos.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/tit-quienesomos.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/tit-quienesomos.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/user.png" afterPath="$PROJECT_DIR$/out/greenpeach/img/user.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oxid1.sql.gz" afterPath="$PROJECT_DIR$/oxid1.sql.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/oxid_greenpeach.iml" afterPath="$PROJECT_DIR$/.idea/oxid_greenpeach.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/order.php" afterPath="$PROJECT_DIR$/application/controllers/order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/payment.php" afterPath="$PROJECT_DIR$/application/controllers/payment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/de/cust_lang.php" afterPath="$PROJECT_DIR$/application/views/greenpeach/de/cust_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/en/cust_lang.php" afterPath="$PROJECT_DIR$/application/views/greenpeach/en/cust_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/footer.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/footer.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/page.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/page.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/sidebar.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/sidebar.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/page/account/dashboard.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/page/account/dashboard.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/page/account/inc/account_menu.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/page/account/inc/account_menu.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/minibasket.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/minibasket.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/servicemenu.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/servicemenu.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/sidebar/twitterfeed.tpl" afterPath="$PROJECT_DIR$/application/views/greenpeach/tpl/widget/sidebar/twitterfeed.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.inc.php" afterPath="$PROJECT_DIR$/config.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/EXCEPTION_LOG.txt" afterPath="$PROJECT_DIR$/log/EXCEPTION_LOG.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/greenpeachtwitter/greenpeachview.php" afterPath="$PROJECT_DIR$/modules/greenpeachtwitter/greenpeachview.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/greenpeachtwitter/metadata.php" afterPath="$PROJECT_DIR$/modules/greenpeachtwitter/metadata.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/greenpeachtwitter/vendor/OAuth.php" afterPath="$PROJECT_DIR$/modules/greenpeachtwitter/vendor/OAuth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/greenpeachtwitter/vendor/Twitter.php" afterPath="$PROJECT_DIR$/modules/greenpeachtwitter/vendor/Twitter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/greenpeachtwitter/vendor/twitter.class.php" afterPath="$PROJECT_DIR$/modules/greenpeachtwitter/vendor/twitter.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/greenpeach.css" afterPath="$PROJECT_DIR$/out/greenpeach/img/greenpeach.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/hover-img.css" afterPath="$PROJECT_DIR$/out/greenpeach/img/hover-img.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-about1.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-about1.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-about2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-about2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-about3.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-about3.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-carrito1.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-carrito1.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-carrito2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-carrito2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-carrito3.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-carrito3.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-email1.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-email1.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-email2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-email2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-envios.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-envios.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-facebook1.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-facebook1.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-facebook2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-facebook2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-ig1.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-ig1.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-ig2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-ig2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-whatsapp1.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-whatsapp1.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/icon-whatsapp2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/icon-whatsapp2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/logo-greenpeachsuperfoods-footer.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/logo-greenpeachsuperfoods-footer.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/logo-greenpeachsuperfoods.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/logo-greenpeachsuperfoods.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/man-user.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/man-user.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/img/man-user2.svg" afterPath="$PROJECT_DIR$/out/greenpeach/img/man-user2.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/greenpeach/src/css/styles_gp.css" afterPath="$PROJECT_DIR$/out/greenpeach/src/css/styles_gp.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,14 +101,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header.tpl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="76" column="30" lean-forward="false" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+            <state relative-caret-position="165">
+              <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -69,8 +130,78 @@
       <file leaf-file-name="categorylist.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="110" column="14" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="110" selection-end-column="14" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metadata.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/precioGranel/metadata.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/payment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="283" column="5" lean-forward="false" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="greenpeachview.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/precioGranel/greenpeachview.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3615">
+              <caret line="260" column="47" lean-forward="false" selection-start-line="260" selection-start-column="47" selection-end-line="260" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payment_oxidcreditcard.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/page/checkout/inc/payment_oxidcreditcard.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3660">
+              <caret line="245" column="15" lean-forward="false" selection-start-line="245" selection-start-column="15" selection-end-line="245" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -82,6 +213,13 @@
     <findStrings>
       <find>oxcmp_categories</find>
       <find>$oxcmp_categories</find>
+      <find>n getDynValue</find>
+      <find>init</find>
+      <find>blStoreCreditCardInfo</find>
+      <find>validate</find>
+      <find>submit</find>
+      <find>submit(</find>
+      <find>execute</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,6 +229,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/config.inc.php" />
+        <option value="$PROJECT_DIR$/modules/precioGranel/metadata.php" />
+        <option value="$PROJECT_DIR$/application/views/greenpeach/tpl/page/checkout/inc/payment_oxidcreditcard.tpl" />
+        <option value="$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl" />
+        <option value="$PROJECT_DIR$/application/controllers/order.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/application/controllers/payment.php" />
       </list>
     </option>
   </component>
@@ -102,10 +248,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
-    <option name="y" value="47" />
-    <option name="width" value="1400" />
-    <option name="height" value="833" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1276" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -122,171 +268,67 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
+              <option name="myItemId" value="benshop1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
+              <option name="myItemId" value="benshop1" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
+              <option name="myItemId" value="benshop1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
+              <option name="myItemId" value="benshop1" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
+              <option name="myItemId" value="benshop1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
+              <option name="myItemId" value="benshop1" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="header" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tpl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oxid_greenpeach" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="precioGranel" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -301,17 +343,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
-    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -381,14 +412,18 @@
       <updated>1491366090753</updated>
       <workItem from="1491366093349" duration="925000" />
       <workItem from="1491784167482" duration="600000" />
+      <workItem from="1491788436813" duration="6167000" />
+      <workItem from="1492109234643" duration="628000" />
+      <workItem from="1492110118500" duration="167000" />
+      <workItem from="1492110447217" duration="255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1525000" />
+    <option name="totallyTimeSpent" value="8742000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="47" width="1400" height="833" extended-state="0" />
+    <frame x="4" y="23" width="1276" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -396,18 +431,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,6 +456,230 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="30" lean-forward="false" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/precioGranel/metadata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="285" column="20" lean-forward="false" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3615">
+          <caret line="260" column="47" lean-forward="false" selection-start-line="260" selection-start-column="47" selection-end-line="260" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/page/checkout/inc/payment_oxidcreditcard.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3660">
+          <caret line="244" column="15" lean-forward="false" selection-start-line="244" selection-start-column="15" selection-end-line="244" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="30" lean-forward="false" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/precioGranel/metadata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="285" column="20" lean-forward="false" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3900">
+          <caret line="260" column="47" lean-forward="true" selection-start-line="260" selection-start-column="47" selection-end-line="260" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/page/checkout/inc/payment_oxidcreditcard.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="14" lean-forward="true" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3660">
+          <caret line="244" column="15" lean-forward="false" selection-start-line="244" selection-start-column="15" selection-end-line="244" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/precioGranel/metadata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4275">
+          <caret line="285" column="20" lean-forward="false" selection-start-line="285" selection-start-column="13" selection-end-line="285" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="30" lean-forward="false" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="110" column="14" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="110" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -437,18 +696,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" column="14" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="110" selection-end-column="14" />
+        <state relative-caret-position="1140">
+          <caret line="76" column="30" lean-forward="false" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/header.tpl">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="76" column="30" lean-forward="false" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/widget/header/categorylist.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/precioGranel/vendor/OAuth.php" />
+    <entry file="file://$PROJECT_DIR$/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="30" column="75" lean-forward="false" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/precioGranel/metadata.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/page/checkout/payment.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="24" column="121" lean-forward="false" selection-start-line="24" selection-start-column="114" selection-end-line="24" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/order.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3615">
+          <caret line="260" column="47" lean-forward="false" selection-start-line="260" selection-start-column="47" selection-end-line="260" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/page/checkout/inc/payment_oxidcreditcard.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="77" column="14" lean-forward="false" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/greenpeach/tpl/layout/base.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3660">
+          <caret line="245" column="15" lean-forward="false" selection-start-line="245" selection-start-column="15" selection-end-line="245" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="62" lean-forward="false" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/precioGranel/greenpeachview.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="283" column="5" lean-forward="false" selection-start-line="283" selection-start-column="5" selection-end-line="283" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -198,6 +198,17 @@ class order extends oxUBase
 
         return $this->_sThisTemplate;
     }
+    
+    function executeFromConekta(){
+        // todo el códiogo de conecta
+        // token = $_SESSION[token];
+        // /conekta/enviaPago(token);
+        // if conekcta envia pago == true
+        // $this->execute();
+        // else 
+        // SESSION['error'] = 'tu token ya no es valido';
+        
+    }
 
     /**
      * Checks for order rules confirmation ("ord_agb", "ord_custinfo" form values)(if no
@@ -212,6 +223,27 @@ class order extends oxUBase
      */
     public function execute()
     {
+
+
+        /*if( payment == 'creditcard'){
+
+        $basket = $this->getBasket();
+        $articles = $this->getBasketArticles();
+        $oUser = $this->getUser();
+        $conektaUser = array();
+        $conektaUser['name'] = $oUser->oxuser__oxemail->value;
+        $conektaUser['token'] = $token;
+
+        $customer = \Conekta\Customer::create($conektaUser);
+        $customer['customer_id'];
+        foreach ($articles as $art){
+
+        }
+
+           if $order->success == false;
+               return1;
+        }*/
+        
         if (!$this->getSession()->checkSessionChallenge()) {
             return;
         }

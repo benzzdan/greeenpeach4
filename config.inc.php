@@ -26,11 +26,11 @@
     $this->dbUser = 'root'; // database user name
     $this->dbPwd = ''; // database user password
     $this->dbType = 'mysql';
-    $this->sShopURL = 'http://localhost/oxid_greenpeach'; // eShop base url, required
+    $this->sShopURL = 'http://greenpeach.local'; // eShop base url, required
     $this->sSSLShopURL  = null;            // eShop SSL url, optional
     $this->sAdminSSLURL = null;            // eShop Admin SSL url, optional
-    $this->sShopDir = '/opt/lampp/htdocs/oxid_greenpeach';
-    $this->sCompileDir = '/opt/lampp/htdocs/oxid_greenpeach/tmp';
+    $this->sShopDir = '/Users/julesmqz/PhpstormProjects/benshop1';
+    $this->sCompileDir = '/Users/julesmqz/PhpstormProjects/benshop1/tmp';
 
     // UTF-8 mode in shop 0 - off, 1 - on
     $this->iUtfMode = 1;
@@ -39,7 +39,7 @@
     $this->aAllowedUploadTypes = array('jpg', 'gif', 'png', 'pdf', 'mp3', 'avi', 'mpg', 'mpeg', 'doc', 'xls', 'ppt');
 
     // timezone information
-    date_default_timezone_set('Europe/Berlin');
+    date_default_timezone_set('America/Mexico_City');
 
     // Search engine friendly URL processor
     // After changing this value, you should rename oxid.php file as well

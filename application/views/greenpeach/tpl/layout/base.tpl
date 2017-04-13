@@ -239,6 +239,11 @@
         //Jquery generate token on submit
         $(function (){
           $("#payment").submit(function(event){
+              //pseudocode if paypal return true
+              var paymentID = $('[name=paymentid]:checked').val();
+              if( paymentID != 'oxidcreditcard'){
+                  return true;
+              }
             var $form = $(this);
             //Prevents double click
             $form.find("button").prop("disabled", true);
