@@ -258,7 +258,9 @@ window.onload = function ()
                         [{ oxinputhelp ident="HELP_ARTICLE_MAIN_VAT" }]
                     </td>
                   </tr>
-
+                  [{if $oViewConf->isModuleActive('preciogranel')}]
+                      [{include file="article_main_precio_granel.tpl"}]
+                  [{/if}]
               [{/block}]
 
               <tr>
