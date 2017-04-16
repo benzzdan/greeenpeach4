@@ -234,6 +234,8 @@
             $form.find(".card-errors").text(response.message_to_purchaser);
             $form.find("button").prop("disabled", false);
             console.log(response);
+            return $.post(token.id);
+
         };
 
         //Jquery generate token on submit

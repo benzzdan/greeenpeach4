@@ -24,7 +24,7 @@
     $this->dbHost = 'localhost'; // database host name
     $this->dbName = 'oxid_gp'; // database name
     $this->dbUser = 'root'; // database user name
-    $this->dbPwd = ''; // database user password
+    $this->dbPwd = 'f7byEhno'; // database user password
     $this->dbType = 'mysql';
     $this->sShopURL = 'http://localhost/oxid_greenpeach'; // eShop base url, required
     $this->sSSLShopURL  = null;            // eShop SSL url, optional

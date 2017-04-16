@@ -1,0 +1,370 @@
+oxUser::__set_state(array(
+   '_blDisableShopCheck' => true,
+   '_oNewsSubscription' => NULL,
+   '_sClassName' => 'oxuser',
+   '_aBaskets' => 
+  array (
+  ),
+   '_oGroups' => 
+  oxList::__set_state(array(
+     '_aArray' => 
+    array (
+      'oxidnotyetordered' => 
+      oxGroups::__set_state(array(
+         '_sClassName' => 'oxgroups',
+         '_iLanguage' => 0,
+         '_blEmployMultilanguage' => true,
+         '_sOXID' => 'oxidnotyetordered',
+         '_iShopId' => 'oxbaseshop',
+         '_blIsSimplyClonable' => true,
+         '_sCoreTable' => 'oxgroups',
+         '_sViewTable' => false,
+         '_aFieldNames' => 
+        array (
+          'oxid' => 0,
+          'oxactive' => 0,
+          'oxtitle' => 1,
+          'oxtimestamp' => 0,
+        ),
+         '_sCacheKey' => 'allviews_i18n',
+         '_blUseLazyLoading' => false,
+         '_aSkipSaveFields' => 
+        array (
+          0 => 'oxtimestamp',
+        ),
+         '_blUseSkipSaveFields' => true,
+         '_sExistKey' => 'oxid',
+         '_blIsDerived' => NULL,
+         '_blIsSeoObject' => false,
+         '_blUpdateSeo' => true,
+         '_blReadOnly' => false,
+         '_blIsInList' => true,
+         '_isLoaded' => false,
+         '_aInnerLazyCache' => NULL,
+         'oxgroups__oxid' => 
+        oxField::__set_state(array(
+           'value' => 'oxidnotyetordered',
+        )),
+         'oxgroups__oxactive' => 
+        oxField::__set_state(array(
+           'rawValue' => '1',
+        )),
+         'oxgroups__oxtitle' => 
+        oxField::__set_state(array(
+           'rawValue' => 'Not Yet Purchased',
+        )),
+         'oxgroups__oxtimestamp' => 
+        oxField::__set_state(array(
+           'rawValue' => '2017-03-30 10:38:15',
+        )),
+      )),
+      'oxidforeigncustomer' => 
+      oxGroups::__set_state(array(
+         '_sClassName' => 'oxgroups',
+         '_iLanguage' => 0,
+         '_blEmployMultilanguage' => true,
+         '_sOXID' => 'oxidforeigncustomer',
+         '_iShopId' => 'oxbaseshop',
+         '_blIsSimplyClonable' => true,
+         '_sCoreTable' => 'oxgroups',
+         '_sViewTable' => false,
+         '_aFieldNames' => 
+        array (
+          'oxid' => 0,
+          'oxactive' => 0,
+          'oxtitle' => 1,
+          'oxtimestamp' => 0,
+        ),
+         '_sCacheKey' => 'allviews_i18n',
+         '_blUseLazyLoading' => false,
+         '_aSkipSaveFields' => 
+        array (
+          0 => 'oxtimestamp',
+        ),
+         '_blUseSkipSaveFields' => true,
+         '_sExistKey' => 'oxid',
+         '_blIsDerived' => NULL,
+         '_blIsSeoObject' => false,
+         '_blUpdateSeo' => true,
+         '_blReadOnly' => false,
+         '_blIsInList' => true,
+         '_isLoaded' => false,
+         '_aInnerLazyCache' => NULL,
+         'oxgroups__oxid' => 
+        oxField::__set_state(array(
+           'value' => 'oxidforeigncustomer',
+        )),
+         'oxgroups__oxactive' => 
+        oxField::__set_state(array(
+           'rawValue' => '1',
+        )),
+         'oxgroups__oxtitle' => 
+        oxField::__set_state(array(
+           'rawValue' => 'Foreign Customer',
+        )),
+         'oxgroups__oxtimestamp' => 
+        oxField::__set_state(array(
+           'rawValue' => '2017-03-30 10:38:15',
+        )),
+      )),
+    ),
+     '_blRemovedActive' => false,
+     '_oBaseObject' => 
+    oxGroups::__set_state(array(
+       '_sClassName' => 'oxgroups',
+       '_iLanguage' => 0,
+       '_blEmployMultilanguage' => true,
+       '_sOXID' => NULL,
+       '_iShopId' => 'oxbaseshop',
+       '_blIsSimplyClonable' => true,
+       '_sCoreTable' => 'oxgroups',
+       '_sViewTable' => false,
+       '_aFieldNames' => 
+      array (
+        'oxid' => 0,
+        'oxactive' => 0,
+        'oxtitle' => 1,
+        'oxtimestamp' => 0,
+      ),
+       '_sCacheKey' => 'allviews_i18n',
+       '_blUseLazyLoading' => false,
+       '_aSkipSaveFields' => 
+      array (
+        0 => 'oxtimestamp',
+      ),
+       '_blUseSkipSaveFields' => true,
+       '_sExistKey' => 'oxid',
+       '_blIsDerived' => NULL,
+       '_blIsSeoObject' => false,
+       '_blUpdateSeo' => true,
+       '_blReadOnly' => false,
+       '_blIsInList' => true,
+       '_isLoaded' => false,
+       '_aInnerLazyCache' => NULL,
+       'oxgroups__oxid' => false,
+       'oxgroups__oxactive' => false,
+       'oxgroups__oxtitle' => false,
+       'oxgroups__oxtimestamp' => false,
+    )),
+     '_blValid' => true,
+     '_sObjectsInListName' => 'oxgroups',
+     '_sCoreTable' => NULL,
+     '_sShopID' => 'oxbaseshop',
+     '_aSqlLimit' => 
+    array (
+      0 => 0,
+      1 => 0,
+    ),
+  )),
+   '_aAddresses' => 
+  array (
+  ),
+   '_oPayments' => NULL,
+   '_oRecommList' => NULL,
+   '_blMallUsers' => NULL,
+   '_iCntNoticeListArticles' => NULL,
+   '_iCntWishListArticles' => NULL,
+   '_iCntRecommLists' => NULL,
+   '_sUpdateKey' => NULL,
+   '_blLoadedFromCookie' => false,
+   '_sSelAddressId' => NULL,
+   '_oSelAddress' => NULL,
+   '_sWishId' => NULL,
+   '_oUserCountryTitle' => NULL,
+   '_oStateObject' => NULL,
+   '_sOXID' => 'ace9e26ac168471b240de51d5ca629b7',
+   '_iShopId' => 'oxbaseshop',
+   '_blIsSimplyClonable' => true,
+   '_sCoreTable' => 'oxuser',
+   '_sViewTable' => 'oxuser',
+   '_aFieldNames' => 
+  array (
+    'oxid' => 0,
+    'oxactive' => 0,
+    'oxrights' => 0,
+    'oxshopid' => 0,
+    'oxusername' => 0,
+    'oxpassword' => 0,
+    'oxpasssalt' => 0,
+    'oxcustnr' => 0,
+    'oxustid' => 0,
+    'oxcompany' => 0,
+    'oxfname' => 0,
+    'oxlname' => 0,
+    'oxstreet' => 0,
+    'oxstreetnr' => 0,
+    'oxaddinfo' => 0,
+    'oxcity' => 0,
+    'oxcountryid' => 0,
+    'oxstateid' => 0,
+    'oxzip' => 0,
+    'oxfon' => 0,
+    'oxfax' => 0,
+    'oxsal' => 0,
+    'oxboni' => 0,
+    'oxcreate' => 0,
+    'oxregister' => 0,
+    'oxprivfon' => 0,
+    'oxmobfon' => 0,
+    'oxbirthdate' => 0,
+    'oxurl' => 0,
+    'oxupdatekey' => 0,
+    'oxupdateexp' => 0,
+    'oxpoints' => 0,
+    'oxfbid' => 0,
+    'oxtimestamp' => 0,
+  ),
+   '_sCacheKey' => 'allviews',
+   '_blUseLazyLoading' => false,
+   '_aSkipSaveFields' => 
+  array (
+    0 => 'oxtimestamp',
+  ),
+   '_blUseSkipSaveFields' => true,
+   '_sExistKey' => 'oxid',
+   '_blIsDerived' => NULL,
+   '_blIsSeoObject' => false,
+   '_blUpdateSeo' => true,
+   '_blReadOnly' => false,
+   '_blIsInList' => false,
+   '_isLoaded' => true,
+   '_aInnerLazyCache' => NULL,
+   '_blEmployMultilanguage' => false,
+   'oxuser__oxid' => 
+  oxField::__set_state(array(
+     'value' => 'ace9e26ac168471b240de51d5ca629b7',
+  )),
+   'oxuser__oxactive' => 
+  oxField::__set_state(array(
+     'rawValue' => '1',
+  )),
+   'oxuser__oxrights' => 
+  oxField::__set_state(array(
+     'rawValue' => 'user',
+  )),
+   'oxuser__oxshopid' => 
+  oxField::__set_state(array(
+     'rawValue' => 'oxbaseshop',
+  )),
+   'oxuser__oxusername' => 
+  oxField::__set_state(array(
+     'rawValue' => 'bensondaniel664@gmail.com',
+  )),
+   'oxuser__oxpassword' => 
+  oxField::__set_state(array(
+     'rawValue' => '',
+  )),
+   'oxuser__oxpasssalt' => 
+  oxField::__set_state(array(
+     'rawValue' => '',
+  )),
+   'oxuser__oxcustnr' => 
+  oxField::__set_state(array(
+     'rawValue' => '4',
+  )),
+   'oxuser__oxustid' => 
+  oxField::__set_state(array(
+     'rawValue' => 'k;lk',
+  )),
+   'oxuser__oxcompany' => 
+  oxField::__set_state(array(
+     'rawValue' => 'ORACLE',
+  )),
+   'oxuser__oxfname' => 
+  oxField::__set_state(array(
+     'rawValue' => 'Daniel',
+  )),
+   'oxuser__oxlname' => 
+  oxField::__set_state(array(
+     'rawValue' => 'Benson',
+  )),
+   'oxuser__oxstreet' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lk',
+  )),
+   'oxuser__oxstreetnr' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lk',
+  )),
+   'oxuser__oxaddinfo' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lk',
+  )),
+   'oxuser__oxcity' => 
+  oxField::__set_state(array(
+     'rawValue' => 'k;l',
+  )),
+   'oxuser__oxcountryid' => 
+  oxField::__set_state(array(
+     'rawValue' => '8f241f11095ebf3a6.86388577',
+  )),
+   'oxuser__oxstateid' => 
+  oxField::__set_state(array(
+     'rawValue' => '',
+  )),
+   'oxuser__oxzip' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lk;l',
+  )),
+   'oxuser__oxfon' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lk',
+  )),
+   'oxuser__oxfax' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lasdfadsf',
+  )),
+   'oxuser__oxsal' => 
+  oxField::__set_state(array(
+     'rawValue' => 'MRS',
+  )),
+   'oxuser__oxboni' => 
+  oxField::__set_state(array(
+     'rawValue' => '1000',
+  )),
+   'oxuser__oxcreate' => 
+  oxField::__set_state(array(
+     'rawValue' => '2017-04-11 06:14:09',
+  )),
+   'oxuser__oxregister' => 
+  oxField::__set_state(array(
+     'rawValue' => '0000-00-00 00:00:00',
+  )),
+   'oxuser__oxprivfon' => 
+  oxField::__set_state(array(
+     'rawValue' => 'hkjhkjhkjh',
+  )),
+   'oxuser__oxmobfon' => 
+  oxField::__set_state(array(
+     'rawValue' => 'hkjhjkhkj',
+  )),
+   'oxuser__oxbirthdate' => 
+  oxField::__set_state(array(
+     'rawValue' => '1989-03-03',
+  )),
+   'oxuser__oxurl' => 
+  oxField::__set_state(array(
+     'rawValue' => '',
+  )),
+   'oxuser__oxupdatekey' => 
+  oxField::__set_state(array(
+     'rawValue' => '',
+  )),
+   'oxuser__oxupdateexp' => 
+  oxField::__set_state(array(
+     'rawValue' => '0',
+  )),
+   'oxuser__oxpoints' => 
+  oxField::__set_state(array(
+     'rawValue' => '0',
+  )),
+   'oxuser__oxfbid' => 
+  oxField::__set_state(array(
+     'rawValue' => '0',
+  )),
+   'oxuser__oxtimestamp' => 
+  oxField::__set_state(array(
+     'rawValue' => '2017-04-13 14:59:59',
+  )),
+))
+---------------------------------------------
