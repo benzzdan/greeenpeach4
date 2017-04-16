@@ -199,17 +199,16 @@ class order extends oxUBase
 
         return $this->_sThisTemplate;
     }
-    
+
     function executeFromConekta(){
         // todo el códiogo de conecta
         // token = $_SESSION[token];
         // /conekta/enviaPago(token);
         // if conekcta envia pago == true
         // $this->execute();
-        // else 
+        // else
         // SESSION['error'] = 'tu token ya no es valido';
-        
-    }
+        }
 
     /**
      * Checks for order rules confirmation ("ord_agb", "ord_custinfo" form values)(if no
@@ -222,248 +221,228 @@ class order extends oxUBase
      *
      * @return string
      */
-    public function execute()
-<<<<<<< HEAD
 
-      {
-        /*if( payment == 'creditcard'){
-
-=======
-    {
+    public function execute() {
 
 
-        /*if( payment == 'creditcard'){
->>>>>>> 8426365d8d7c637d872770f64e6372864f27eeca
+      /*
+      if( payment == 'creditcard'){
 
-        $basket = $this->getBasket();
-        $articles = $this->getBasketArticles();
-        $oUser = $this->getUser();
-        $conektaUser = array();
-        $conektaUser['name'] = $oUser->oxuser__oxemail->value;
-        $conektaUser['token'] = $token;
+      $basket = $this->getBasket();
+      $articles = $this->getBasketArticles();
+      $oUser = $this->getUser();
+      $conektaUser = array();
+      $conektaUser['name'] = $oUser->oxuser__oxemail->value;
+      $conektaUser['token'] = $token;
 
-        $customer = \Conekta\Customer::create($conektaUser);
-        $customer['customer_id'];
-        foreach ($articles as $art){
+      $customer = \Conekta\Customer::create($conektaUser);
+      $customer['customer_id'];
+      foreach ($articles as $art){
 
-<<<<<<< HEAD
-=======
-        }
+      }
 
-           if $order->success == false;
-               return1;
-        }*/
-        
-        if (!$this->getSession()->checkSessionChallenge()) {
-            return;
->>>>>>> 8426365d8d7c637d872770f64e6372864f27eeca
-        }
+         if $order->success == false;
+             return1;
+      }    if( payment == 'creditcard'){
 
-           if $order->success == false;
-               return1;
-        }*/
+      $basket = $this->getBasket();
+      $articles = $this->getBasketArticles();
+      $oUser = $this->getUser();
+      $conektaUser = array();
+      $conektaUser['name'] = $oUser->oxuser__oxemail->value;
+      $conektaUser['token'] = $token;
 
-// begins my code
+      $customer = \Conekta\Customer::create($conektaUser);
+      $customer['customer_id'];
+      foreach ($articles as $art){if( payment == 'creditcard'){
+
+      $basket = $this->getBasket();
+      $articles = $this->getBasketArticles();
+      $oUser = $this->getUser();
+      $conektaUser = array();
+      $conektaUser['name'] = $oUser->oxuser__oxemail->value;
+      $conektaUser['token'] = $token;
+
+      $customer = \Conekta\Customer::create($conektaUser);
+      $customer['customer_id'];
+      foreach ($articles as $art){if( payment == 'creditcard'){
+
+      $basket = $this->getBasket();
+      $articles = $this->getBasketArticles();
+      $oUser = $this->getUser();
+      $conektaUser = array();
+      $conektaUser['name'] = $oUser->oxuser__oxemail->value;
+      $conektaUser['token'] = $token;
+
+      $customer = \Conekta\Customer::create($conektaUser);
+      $customer['customer_id'];
+      foreach ($articles as $art){
 
 
-            $current_user = $this->getUser();
-            $fname = $current_user->oxuser__oxfname . " " . $current_user->oxuser__oxlname;
-            $email = $current_user->oxuser__oxusername->value;
-            $phone = $current_user->oxuser__oxfon->value;
-            $oSession = $this->getSession();
+      */
 
-        if ($oSession->getVariable('paymentid') == 'oxidcreditcard'){
 
-        try{
-          require_once("/opt/lampp/htdocs/oxid_greenpeach/conekta/conekta-php/lib/Conekta.php");
-          \Conekta\Conekta::setApiKey("key_qcxP1NJhhTz94mfx4zza6w");
-          \Conekta\Conekta::setApiVersion("2.0.0");
 
-          \Conekta\Customer::create(
-          array(
-          "name" => "Fulanito Pérez",
-          "email" => "fulanito@conekta.com",
-          "phone" => "52181818181",
-          "payment_sources" => array(
-          array(
-          "type" => "card",
-          "token_id" => "tok_test_visa_4242"
-          )
-          )//payment_sources
-          )//customer
-        );
+      // begins my code
 
-        //create order
 
-        $order = \Conekta\Order::create(
+          $current_user = $this->getUser();
+          $fname = $current_user->oxuser__oxfname . " " . $current_user->oxuser__oxlname;
+          $email = $current_user->oxuser__oxusername->value;
+          $phone = $current_user->oxuser__oxfon->value;
+          $oSession = $this->getSession();
+
+      if ($oSession->getVariable('paymentid') == 'oxidcreditcard'){
+
+      try{
+        require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
+        \Conekta\Conekta::setApiKey("key_qcxP1NJhhTz94mfx4zza6w");
+        \Conekta\Conekta::setApiVersion("2.0.0");
+
+        \Conekta\Customer::create(
         array(
-        "line_items" => array(
+        "name" => "Fulanito Pérez",
+        "email" => "fulanito@conekta.com",
+        "phone" => "52181818181",
+        "payment_sources" => array(
         array(
-        "name" => "Tacos",
-        "unit_price" => 1000,
-        "quantity" => 12
-        )//first line_item
+        "type" => "card",
+        "token_id" => "tok_test_visa_4242"
+        )
+        )//payment_sources
+        )//customer
+      );
+
+      //create order
+
+      $order = \Conekta\Order::create(
+      array(
+      "line_items" => array(
+      array(
+      "name" => "Tacos",
+      "unit_price" => 1000,
+      "quantity" => 12
+      )//first line_item
       ), //line_items
       "shipping_lines" => array(
       array(
       "amount" => 1500,
       "carrier" => "mi compañia"
       )
-    ), //shipping_lines
-    "currency" => "MXN",
-    "customer_info" => array(
-    "customer_id" => "cus_2gMCsDXtYrn13yvFm"
-    ), //customer_info
-    "shipping_contact" => array(
-    "phone" => "5555555555",
-    "receiver" => "Bruce Wayne",
-    "address" => array(
-    "street1" => "Calle 123 int 2 Col. Chida",
-    "city" => "Cuahutemoc",
-    "state" => "Ciudad de Mexico",
-    "country" => "MX",
-    "postal_code" => "06100",
-    "residential" => true
-    )//address
-    ), //shipping_contact
-    "charges" => array(
-    array(
-    "payment_method" => array(
+      ), //shipping_lines
+      "currency" => "MXN",
+      "customer_info" => array(
+      "customer_id" => "cus_2gMCsDXtYrn13yvFm"
+      ), //customer_info
+      "shipping_contact" => array(
+      "phone" => "5555555555",
+      "receiver" => "Bruce Wayne",
+      "address" => array(
+      "street1" => "Calle 123 int 2 Col. Chida",
+      "city" => "Cuahutemoc",
+      "state" => "Ciudad de Mexico",
+      "country" => "MX",
+      "postal_code" => "06100",
+      "residential" => true
+      )//address
+      ), //shipping_contact
+      "charges" => array(
+      array(
+      "payment_method" => array(
       'token_id' => "tok_test_visa_4242",
       "object" => "card_payment",
       "type" => "card",
       "name"=> "Jorge Lopez",
-        "exp_month"=> "12",
-        "exp_year"=> "19",
-        "auth_code"=> "490884",
-        "last4"=> "4242",
-        "brand"=> "visa",
-        "issuer"=> "",
-        "account_type"=> "",
-        "country"=> "US",
-        "fraud_score"=> 29,
-        "fraud_indicators"=> []
+      "exp_month"=> "12",
+      "exp_year"=> "19",
+      "auth_code"=> "490884",
+      "last4"=> "4242",
+      "brand"=> "visa",
+      "issuer"=> "",
+      "account_type"=> "",
+      "country"=> "US",
+      "fraud_score"=> 29,
+      "fraud_indicators"=> []
 
-    )//payment_method
-    ) //first charge
-    ) //charges
-    )//order
-    );
-
-
-  }catch(Exception $e){
-  echo $e->getMessage();
-}
+      )//payment_method
+      ) //first charge
+      ) //charges
+      )//order
+      );
 
 
+      }catch(Exception $e){
+      echo $e->getMessage();
+      }
 
+
+
+      }
+
+
+
+      /////ends my code
+
+
+
+
+
+
+
+
+
+      if (!$this->getSession()->checkSessionChallenge()) {
+        return;
+      }
+
+      if (!$this->_validateTermsAndConditions()) {
+        $this->_blConfirmAGBError = 1;
+
+        return;
+      }
+
+      /* @deprecated since v5.1.6 (2014-05-28); Not used anymore */
+      $oConfig = $this->getConfig();
+      $sOrderCustomerInfo = $oConfig->getRequestParameter('ord_custinfo');
+      if ($sOrderCustomerInfo !== null && !$sOrderCustomerInfo && $this->isConfirmCustInfoActive()) {
+        $this->_blConfirmCustInfoError = 1;
+
+        return;
+      }
+
+      // additional check if we really really have a user now
+      $oUser = $this->getUser();
+      if (!$oUser) {
+        return 'user';
+      }
+
+      // get basket contents
+      $oBasket = $this->getSession()->getBasket();
+      if ($oBasket->getProductsCount()) {
+
+        try {
+          $oOrder = oxNew('oxorder');
+
+          //finalizing ordering process (validating, storing order into DB, executing payment, setting status ...)
+          $iSuccess = $oOrder->finalizeOrder($oBasket, $oUser);
+
+          // performing special actions after user finishes order (assignment to special user groups)
+          $oUser->onOrderExecute($oBasket, $iSuccess);
+
+          // proceeding to next view
+          return $this->_getNextStep($iSuccess);
+        } catch (oxOutOfStockException $oEx) {
+          $oEx->setDestination('basket');
+          oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx, false, true, 'basket');
+        } catch (oxNoArticleException $oEx) {
+          oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
+        } catch (oxArticleInputException $oEx) {
+          oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
         }
+      }
 
 
-
-        /////ends my code
-
-
-        //begins demo code
-        /*
-          $myCard = array('number' => '4242424242424242', 'exp_month' => 5, 'exp_year' => 2015, 'cvc' => 123, 'name' => 'Mario Moreno');
-try {
-  $charge = Conekta_Charge::create(array('card' => $myCard, 'description' => 'Some desc', 'amount' => 2000, 'currency' => 'mxn'));
-  echo $charge;
-} catch (Exception $e) {
-  // Catch all exceptions including validation errors.
-  echo $e->getMessage(); }
-
-{
-    "id"=> "5286828b8ee31e64b7001739",
-    "livemode"=> false,
-    "created_at"=> 1384546955,
-    "status"=> "paid",
-    "currency"=> "MXN",
-    "description"=> "Some desc",
-    "reference_id"=> null,
-    "failure_code"=> null,
-    "failure_message"=> null,
-    "object"=> "charge",
-    "amount"=> 2000,
-    "fee"=> 371,
-    "payment_method"=> {
-        "name"=> "Mario Moreno",
-        "exp_month"=> "05",
-        "exp_year"=> "15",
-        "auth_code"=> "861491",
-        "object"=> "card_payment",
-        "last4"=> "4242",
-        "brand"=> "visa"
-    },
-    "details"=> {
-        "name"=> null,
-        "phone"=> null,
-        "email"=> null,
-        "line_items"=> []
     }
-}
-
-*/
-        //ends demo code
-
-
-
-
-
-          if (!$this->getSession()->checkSessionChallenge()) {
-            return;
-          }
-
-          if (!$this->_validateTermsAndConditions()) {
-            $this->_blConfirmAGBError = 1;
-
-            return;
-          }
-
-          /* @deprecated since v5.1.6 (2014-05-28); Not used anymore */
-          $oConfig = $this->getConfig();
-          $sOrderCustomerInfo = $oConfig->getRequestParameter('ord_custinfo');
-          if ($sOrderCustomerInfo !== null && !$sOrderCustomerInfo && $this->isConfirmCustInfoActive()) {
-            $this->_blConfirmCustInfoError = 1;
-
-            return;
-          }
-
-          // additional check if we really really have a user now
-          $oUser = $this->getUser();
-          if (!$oUser) {
-            return 'user';
-          }
-
-          // get basket contents
-          $oBasket = $this->getSession()->getBasket();
-          if ($oBasket->getProductsCount()) {
-
-            try {
-              $oOrder = oxNew('oxorder');
-
-              //finalizing ordering process (validating, storing order into DB, executing payment, setting status ...)
-              $iSuccess = $oOrder->finalizeOrder($oBasket, $oUser);
-
-              // performing special actions after user finishes order (assignment to special user groups)
-              $oUser->onOrderExecute($oBasket, $iSuccess);
-
-              // proceeding to next view
-              return $this->_getNextStep($iSuccess);
-            } catch (oxOutOfStockException $oEx) {
-              $oEx->setDestination('basket');
-              oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx, false, true, 'basket');
-            } catch (oxNoArticleException $oEx) {
-              oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
-            } catch (oxArticleInputException $oEx) {
-              oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
-            }
-          }
-
-
-
-    }//ends execute
 
     /**
      * Template variable getter. Returns payment object

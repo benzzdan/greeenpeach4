@@ -1047,3 +1047,41 @@ oxException (time: 2017-04-14 23:51:00): [0]: Could not instantiate mail functio
 
 
 ---------------------------------------------
+oxException (time: 2017-04-16 17:58:28): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(oxBasket), Object(oxUserPayment))
+#8 /opt/bitnami/apache2/htdocs/greenpeach2/application/controllers/order.php(427): oxOrder->finalizeOrder(Object(oxBasket), Object(oxUser))
+#9 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/bitnami/apache2/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-16 17:58:28): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(oxBasket), Object(oxUserPayment))
+#8 /opt/bitnami/apache2/htdocs/greenpeach2/application/controllers/order.php(427): oxOrder->finalizeOrder(Object(oxBasket), Object(oxUser))
+#9 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/bitnami/apache2/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
