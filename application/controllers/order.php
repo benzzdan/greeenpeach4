@@ -199,6 +199,17 @@ class order extends oxUBase
 
         return $this->_sThisTemplate;
     }
+    
+    function executeFromConekta(){
+        // todo el códiogo de conecta
+        // token = $_SESSION[token];
+        // /conekta/enviaPago(token);
+        // if conekcta envia pago == true
+        // $this->execute();
+        // else 
+        // SESSION['error'] = 'tu token ya no es valido';
+        
+    }
 
     /**
      * Checks for order rules confirmation ("ord_agb", "ord_custinfo" form values)(if no
@@ -212,10 +223,17 @@ class order extends oxUBase
      * @return string
      */
     public function execute()
+<<<<<<< HEAD
 
       {
         /*if( payment == 'creditcard'){
 
+=======
+    {
+
+
+        /*if( payment == 'creditcard'){
+>>>>>>> 8426365d8d7c637d872770f64e6372864f27eeca
 
         $basket = $this->getBasket();
         $articles = $this->getBasketArticles();
@@ -228,6 +246,17 @@ class order extends oxUBase
         $customer['customer_id'];
         foreach ($articles as $art){
 
+<<<<<<< HEAD
+=======
+        }
+
+           if $order->success == false;
+               return1;
+        }*/
+        
+        if (!$this->getSession()->checkSessionChallenge()) {
+            return;
+>>>>>>> 8426365d8d7c637d872770f64e6372864f27eeca
         }
 
            if $order->success == false;
