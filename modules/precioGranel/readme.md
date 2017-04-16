@@ -1,0 +1,3 @@
+# DATABASE CHANGES 
+* ALTER TABLE oxarticles ADD COLUMN ottmaxgranel INT DEFAULT 0;
+* ALTER TABLE oxarticles ADD COLUMN ottpricegranel DOUBLE DEFAULT 0;

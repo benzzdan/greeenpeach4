@@ -1,0 +1,1 @@
+[{include file="article_main_precio_granel.tpl"}]

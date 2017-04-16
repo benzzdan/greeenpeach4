@@ -113,7 +113,7 @@
                                         <td class="title">
                                             <a href="[{$_product->getLink()}]" title="[{$minibasketItemTitle|strip_tags}]">[{$minibasketItemTitle|strip_tags}]</a>
                                         </td>
-                                        <td class="price text-right">[{$_product->getFTotalPrice()}]&nbsp;[{$currency->sign}]</td>
+                                        <td class="price text-right">[{$_product->getFTotalPrice()}]&nbsp;[{$currency->sign}] </td>
                                     </tr>
                                 [{/block}]
                             [{/foreach}]
