@@ -1085,3 +1085,61 @@ oxException (time: 2017-04-16 17:58:28): [0]: Could not instantiate mail functio
 
 
 ---------------------------------------------
+oxConnectionException-oxException (time: 2017-04-16 18:16:24): [1054]: mysql error: [1054: Unknown column 'oxv_oxarticles_en.ottpricegranel' in 'field list'] in EXECUTE (select `oxv_oxarticles_en`.`oxid`, `oxv_oxarticles_en`.`oxshopid`, `oxv_oxarticles_en`.`oxparentid`, `oxv_oxarticles_en`.`oxactive`, `oxv_oxarticles_en`.`oxactivefrom`, `oxv_oxarticles_en`.`oxactiveto`, `oxv_oxarticles_en`.`oxartnum`, `oxv_oxarticles_en`.`oxean`, `oxv_oxarticles_en`.`oxdistean`, `oxv_oxarticles_en`.`oxmpn`, `oxv_oxarticles_en`.`oxtitle`, `oxv_oxarticles_en`.`oxshortdesc`, `oxv_oxarticles_en`.`oxprice`, `oxv_oxarticles_en`.`oxblfixedprice`, `oxv_oxarticles_en`.`oxpricea`, `oxv_oxarticles_en`.`oxpriceb`, `oxv_oxarticles_en`.`oxpricec`, `oxv_oxarticles_en`.`oxbprice`, `oxv_oxarticles_en`.`oxtprice`, `oxv_oxarticles_en`.`oxunitname`, `oxv_oxarticles_en`.`oxunitquantity`, `oxv_oxarticles_en`.`oxexturl`, `oxv_oxarticles_en`.`oxurldesc`, `oxv_oxarticles_en`.`oxurlimg`, `oxv_oxarticles_en`.`oxvat`, `oxv_oxarticles_en`.`oxthumb`, `oxv_oxarticles_en`.`oxicon`, `oxv_oxarticles_en`.`oxpic1`, `oxv_oxarticles_en`.`oxpic2`, `oxv_oxarticles_en`.`oxpic3`, `oxv_oxarticles_en`.`oxpic4`, `oxv_oxarticles_en`.`oxpic5`, `oxv_oxarticles_en`.`oxpic6`, `oxv_oxarticles_en`.`oxpic7`, `oxv_oxarticles_en`.`oxpic8`, `oxv_oxarticles_en`.`oxpic9`, `oxv_oxarticles_en`.`oxpic10`, `oxv_oxarticles_en`.`oxpic11`, `oxv_oxarticles_en`.`oxpic12`, `oxv_oxarticles_en`.`oxweight`, `oxv_oxarticles_en`.`oxstock`, `oxv_oxarticles_en`.`oxstockflag`, `oxv_oxarticles_en`.`oxstocktext`, `oxv_oxarticles_en`.`oxnostocktext`, `oxv_oxarticles_en`.`oxdelivery`, `oxv_oxarticles_en`.`oxinsert`, `oxv_oxarticles_en`.`oxtimestamp`, `oxv_oxarticles_en`.`oxlength`, `oxv_oxarticles_en`.`oxwidth`, `oxv_oxarticles_en`.`oxheight`, `oxv_oxarticles_en`.`oxfile`, `oxv_oxarticles_en`.`oxsearchkeys`, `oxv_oxarticles_en`.`oxtemplate`, `oxv_oxarticles_en`.`oxquestionemail`, `oxv_oxarticles_en`.`oxissearch`, `oxv_oxarticles_en`.`oxisconfigurable`, `oxv_oxarticles_en`.`oxvarname`, `oxv_oxarticles_en`.`oxvarstock`, `oxv_oxarticles_en`.`oxvarcount`, `oxv_oxarticles_en`.`oxvarselect`, `oxv_oxarticles_en`.`oxvarminprice`, `oxv_oxarticles_en`.`oxvarmaxprice`, `oxv_oxarticles_en`.`oxbundleid`, `oxv_oxarticles_en`.`oxfolder`, `oxv_oxarticles_en`.`oxsubclass`, `oxv_oxarticles_en`.`oxsort`, `oxv_oxarticles_en`.`oxsoldamount`, `oxv_oxarticles_en`.`oxnonmaterial`, `oxv_oxarticles_en`.`oxfreeshipping`, `oxv_oxarticles_en`.`oxremindactive`, `oxv_oxarticles_en`.`oxremindamount`, `oxv_oxarticles_en`.`oxamitemid`, `oxv_oxarticles_en`.`oxamtaskid`, `oxv_oxarticles_en`.`oxvendorid`, `oxv_oxarticles_en`.`oxmanufacturerid`, `oxv_oxarticles_en`.`oxskipdiscounts`, `oxv_oxarticles_en`.`oxrating`, `oxv_oxarticles_en`.`oxratingcnt`, `oxv_oxarticles_en`.`oxmindeltime`, `oxv_oxarticles_en`.`oxmaxdeltime`, `oxv_oxarticles_en`.`oxdeltimeunit`, `oxv_oxarticles_en`.`oxupdateprice`, `oxv_oxarticles_en`.`oxupdatepricea`, `oxv_oxarticles_en`.`oxupdatepriceb`, `oxv_oxarticles_en`.`oxupdatepricec`, `oxv_oxarticles_en`.`oxupdatepricetime`, `oxv_oxarticles_en`.`oxisdownloadable`, `oxv_oxarticles_en`.`oxshowcustomagreement`, `oxv_oxarticles_en`.`ottpricegranel`, `oxv_oxarticles_en`.`ottmaxgranel` from oxv_oxarticles_en where 1  and oxv_oxarticles_en.oxparentid = ''  LIMIT 0, 10, Array) with user root
+ 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greenpeach2/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1054, 'Unknown column ...', 'select `oxv_oxa...', Array, Object(object_ADOConnection))
+#1 /opt/bitnami/apache2/htdocs/greenpeach2/core/adodblite/adodb.inc.php(334): mysql_driver_ADOConnection->do_query('select `oxv_oxa...', 0, 10, Array)
+#2 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxlegacydb.php(169): ADOConnection->SelectLimit('select `oxv_oxa...', 10, 0, Array)
+#3 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxlist.php(384): oxLegacyDb->selectLimit('select `oxv_oxa...', 10, 0)
+#4 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxarticlelist.php(79): oxList->selectString('select `oxv_oxa...')
+#5 /opt/bitnami/apache2/htdocs/greenpeach2/application/controllers/admin/oxadminlist.php(808): oxArticleList->selectString('select `oxv_oxa...')
+#6 /opt/bitnami/apache2/htdocs/greenpeach2/application/controllers/admin/article_list.php(59): oxAdminList->getItemList()
+#7 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(479): Article_List->render()
+#8 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Article_List))
+#9 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('article_list', NULL, NULL, NULL)
+#10 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#11 /opt/bitnami/apache2/htdocs/greenpeach2/index.php(26): Oxid::run()
+#12 /opt/bitnami/apache2/htdocs/greenpeach2/admin/index.php(27): require_once('/opt/bitnami/ap...')
+#13 {main}
+
+ Connection Adress --> 
+Connection Error --> 
+---------------------------------------------
+oxException (time: 2017-04-16 22:15:17): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/bitnami/apache2/htdocs/greenpeach2/application/controllers/order.php(427): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/bitnami/apache2/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-16 22:15:17): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/bitnami/apache2/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/bitnami/apache2/htdocs/greenpeach2/application/controllers/order.php(427): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/bitnami/apache2/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/bitnami/apache2/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
