@@ -295,7 +295,8 @@ class order extends oxUBase
       if ($oSession->getVariable('paymentid') == 'oxidcreditcard'){
 
       try{
-        require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
+        require_once("/opt/lampp/htdocs/greenpeach/conekta/conekta-php/lib/Conekta.php");
+        //require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
         \Conekta\Conekta::setApiKey("key_qcxP1NJhhTz94mfx4zza6w");
         \Conekta\Conekta::setApiVersion("2.0.0");
 

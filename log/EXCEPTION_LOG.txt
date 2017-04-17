@@ -1143,3 +1143,41 @@ oxException (time: 2017-04-16 22:15:17): [0]: Could not instantiate mail functio
 
 
 ---------------------------------------------
+oxException (time: 2017-04-16 23:15:42): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(oxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach/application/controllers/order.php(428): oxOrder->finalizeOrder(Object(oxBasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-16 23:15:42): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(oxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach/application/controllers/order.php(428): oxOrder->finalizeOrder(Object(oxBasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
