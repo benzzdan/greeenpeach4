@@ -224,9 +224,9 @@
           var conektaSuccessResponseHandler = function(token){
             var $form = $('#payment');
             $form.append($("<input type='hidden' id='conektaTokenId' name='conektaToken'>").val(token.id));
-
             $form.get(0).submit();
             console.log(token);
+
           }
 
           var conektaErrorResponseHandler = function(response) {
@@ -249,8 +249,13 @@
             var $form = $(this);
             //Prevents double click
             $form.find("button").prop("disabled", true);
-            Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
-            return false ;
+            try{
+              Conekta.token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+              return false ;
+            }catch(error){
+              document.getElementById("demo").innerHTML = error.message;
+            }
+
           });
         });
         </script>

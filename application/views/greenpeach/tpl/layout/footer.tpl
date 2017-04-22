@@ -7,8 +7,14 @@
         [{assign var="force_sid" value=$oView->getSidForWidget()}]
     [{/if}]
 
+
+
+
     <footer id="footer">
-        <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
+
+      <div class="bottombanner">
+          <a href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017</div>
+        <!-- <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
             <div class="row">
                 <div class="col-xs-12 col-md-8">
                     <div class="row">
@@ -153,43 +159,11 @@
         [{block name="layout_page_vatinclude"}]
         [{block name="footer_deliveryinfo"}]
         [{oxifcontent ident="oxdeliveryinfo" object="oCont"}]
-        <div id="incVatInfo">
-            [{if $oView->isVatIncluded()}]
-            * <span class="deliveryInfo">[{oxmultilang ident="PLUS_SHIPPING"}]<a href="[{$oCont->getLink()}]">[{oxmultilang ident="PLUS_SHIPPING2"}]</a></span>
-            [{else}]
-            * <span class="deliveryInfo">[{oxmultilang ident="PLUS"}]<a href="[{$oCont->getLink()}]">[{oxmultilang ident="PLUS_SHIPPING2"}]</a></span>
-            [{/if}]
-        </div>
         [{/oxifcontent}]
         [{/block}]
         [{/block}]
-        [{/if}]
+        [{/if}] -->
     </footer>
-
-    <div class="legal">
-        <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
-            <div class="legal-box">
-                <div class="row">
-                    <section class="col-sm-12">
-                        [{block name="sidebar_trustedshopsratings"}]
-                            [{block name="dd_footer_servicelist_trustedshopsratings"}]
-                                [{if $oViewConf->showTs("WIDGET") }]
-                                    [{include file="widget/trustedshops/ratings.tpl" }]
-                                [{/if}]
-                            [{/block}]
-                        [{/block}]
-
-                        [{block name="dd_footer_copyright"}]
-                            [{oxifcontent ident="oxstdfooter" object="oCont"}]
-                                [{$oCont->oxcontents__oxcontent->value}]
-                            [{/oxifcontent}]
-                        [{/block}]
-                    </section>
-                </div>
-            </div>
-        </div>
-
-    </div>
 [{/block}]
 
 [{if $oView->isRootCatChanged()}]

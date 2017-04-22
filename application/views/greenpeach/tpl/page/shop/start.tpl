@@ -1,5 +1,6 @@
+
 [{capture append="oxidBlock_content"}]
-    [{assign var="oConfig" value=$oViewConf->getConfig()}]
+    <!-- [{assign var="oConfig" value=$oViewConf->getConfig()}]
     [{assign var='rsslinks' value=$oView->getRssLinks()}]
     [{oxscript include="js/pages/start.min.js"}]
 
@@ -7,24 +8,26 @@
         <div class="welcome-teaser">[{$oCont->oxcontents__oxcontent->value}]</div>
     [{/oxifcontent}]
 
+
+
     [{assign var="oBargainArticles" value=$oView->getBargainArticleList()}]
     [{assign var="oNewestArticles" value=$oView->getNewestArticles()}]
     [{assign var="oTopArticles" value=$oView->getTop5ArticleList()}]
 
-    [{if $oBargainArticles && $oBargainArticles->count()}]
+     [{if $oBargainArticles && $oBargainArticles->count()}]
         [{include file="widget/product/list.tpl" type=$oViewConf->getViewThemeParam('sStartPageListDisplayType') head="START_BARGAIN_HEADER"|oxmultilangassign subhead="START_BARGAIN_SUBHEADER"|oxmultilangassign listId="bargainItems" products=$oBargainArticles rsslink=$rsslinks.bargainArticles rssId="rssBargainProducts" showMainLink=true iProductsPerLine=4}]
     [{/if}]
 
-    [{if $oViewConf->getViewThemeParam('bl_showManufacturerSlider')}]
+   [{if $oViewConf->getViewThemeParam('bl_showManufacturerSlider')}]
         [{include file="widget/manufacturersslider.tpl"}]
     [{/if}]
 
 
-    [{if $oNewestArticles && $oNewestArticles->count()}]
+   [{if $oNewestArticles && $oNewestArticles->count()}]
         [{include file="widget/product/list.tpl" type=$oViewConf->getViewThemeParam('sStartPageListDisplayType') head="START_NEWEST_HEADER"|oxmultilangassign subhead="START_NEWEST_SUBHEADER"|oxmultilangassign listId="newItems" products=$oNewestArticles rsslink=$rsslinks.newestArticles rssId="rssNewestProducts" showMainLink=true iProductsPerLine=4}]
     [{/if}]
 
-    [{if $oNewestArticles && $oNewestArticles->count() && $oTopArticles && $oTopArticles->count()}]
+     [{if $oNewestArticles && $oNewestArticles->count() && $oTopArticles && $oTopArticles->count()}]
         <div class="row">
             <hr>
         </div>
@@ -35,6 +38,9 @@
     [{/if}]
 
 
-    [{insert name="oxid_tracker"}]
+     [{insert name="oxid_tracker"}]  -->
+
+
 [{/capture}]
+
 [{include file="layout/page.tpl"}]

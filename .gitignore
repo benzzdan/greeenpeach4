@@ -10,3 +10,4 @@ out/pictures/generated/product/1/540_340_75/nkb_evo_2010_1.jpg
 out/pictures/generated
 log/
 .htaccess
+config.inc.php

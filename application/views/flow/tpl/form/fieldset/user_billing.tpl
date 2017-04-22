@@ -99,6 +99,9 @@
     </div>
 </div>
 
+
+
+
 <div class="form-group[{if $aErrors.oxuser__oxustid}] text-danger[{/if}]">
     <label class="control-label col-lg-3[{if $oView->isFieldRequired(oxuser__oxustid)}] req[{/if}]">[{oxmultilang ident="VAT_ID_NUMBER"}]</label>
     <div class="col-lg-9">

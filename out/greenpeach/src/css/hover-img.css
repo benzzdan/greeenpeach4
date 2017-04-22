@@ -1,0 +1,65 @@
+.productobox {
+    position: relative;
+    width: 100%;
+}
+
+.productogp {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  background-color:rgba(255,255,255,0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.productobox:hover .productogp {
+  opacity: 0.3;
+}
+
+.productobox:hover .middle {
+  opacity: 1;
+}
+
+.vermas {
+  background-color:#1FD5B2;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+}
+
+.vermas-prod {
+  background-color:#1FD5B2;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius:5px;
+}
+
+.vermas:hover{
+background-color:#0DAD8F;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+.vermas-prod:hover{
+background-color:#0DAD8F;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}

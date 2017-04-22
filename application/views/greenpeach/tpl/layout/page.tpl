@@ -9,15 +9,14 @@
 
     [{assign var="blFullwidth" value=$oViewConf->getViewThemeParam('blFullwidthLayout')}]
 
+     [{if $oView->getTemplateName() == 'page/shop/start.tpl'}]
+      [{include file="widget/slider/slider.tpl"}]
+     [{/if}]
+
     <div id="wrapper" [{if $sidebar}]class="sidebar[{$sidebar}]"[{/if}]>
 
+
         <div class="container">
-
-            <div class="underdog">
-
-                <div class="row">
-
-                </div>
 
                 <div class="content-box">
 
@@ -63,17 +62,18 @@
 
                 </div>
 
-            </div>
-
         </div>
 
     </div>
+    [{if $oView->getTemplateName() == 'page/shop/start.tpl'}]
+     [{include file="widget/contact/contact-box.tpl"}]
+    [{/if}]
 
-    [{include file="layout/footer.tpl"}]
 
-    [{include file="widget/facebook/init.tpl"}]
+            [{include file="layout/footer.tpl"}]
 
-    <i class="fa fa-chevron-circle-up icon-4x" id="jumptotop"></i>
+
 [{/capture}]
+
 
 [{include file="layout/base.tpl"}]

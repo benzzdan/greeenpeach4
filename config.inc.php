@@ -24,13 +24,13 @@
     $this->dbHost = 'localhost'; // database host name
     $this->dbName = 'oxid_gp'; // database name
     $this->dbUser = 'root'; // database user name
-    $this->dbPwd = 'f7byEhno'; // database user password
+    $this->dbPwd = ''; // database user password
     $this->dbType = 'mysql';
-    $this->sShopURL = 'http://104.197.142.250/greenpeach2'; // eShop base url, required
+    $this->sShopURL = 'http://localhost/greenpeach2'; // eShop base url, required
     $this->sSSLShopURL  = null;            // eShop SSL url, optional
     $this->sAdminSSLURL = null;            // eShop Admin SSL url, optional
-    $this->sShopDir = '/opt/bitnami/apache2/htdocs/greenpeach2';
-    $this->sCompileDir = '/opt/bitnami/apache2/htdocs/greenpeach2/tmp';
+    $this->sShopDir = '/opt/lampp/htdocs/greenpeach2';
+    $this->sCompileDir = '/opt/lampp/htdocs/greenpeach2/tmp';
 
     // UTF-8 mode in shop 0 - off, 1 - on
     $this->iUtfMode = 1;

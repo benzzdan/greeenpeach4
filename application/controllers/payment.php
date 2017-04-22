@@ -283,6 +283,8 @@ class Payment extends oxUBase
     public function validatePayment()
     {
 
+        $_SESSION['token_id']  = $_POST['conektaToken'];
+
         $myConfig = $this->getConfig();
         $oSession = $this->getSession();
 
