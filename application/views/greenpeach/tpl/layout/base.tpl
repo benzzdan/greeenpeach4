@@ -146,6 +146,7 @@
 
         [{block name="custom_style"}]
             [{oxstyle include="css/styles_gp.css"}]
+            [{oxstyle include="css/slider.css"}]
         [{/block}]
 
         [{block name="base_fonts"}]
