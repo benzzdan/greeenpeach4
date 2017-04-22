@@ -3,7 +3,7 @@
               <div class="contact-label">
                 <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" />
               </div>
-              <div class="row" style="margin-top: 54px;margin-right: 15%; margin-left: 15%; margin-bottom: 28px">
+              <div class="row" style="margin-top: 54px;margin-right: 15%; margin-left: 15%;">
                 <div class="col-md-6">
                   <div class="footer-logo">
                     <img src="[{$oViewConf->getImageUrl()}]/logo-greenpeachsuperfoods-footer.svg" style="width: 130px; heigth: 100px;margin-bottom: 20px;"/>
