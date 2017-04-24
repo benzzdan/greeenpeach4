@@ -112,6 +112,7 @@
                 <link rel="fluid-icon" href="[{$oViewConf->getImageUrl("favicons/`$sFavicon512File`")}]" title="[{$sPageTitle}]" />
             [{/if}]
 
+
             <!-- Shortcut Icons -->
             [{assign var="sFaviconFile"    value=$oViewConf->getViewThemeParam('sFaviconFile')}]
             [{assign var="sFavicon16File"  value=$oViewConf->getViewThemeParam('sFavicon16File')}]
@@ -261,6 +262,11 @@
 
           });
         });
+
+      $(document).ready(function(){
+        $("span:contains(-)").css('display', 'none');
+      });
+
         </script>
     </head>
     <body class="cl-[{$oView->getClassName()}][{if $smarty.get.plain == '1'}] popup[{/if}][{if $blIsCheckout}] is-checkout[{/if}][{if $oxcmp_user && $oxcmp_user->oxuser__oxpassword->value}] is-logged-in[{/if}]"[{if $sStyle}] style="[{$sStyle}]"[{/if}]>

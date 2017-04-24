@@ -29,4 +29,9 @@ $sLangName  = 'Español';
 // -------------------------------
 $aLang = array(
 'charset' => 'utf-8',
+// Billing address
+'DD_USER_BILLING_LABEL_STATE'                           => 'Estado:',
+'DD_USER_SHIPPING_LABEL_STATE'                          => 'Estado:',
+'DD_USER_SHIPPING_SELECT_ADDRESS'                       => 'seleccionar',
+'DD_USER_SHIPPING_ADD_DELIVERY_ADDRESS'                 => 'agrega dirección de envio',
 );
