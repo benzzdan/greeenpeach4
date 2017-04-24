@@ -333,6 +333,7 @@ foreach($content as $item){
       array(
       "payment_method" => array(
       'type' => 'default',
+      'token_id' => $token_id,
       // "object" => "card_payment",
       // "type" => "card",
       // "name"=> "Jorge Lopez",

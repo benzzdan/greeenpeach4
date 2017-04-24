@@ -26,7 +26,7 @@
                                 [{assign var="sLogoWidth" value=$oViewConf->getViewThemeParam('sLogoWidth')}]
                                 [{assign var="sLogoHeight" value=$oViewConf->getViewThemeParam('sLogoHeight')}]
                                 <a href="[{$oViewConf->getHomeLink()}]" title="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" id="logo_gp">
-                                    <img src="[{$slogoImg}]" alt="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" style="[{if $sLogoWidth}]width:[{$sLogoWidth}]px;[{/if}][{if $sLogoHeight}]height:[{$sLogoHeight}]px;[{/if}]; top: -24px; position: relative;">
+                                    <img src="[{$slogoImg}]" alt="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" style="[{if $sLogoWidth}]width:[{$sLogoWidth}]px;[{/if}][{if $sLogoHeight}]height:[{$sLogoHeight}]px;[{/if}]; top: -24px; position: relative; left: 19%;">
                                 </a>
                             [{/block}]
 

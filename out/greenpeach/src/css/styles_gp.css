@@ -335,3 +335,68 @@ top: 2px;
 #mymenu {
   float: right !important;
 }
+
+.seperate {
+  height: 50px;
+}
+
+.text-quienes {
+  color: #9b9691;
+line-height: 32px;
+text-align: left;
+font-size: 18px;
+font-weight: 400;
+padding: 10px;
+}
+
+
+.text-icon-about {
+  width: 72%;
+text-align: center;
+vertical-align: middle;
+color: #9b9691;
+line-height: 25px;
+text-align: left;
+font-size: 18px;
+font-weight: 400;
+}
+
+
+.category-prod {
+  color: #1ed6b3;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1ed6b3;
+  font-family: 'Signika', sans-serif;
+  font-size: 24px;
+  text-align: left;
+}
+
+
+
+.text-dist {
+  color: #9b9691;
+line-height: 28px;
+text-align: left;
+font-size: 18px;
+font-weight: 400;
+padding: 0px;
+}
+
+
+.under_const {
+  width: 400px;
+height: 452px;
+}
+
+
+
+nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header a#logo_gp img{
+
+width: 81px !important;
+height: 82px!important;
+top: -7px!important;
+position: relative;
+padding: 9px!important;
+left: 25px!important;
+
+}

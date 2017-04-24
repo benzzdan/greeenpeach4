@@ -231,6 +231,14 @@ class oxCategory extends oxI18n implements oxIUrl
         return $aData;
     }
 
+
+    protected function _loadFromDb2($sOXTITLE){
+      $sSelect = $this->buildSelectString(array("`{$this->getViewName()}`.`oxtitle`" => $sOXTITLE));
+      $aData = oxDb::getDb(oxDb::FETCH_MODE_ASSOC)->getRow($sSelect);
+
+      return $aData;
+    }
+
     /**
      * Load category data
      *
@@ -242,6 +250,20 @@ class oxCategory extends oxI18n implements oxIUrl
     {
 
         $aData = $this->_loadFromDb($sOXID);
+
+        if ($aData) {
+            $this->assign($aData);
+            $this->_isLoaded = true;
+            return true;
+        }
+
+        return false;
+    }
+    public function load2($sOXTITLE)
+
+    {
+
+        $aData = $this->_loadFromDb2($sOXTITLE);
 
         if ($aData) {
             $this->assign($aData);

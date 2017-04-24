@@ -20,11 +20,14 @@
 
                 <div class="content-box">
 
+
+
+<!--
                     [{if $oView->getClassName() != "start" && !$blHideBreadcrumb}]
                         [{block name="layout_breadcrumb"}]
                             [{include file="widget/breadcrumb.tpl"}]
                         [{/block}]
-                    [{/if}]
+                    [{/if}] -->
 
                     [{$smarty.capture.loginErrors}]
 

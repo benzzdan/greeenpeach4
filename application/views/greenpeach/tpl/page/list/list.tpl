@@ -29,7 +29,7 @@
             <img src="[{$oViewConf->getImageUrl('spinner.gif')}]" data-src="[{$actCategory->getThumbUrl()}]" alt="[{$actCategory->oxcategories__oxtitle->value}]" class="categoryPicture img-responsive img-thumbnail">
         [{/if}]
 
-        <div class="page-header">
+        <!-- <div class="page-header">
             [{assign var='rsslinks' value=$oView->getRssLinks()}]
             <h1>
                 [{$oView->getTitle()}]
@@ -39,7 +39,7 @@
                     </a>
                 [{/if}]
             </h1>
-        </div>
+        </div> -->
 
         [{assign var="oPageNavigation" value=$oView->getPageNavigation()}]
         [{if $actCategory && $actCategory->getShortDescription() && $oPageNavigation->actPage == 1}]
@@ -55,7 +55,7 @@
 
         [{if $oView->hasVisibleSubCats()}]
             [{assign var="iSubCategoriesCount" value=0}]
-            <div class="subcatList">
+            <!-- <div class="subcatList">
                 <div class="row">
                     [{foreach from=$oView->getSubCatList() item=category name=MoreSubCat}]
                         [{if $category->getContentCats()}]
@@ -116,21 +116,21 @@
                         [{/if}]
                     [{/foreach}]
                 </div>
-            </div>
+            </div> -->
             <hr/>
         [{/if}]
     [{/block}]
 
     [{block name="page_list_listbody"}]
-        [{if $oView->getArticleList()|@count > 0}]
-            <div class="listRefine">
+        <!-- [{if $oView->getArticleList()|@count > 0}] -->
+            <!-- <div class="listRefine">
                 [{include file="widget/locator/listlocator.tpl" locator=$oView->getPageNavigationLimitedTop() attributes=$oView->getAttributes() listDisplayType=true itemsPerPage=true sort=true}]
-            </div>
+            </div> -->
 
-            [{* List types: grid|line|infogrid *}]
+            <!-- [{* List types: grid|line|infogrid *}] -->
             [{include file="widget/product/list.tpl" type=$oView->getListDisplayType() listId="productList" products=$oView->getArticleList()}]
-            [{include file="widget/locator/listlocator.tpl" locator=$oView->getPageNavigationLimitedBottom() place="bottom"}]
-        [{/if}]
+            <!-- [{include file="widget/locator/listlocator.tpl" locator=$oView->getPageNavigationLimitedBottom() place="bottom"}] -->
+        <!-- [{/if}] -->
     [{/block}]
     [{insert name="oxid_tracker"}]
 [{/capture}]

@@ -2203,3 +2203,491 @@ oxException (time: 2017-04-21 18:15:11): [0]: Could not instantiate mail functio
 
 
 ---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-22 14:51:33): [0]: ERROR_MESSAGE_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxview.php(570): oxNew('oxSystemCompone...')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxview.php(526): oxView->_executeNewAction(Object(order))
+#5 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#6 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#7 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#8 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#9 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxException (time: 2017-04-22 14:53:23): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(402): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 14:53:23): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(402): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 14:55:12): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(389): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 14:55:12): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(389): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 14:57:33): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(388): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 14:57:33): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(388): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 15:01:58): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(389): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 15:01:58): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(389): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 15:11:57): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(389): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-22 15:11:57): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(InvoicepdfOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oxUser), Object(preciogranel_oxbasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(389): oxOrder->finalizeOrder(Object(preciogranel_oxbasket), Object(oxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 16:24:34): [0]: Function 'getCategory' does not exist or is not accessible! (aList)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(36): oxSuperCfg->__call('getCategory', Array)
+#1 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(36): aList->getCategory()
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(203): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#6 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#7 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#9 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#10 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#11 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 16:24:34): [0]: Function 'getCategory' does not exist or is not accessible! (Start)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(36): oxSuperCfg->__call('getCategory', Array)
+#1 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(36): Start->getCategory()
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|1|0')
+#6 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#7 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#9 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#10 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 17:47:17): [0]: Function '_loadFromDb' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxSuperCfg->__call('_loadFromDb', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxCategory->_loadFromDb('0f4270b89fbef14...')
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->loadById('0f4270b89fbef14...')
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#5 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#11 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#12 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#13 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#14 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 17:47:23): [0]: Function '_loadFromDb' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxSuperCfg->__call('_loadFromDb', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxCategory->_loadFromDb('0f4270b89fbef14...')
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->loadById('0f4270b89fbef14...')
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#5 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#11 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#12 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#13 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#14 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 17:48:11): [0]: Function '_loadFromDb' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxSuperCfg->__call('_loadFromDb', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxCategory->_loadFromDb(NULL)
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->loadById()
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#5 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#11 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#12 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#13 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#14 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 17:48:15): [0]: Function '_loadFromDb' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxSuperCfg->__call('_loadFromDb', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxCategory->_loadFromDb(NULL)
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->loadById()
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#5 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#11 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#12 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#13 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#14 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 18:21:24): [0]: Function 'getSubCats' does not exist or is not accessible! (aList)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxSuperCfg->__call('getSubCats', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): aList->getSubCats()
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->getArticleList2()
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#5 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#11 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#12 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#13 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#14 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 18:21:28): [0]: Function 'getSubCats' does not exist or is not accessible! (aList)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): oxSuperCfg->__call('getSubCats', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(832): aList->getSubCats()
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->getArticleList2()
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#5 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#11 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#12 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#13 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#14 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 18:23:23): [0]: Function 'getArticleList3' does not exist or is not accessible! (aList)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): oxSuperCfg->__call('getArticleList3', Array)
+#1 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->getArticleList3()
+#2 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1935): eval()
+#3 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#4 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#8 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#10 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#11 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#12 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#13 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 18:35:03): [0]: Function 'getSubCatList' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(200): oxSuperCfg->__call('getSubCatList', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(200): oxCategory->getSubCatList()
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 18:35:06): [0]: Function 'getSubCatList' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(200): oxSuperCfg->__call('getSubCatList', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(200): oxCategory->getSubCatList()
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 19:34:30): [0]: Function 'getCategoryId' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(211): oxSuperCfg->__call('getCategoryId', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(211): oxCategory->getCategoryId()
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 20:16:10): [0]: Function 'getCategoryId' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(203): oxSuperCfg->__call('getCategoryId', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(203): oxCategory->getCategoryId()
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 21:02:19): [0]: Function '_loadFromDb2' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(201): oxSuperCfg->__call('_loadFromDb2', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(201): oxCategory->_loadFromDb2('Empacados')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 21:02:48): [0]: Function '_loadFromDb2' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(201): oxSuperCfg->__call('_loadFromDb2', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(201): oxCategory->_loadFromDb2('Empacados')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 21:02:51): [0]: Function '_loadFromDb2' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(201): oxSuperCfg->__call('_loadFromDb2', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(201): oxCategory->_loadFromDb2('Empacados')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-23 21:09:06): [0]: Function 'getCategoryId' does not exist or is not accessible! (oxCategory)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(203): oxSuperCfg->__call('getCategoryId', Array)
+#1 /opt/lampp/htdocs/greenpeach2/application/controllers/alist.php(203): oxCategory->getCategoryId()
+#2 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(479): aList->render()
+#3 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#4 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#5 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#6 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#7 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#8 {main}
+
+ Faulty component --> 
+---------------------------------------------

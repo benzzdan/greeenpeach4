@@ -117,7 +117,7 @@ class aList extends oxUBase
      * Recomendation list
      *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
-     *             
+     *
      * @var object
      */
     protected $_oRecommList = null;
@@ -147,7 +147,7 @@ class aList extends oxUBase
 
     /**
      * Array of id to form recommendation list.
-     * 
+     *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
      *
      * @var array
@@ -194,6 +194,28 @@ class aList extends oxUBase
      */
     public function render()
     {
+
+    // /* test code */
+    // //print_r(count($this->_loadArticles($this->getActiveCategory())));
+    // $sub_cat  = oxNew('oxCategory');
+    // $sub_cat->load('0f4270b89fbef1481958381410a0dbca');
+    //
+    //
+    // $oArtList = oxNew('oxarticlelist');
+    // $articles = $oArtList->loadCategoryArticles('0f4270b89fbef1481958381410a0dbca', null);
+    // print_r($articles);
+    //
+    //
+    //   die();
+    // //
+    //
+
+
+
+
+
+    /*   */
+
         $myConfig = $this->getConfig();
 
         $oCategory = null;
@@ -818,6 +840,48 @@ class aList extends oxUBase
         return $this->_aArticleList;
     }
 
+/************* tst code d. benson ****************/
+
+public function getArticleList2($cat_tit)
+{
+
+      $cat = oxNew('oxCategory');
+
+      $cat->load2($cat_tit);
+
+      $myConfig = $this->getConfig();
+
+      // load only articles which we show on screen
+      $oArtList = oxNew('oxarticlelist');
+      $oArtList->setSqlLimit(0, 8);
+      $oArtList->setCustomSorting('oxtitle asc');
+
+      $sActCat = $cat->getId();
+      $oArtList->loadCategoryArticles($sActCat, []);
+
+      return $oArtList;
+}
+
+
+
+
+/************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Article count getter
      *
@@ -832,7 +896,7 @@ class aList extends oxUBase
      * Return array of id to form recommend list.
      *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
-     *             
+     *
      * @return array
      */
     public function getSimilarRecommListIds()
