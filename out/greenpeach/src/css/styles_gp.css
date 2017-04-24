@@ -130,7 +130,7 @@ body {
     height: 30px;
     margin: 5px;
     display: inline-block;
-    background: url(../../img/icon-facebook1.svg) no-repeat;
+    background: url("../../img/icon-facebook1.svg") no-repeat;
   }
 
 
@@ -139,17 +139,17 @@ body {
   height: 30px;
   margin: 5px;
   display: inline-block;
-  background: url(../../img/icon-ig1.svg) no-repeat;
+  background: url("../../img/icon-ig1.svg") no-repeat;
 }
 
 #icon-ig:hover {
-  background: url(../../img/icon-ig2.svg) no-repeat;
+  background: url("../../img/icon-ig2.svg") no-repeat;
 }
 #icon-carrito:hover {
-  background: url(../../img/icon-carrito2.svg) no-repeat;
+  background: url("../../img/icon-carrito2.svg") no-repeat;
 }
 #icon-face:hover {
-  background: url(../../img/icon-facebook2.svg) no-repeat;
+  background: url("../../img/icon-facebook2.svg") no-repeat;
 }
 
 
@@ -158,7 +158,7 @@ body {
     height: 30px;
     margin: 5px;
     display: inline-block;
-    background: url(../../img/icon-carrito1.svg) no-repeat;
+    background: url("../../img/icon-carrito1.svg") no-repeat;
   }
 
 
