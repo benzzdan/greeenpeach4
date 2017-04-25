@@ -13,7 +13,12 @@
       [{include file="widget/slider/slider.tpl"}]
      [{/if}]
 
-    <div id="wrapper" [{if $sidebar}]class="sidebar[{$sidebar}]"[{/if}]>
+     <!-- true if template list.tpl is active -->
+     [{if $oView->getTemplateName() == 'page/list/list.tpl'}]
+      [{assign var="flag" value="true"}]
+     [{/if}]
+
+    <div id="wrapper" [{if $flag}]class="productlisting"[{/if}]>
 
 
         <div class="container">

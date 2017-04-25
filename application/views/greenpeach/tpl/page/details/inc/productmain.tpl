@@ -74,12 +74,13 @@
 
                     <div class="picture text-center">
                         <a href="[{$oPictureProduct->getMasterZoomPictureUrl(1)}]" id="zoom1"[{if $aPictureInfo}] data-width="[{$aPictureInfo.0}]" data-height="[{$aPictureInfo.1}]"[{/if}]>
-                            <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive">
+                            <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive img-detail">
                         </a>
                     </div>
+
                 [{else}]
-                    <div class="picture  text-center">
-                        <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive">
+                    <div class="picture text-center">
+                        <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive img-detail">
                     </div>
                 [{/if}]
             [{/block}]
@@ -176,6 +177,7 @@
 
                                                     <span class="text8b">
                                                       <span class="price-from">[{$sFrom}]</span>
+                                                      <span>$</span>
                                                       <span class="price">[{$fPrice}]</span>
                                                       <span class="currency">[{$currency->sign}]</span>
 
@@ -190,13 +192,12 @@
 
                                                   <span>Precio +10 piezas: </span>
                                                   <label id="productPriceGranel" class="price">
-
-                                                    [{assign var="article" value=$oDetailsProduct}]
-                                                    [{if $article->oxarticles__ottmaxgranel->value}]
-                                                    [{assign var="granelPrice" value="$article->oxarticles__ottmaxgranel->value"}]
-                                                    [{/if}]
-
-                                                    [{$granelPrice}]
+                                                    <span class="text8b">
+                                                      [{assign var="article" value=$oDetailsProduct}]
+                                                      <span>$</span>
+                                                      <span class="price">[{$article->oxarticles__ottpricegranel->value}]</span>
+                                                      <span class="currency">[{$currency->sign}]</span>
+                                                    </span>
                                                 </div>
                                               </div>
 

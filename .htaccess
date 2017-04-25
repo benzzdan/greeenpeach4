@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
     Options +FollowSymLinks
     RewriteEngine On
-    RewriteBase /gpeach
+    RewriteBase /gp4
 
     RewriteCond %{REQUEST_URI}     config\.inc\.php [NC]
     RewriteRule ^config\.inc\.php  index\.php       [R=301,L]

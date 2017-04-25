@@ -463,3 +463,65 @@ font-weight: bold;
 padding: 0px;
 
 }
+
+
+.img-detail{
+  padding: 25px;
+}
+
+
+
+#toBasket {
+  height: 34px;
+border-color: #1ed6b3;
+background-color: #1ed6b3;
+font-family: 'Signika', sans-serif;
+font-size: 20px;
+padding: 3px;
+}
+
+
+#toBasket:hover {
+  border-color: #0CAA80;
+  background-color: #0CAA80;
+}
+
+
+.pricebox{
+  margin-top: 14px;
+margin-bottom: 14px;
+}
+
+
+.productlisting{
+  background: url("../../img/green-peach-fondo-01.jpg") top center repeat;
+}
+
+
+.mas-info {
+  background-color: #1FD5B2 !important;
+color: white;
+font-size: 16px;
+padding: 5px 10px;
+border-radius: 5px;
+border-color: #1FD5B2 !important;
+
+}
+
+.mas-info:hover{
+  background-color: #0DAD8F !important;
+  border-color: #0DAD8F !important;
+}
+
+
+
+/* hover images */
+/* Opacity #1 */
+.picture1 img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.picture1:hover img {
+	opacity: .5;
+}

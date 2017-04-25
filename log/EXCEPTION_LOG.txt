@@ -3314,3 +3314,59 @@ oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:34:13):
  Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
 
 ---------------------------------------------
+oxConnectionException-oxException (time: 2017-04-25 17:59:37): [1064]: mysql error: [1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 4] in EXECUTE (SELECT `oxv_oxarticles_en`.`oxid`, `oxv_oxarticles_en`.`oxparentid`, `oxv_oxarticles_en`.`oxvarstock`, `oxv_oxarticles_en`.`oxvarcount`, `oxv_oxarticles_en`.`oxstock`, `oxv_oxarticles_en`.`oxstockflag`, `oxv_oxarticles_en`.`oxshopid`, `oxv_oxarticles_en`.`oxprice`, `oxv_oxarticles_en`.`oxtitle`, `oxv_oxarticles_en`.`oxvarselect`, `oxv_oxarticles_en`.`oxthumb`, oxv_oxarticles_en.oxtimestamp FROM oxobject2category as oc left join oxv_oxarticles_en
+                    ON oxv_oxarticles_en.oxid = oc.oxobjectid
+                    WHERE (  oxv_oxarticles_en.oxactive = 1   and ( oxv_oxarticles_en.oxstockflag != 2 or ( oxv_oxarticles_en.oxstock + oxv_oxarticles_en.oxvarstock ) > 0  )  and IF( oxv_oxarticles_en.oxvarcount = 0, 1, ( select 1 from oxv_oxarticles_en as art where art.oxparentid=oxv_oxarticles_en.oxid and ( art.oxactive = 1  ) and ( art.oxstockflag != 2 or art.oxstock > 0 ) limit 1 ) )  )  and oxv_oxarticles_en.oxparentid = ''
+                    and oc.oxcatnid = '0f4270b89fbef1481958381410a0dbca'  ORDER BY  oxtitle asc ,  oc.oxpos, oc.oxobjectid  LIMIT 1, , Array) with user root
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/adodblite/adodbSQL_drivers/mysql/mysql_driver.inc(369): adodb_throw('mysql', 'EXECUTE', 1064, 'You have an err...', 'SELECT `oxv_oxa...', Array, Object(object_ADOConnection))
+#1 /opt/lampp/htdocs/gp4/core/adodblite/adodb.inc.php(334): mysql_driver_ADOConnection->do_query('SELECT `oxv_oxa...', 1, NULL, Array)
+#2 /opt/lampp/htdocs/gp4/core/oxlegacydb.php(169): ADOConnection->SelectLimit('SELECT `oxv_oxa...', NULL, 1, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxlist.php(384): oxLegacyDb->selectLimit('SELECT `oxv_oxa...', NULL, 1)
+#4 /opt/lampp/htdocs/gp4/application/models/oxarticlelist.php(79): oxList->selectString('SELECT `oxv_oxa...')
+#5 /opt/lampp/htdocs/gp4/application/models/oxarticlelist.php(434): oxArticleList->selectString('SELECT `oxv_oxa...')
+#6 /opt/lampp/htdocs/gp4/application/controllers/alist.php(860): oxArticleList->loadCategoryArticles('0f4270b89fbef14...', Array)
+#7 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1935) : eval()'d code(15): aList->getArticleList2('Empacados')
+#8 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1935): eval()
+#9 /opt/lampp/htdocs/gp4/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#10 /opt/lampp/htdocs/gp4/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#11 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#12 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#13 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#14 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#15 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#16 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#17 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#18 /opt/lampp/htdocs/gp4/oxseo.php(44): require('/opt/lampp/htdo...')
+#19 {main}
+
+ Connection Adress --> 
+Connection Error --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-25 18:07:53): [0]: EXCEPTION_SYSTEMCOMPONENT_TEMPLATENOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(485): oxNew('oxSystemCompone...')
+#4 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwArticleBox))
+#5 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('oxwarticlebox', NULL, Array, Array)
+#6 /opt/lampp/htdocs/gp4/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwarticlebox', NULL, Array, Array)
+#7 /opt/lampp/htdocs/gp4/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwarticlebox', NULL, Array, Array)
+#8 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%FC^FCA^FCA347E9%%list.tpl.php(52): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1935) : eval()'d code(15): Smarty->_smarty_include(Array)
+#11 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1935): eval()
+#12 /opt/lampp/htdocs/gp4/core/smarty/plugins/function.eval.php(36): Smarty->_eval('?><?php /* Smar...')
+#13 /opt/lampp/htdocs/gp4/core/smarty/plugins/function.oxeval.php(44): smarty_function_eval(Array, Object(Smarty))
+#14 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%F0^F0F^F0F92504%%list.tpl.php(70): smarty_function_oxeval(Array, Object(Smarty))
+#15 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#17 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#18 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#19 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#20 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#21 /opt/lampp/htdocs/gp4/oxseo.php(44): require('/opt/lampp/htdo...')
+#22 {main}
+
+ Faulty component --> widget/product/boxproduct.tpl
+---------------------------------------------

@@ -78,7 +78,7 @@
                         </a>
                     </div>
                 [{else}]
-                    <div class="picture  text-center">
+                    <div class="picture text-center">
                         <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive">
                     </div>
                 [{/if}]
