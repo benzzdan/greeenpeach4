@@ -43,7 +43,7 @@
 
             [{* details locator *}]
             [{assign var="actCategory" value=$oView->getActiveCategory()}]
-            <div class="detailsParams listRefine bottomRound">
+            <!-- <div class="detailsParams listRefine bottomRound">
                 <div class="row refineParams clear" id="detailsItemsPager">
                     <div class="col-xs-3 text-left pager-overview-link">
                         <i class="fa fa-bars"></i> <a href="[{$actCategory->toListLink}]">[{oxmultilang ident="BACK_TO_OVERVIEW"}]</a>
@@ -62,7 +62,7 @@
                         [{/if}]
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             [{* RDFa offering*}]
             <div id="productinfo">

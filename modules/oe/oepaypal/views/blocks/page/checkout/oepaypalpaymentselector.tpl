@@ -7,13 +7,7 @@
             <label for="payment_[{$sPaymentID}]"><b>[{$paymentmethod->oxpayments__oxdesc->value}]</b></label>
         </dt>
         <dd class="[{if $oView->getCheckedPaymentId() == $paymentmethod->oxpayments__oxid->value}]activePayment[{/if}]">
-            [{if $paymentmethod->getPrice()}]
-                [{if $oxcmp_basket->getPayCostNet()}]
-                    [{$paymentmethod->getFNettoPrice()}] [{$currency->sign}] [{oxmultilang ident="OEPAYPAL_PLUS_VAT"}] [{$paymentmethod->getFPriceVat()}]
-                [{else}]
-                    [{$paymentmethod->getFBruttoPrice()}] [{$currency->sign}]
-                [{/if}]
-            [{/if}]
+            
             <div class="paypalDescBox">
                 <a href="#"><img class="paypalPaymentImg"
                                  src="[{$oViewConf->getModuleUrl('oepaypal','out/img/')}][{oxmultilang ident="OEPAYPAL_LOGO_IMG"}]"

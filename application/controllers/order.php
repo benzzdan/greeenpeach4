@@ -166,6 +166,8 @@ class order extends oxUBase
     {
 
 
+
+
         if ($this->getIsOrderStep()) {
             $oBasket = $this->getBasket();
             $myConfig = $this->getConfig();
@@ -210,6 +212,58 @@ class order extends oxUBase
         // $this->execute();
         // else
         // SESSION['error'] = 'tu token ya no es valido';
+        }
+
+        public function saveOrder(){
+          if (!$this->getSession()->checkSessionChallenge()) {
+            return;
+          }
+
+          if (!$this->_validateTermsAndConditions()) {
+            $this->_blConfirmAGBError = 1;
+
+            return;
+          }
+
+          /* @deprecated since v5.1.6 (2014-05-28); Not used anymore */
+          $oConfig = $this->getConfig();
+          $sOrderCustomerInfo = $oConfig->getRequestParameter('ord_custinfo');
+          if ($sOrderCustomerInfo !== null && !$sOrderCustomerInfo && $this->isConfirmCustInfoActive()) {
+            $this->_blConfirmCustInfoError = 1;
+
+            return;
+          }
+
+          // additional check if we really really have a user now
+          $oUser = $this->getUser();
+          if (!$oUser) {
+            return 'user';
+          }
+
+          // get basket contents
+          $oBasket = $this->getSession()->getBasket();
+          if ($oBasket->getProductsCount()) {
+
+            try {
+              $oOrder = oxNew('oxorder');
+
+              //finalizing ordering process (validating, storing order into DB, executing payment, setting status ...)
+              $iSuccess = $oOrder->finalizeOrder($oBasket, $oUser);
+
+              // performing special actions after user finishes order (assignment to special user groups)
+              $oUser->onOrderExecute($oBasket, $iSuccess);
+
+              // proceeding to next view
+              return $this->_getNextStep($iSuccess);
+            } catch (oxOutOfStockException $oEx) {
+              $oEx->setDestination('basket');
+              oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx, false, true, 'basket');
+            } catch (oxNoArticleException $oEx) {
+              oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
+            } catch (oxArticleInputException $oEx) {
+              oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
+            }
+          }
         }
 
     /**
@@ -283,7 +337,7 @@ $basketItems = array();
 foreach($content as $item){
   $basketItems[] = array(
     "name" => $item->getTitle(),
-    "unit_price" => $item->getUnitPrice()->getPrice(),
+    "unit_price" => $item->getUnitPrice()->getPrice() * 100,
     "quantity" => $item->getAmount()
   );
 }
@@ -353,67 +407,15 @@ foreach($content as $item){
       );
 
       if($order){
-              if (!$this->getSession()->checkSessionChallenge()) {
-                return;
-              }
 
-              if (!$this->_validateTermsAndConditions()) {
-                $this->_blConfirmAGBError = 1;
-
-                return;
-              }
-
-              /* @deprecated since v5.1.6 (2014-05-28); Not used anymore */
-              $oConfig = $this->getConfig();
-              $sOrderCustomerInfo = $oConfig->getRequestParameter('ord_custinfo');
-              if ($sOrderCustomerInfo !== null && !$sOrderCustomerInfo && $this->isConfirmCustInfoActive()) {
-                $this->_blConfirmCustInfoError = 1;
-
-                return;
-              }
-
-              // additional check if we really really have a user now
-              $oUser = $this->getUser();
-              if (!$oUser) {
-                return 'user';
-              }
-
-              // get basket contents
-              $oBasket = $this->getSession()->getBasket();
-              if ($oBasket->getProductsCount()) {
-
-                try {
-                  $oOrder = oxNew('oxorder');
-
-                  //finalizing ordering process (validating, storing order into DB, executing payment, setting status ...)
-                  $iSuccess = $oOrder->finalizeOrder($oBasket, $oUser);
-
-                  // performing special actions after user finishes order (assignment to special user groups)
-                  $oUser->onOrderExecute($oBasket, $iSuccess);
-
-                  // proceeding to next view
-                  return $this->_getNextStep($iSuccess);
-                } catch (oxOutOfStockException $oEx) {
-                  $oEx->setDestination('basket');
-                  oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx, false, true, 'basket');
-                } catch (oxNoArticleException $oEx) {
-                  oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
-                } catch (oxArticleInputException $oEx) {
-                  oxRegistry::get("oxUtilsView")->addErrorToDisplay($oEx);
-                }
-              }
-
-
-            }else{
-              return $this;
-            }
-
+        return $this->saveOrder();
+        }
       }catch(Exception $e){
       echo $e->getMessage();
         }
       }
 
-
+      return $this->saveOrder();
 
       /////ends my code
 

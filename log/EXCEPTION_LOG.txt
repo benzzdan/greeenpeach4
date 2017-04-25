@@ -2691,3 +2691,626 @@ oxSystemComponentException-oxException (time: 2017-04-23 21:09:06): [0]: Functio
 
  Faulty component --> 
 ---------------------------------------------
+oxException (time: 2017-04-24 20:56:51): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(406): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 20:56:51): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(406): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 22:36:35): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(406): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 22:36:36): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(406): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#12 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#13 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#14 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 23:48:41): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(251): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(418): order->saveOrder()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 23:48:41): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(251): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(418): order->saveOrder()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 23:49:45): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(251): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(418): order->saveOrder()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-24 23:49:45): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/greenpeach2/core/oxemail.php(638): oxEmail->send()
+#6 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(1739): oxEmail->sendOrderEmailToOwner(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/greenpeach2/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(251): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/greenpeach2/application/controllers/order.php(418): order->saveOrder()
+#10 /opt/lampp/htdocs/greenpeach2/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:27:03): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%F0^F0F^F0F92504%%list.tpl.php(204): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '0c0fa3dba960fc4...')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#27 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:27:09): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%DA^DA0^DA07DFA9%%err_404.tpl.php(56): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxutilsview.php(104): Smarty->fetch('message/err_404...')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxutils.php(1493): oxUtilsView->getTemplateOutput('message/err_404...', Object(oxUBase))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(233): oxUtils->handlePageNotFoundError('productos/empac...')
+#24 /opt/lampp/htdocs/greenpeach2/core/oxseodecoder.php(218): error_404_handler('productos/empac...')
+#25 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(364): oxSeoDecoder->processSeoCall()
+#26 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(420): oxConfig->_processSeoCall()
+#27 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(331): oxConfig->init()
+#28 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(1934): oxConfig->getConfigParam('blProductive')
+#29 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(618): oxConfig->isProductiveMode()
+#30 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(582): oxShopControl->_getErrorReportingLevel()
+#31 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(121): oxShopControl->_runOnce()
+#32 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#33 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#34 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#35 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:27:18): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:27:44): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:28:15): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:28:48): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:29:36): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:31:29): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:33:38): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:33:40): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:33:41): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:33:42): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:33:57): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%DA^DA0^DA07DFA9%%err_404.tpl.php(56): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxutilsview.php(104): Smarty->fetch('message/err_404...')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxutils.php(1493): oxUtilsView->getTemplateOutput('message/err_404...', Object(oxUBase))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(233): oxUtils->handlePageNotFoundError('productos/empac...')
+#24 /opt/lampp/htdocs/greenpeach2/core/oxseodecoder.php(218): error_404_handler('productos/empac...')
+#25 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(364): oxSeoDecoder->processSeoCall()
+#26 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(420): oxConfig->_processSeoCall()
+#27 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(331): oxConfig->init()
+#28 /opt/lampp/htdocs/greenpeach2/core/oxconfig.php(1934): oxConfig->getConfigParam('blProductive')
+#29 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(618): oxConfig->isProductiveMode()
+#30 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(582): oxShopControl->_getErrorReportingLevel()
+#31 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(121): oxShopControl->_runOnce()
+#32 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#33 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#34 /opt/lampp/htdocs/greenpeach2/oxseo.php(44): require('/opt/lampp/htdo...')
+#35 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------
+oxNoArticleException-oxArticleException-oxException (time: 2017-04-25 00:34:13): [0]: Desafortunadamente el producto "fad21eb148918c8f4d9f0077fedff1ba" no volverá a estar disponible! 
+ Stack Trace: #0 /opt/lampp/htdocs/greenpeach2/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxnoarticleexce...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxNoArticleExce...')
+#2 /opt/lampp/htdocs/greenpeach2/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/greenpeach2/application/models/oxbasketitem.php(487): oxNew('oxNoArticleExce...')
+#4 /opt/lampp/htdocs/greenpeach2/modules/precioGranel/models/preciogranel_oxbasketitem.php(7): oxBasketItem->getArticle()
+#5 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%4E^4E2^4E2928E7%%minibasket.tpl.php(209): preciogranel_oxbasketitem->getFTotalPrice()
+#6 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_dynamic.php(66): Smarty->fetch('widget/minibask...')
+#8 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%E0^E04^E04559A3%%minibasket.tpl.php(20): smarty_function_oxid_include_dynamic(Array, Object(Smarty))
+#9 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('widget/header/m...', 'ox|0|0|0|0')
+#11 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oxwMiniBasket))
+#12 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('oxwminibasket', NULL, Array, NULL)
+#13 /opt/lampp/htdocs/greenpeach2/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwminibasket', NULL, Array, NULL)
+#14 /opt/lampp/htdocs/greenpeach2/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwminibasket', NULL, Array, NULL)
+#15 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%93^93D^93D6031B%%header.tpl.php(64): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#16 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#17 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%36^366^366ECF91%%page.tpl.php(14): Smarty->_smarty_include(Array)
+#18 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#19 /opt/lampp/htdocs/greenpeach2/tmp/smarty/01dbec0a2a79f46c316b31a73c217d36^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#20 /opt/lampp/htdocs/greenpeach2/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#21 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|0|0')
+#22 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#23 /opt/lampp/htdocs/greenpeach2/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#24 /opt/lampp/htdocs/greenpeach2/core/oxid.php(40): oxShopControl->start()
+#25 /opt/lampp/htdocs/greenpeach2/index.php(26): Oxid::run()
+#26 {main}
+
+ Faulty Article --> fad21eb148918c8f4d9f0077fedff1ba
+
+---------------------------------------------

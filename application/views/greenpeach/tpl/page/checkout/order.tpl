@@ -204,8 +204,8 @@
                             <input type="hidden" name="fnc" value="[{$oView->getExecuteFnc()}]">
                             <input type="hidden" name="challenge" value="[{$challenge}]">
                             <input type="hidden" name="sDeliveryAddressMD5" value="[{$oView->getDeliveryAddressMD5()}]">
-
-                            [{include file="page/checkout/inc/agb.tpl"}]
+                            <!-- Comentando la parte del withdrawal y term and contitions -->
+                            <!-- [{include file="page/checkout/inc/agb.tpl"}] -->
                         </form>
                     </div>
                 [{/if}]

@@ -400,3 +400,66 @@ padding: 9px!important;
 left: 25px!important;
 
 }
+
+/*
+#content {
+      min-height: 508px;
+}*/
+
+
+
+
+.picture{
+  border: 1px solid;
+}
+
+
+
+
+#productTitle {
+  color: #1ed6b3;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1ed6b3;
+    font-family: 'Signika', sans-serif;
+    font-size: 24px;
+}
+
+
+body.cl-details .detailsInfo>.row {
+  border-bottom: none !important;
+}
+
+
+.information {
+  color: #9b9691;
+    line-height: 28px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px;
+}
+
+
+.stockFlag {
+  float: left;
+}
+
+
+.text8 {
+  color: #9b9691;
+line-height: 28px;
+text-align: left;
+font-size: 18px;
+font-weight: 400;
+padding: 0px;
+
+}
+.text8b {
+  color: #9b9691;
+line-height: 28px;
+text-align: left;
+font-size: 18px;
+font-weight: bold;
+padding: 0px;
+
+}

@@ -2,7 +2,11 @@
     [{include file="page/details/inc/productmain.tpl"}]
 </div>
 
-<div id="detailsRelated" class="detailsRelated clear">
+<div class="row">
+  
+</div>
+
+<!-- <div id="detailsRelated" class="detailsRelated clear">
     <div class="relatedInfo[{if !$oView->getSimilarProducts() && !$oView->getCrossSelling() && !$oView->getAccessoires()}] relatedInfoFull[{/if}]">
         <div class="row">
             <div class="col-xs-12">
@@ -24,4 +28,4 @@
     </div>
 
     [{include file="page/details/inc/related_products.tpl"}]
-</div>
+</div> -->
