@@ -1,3 +1,6 @@
+
+
+
 [{oxscript include="js/widgets/oxequalizer.min.js" priority=10}]
 [{oxscript add="$(window).load(function(){ if( !isMobileDevice() ) { oxEqualizer.equalHeight( $( '#content .subcatList .row .panel-body' ) ); } });"}]
 
@@ -50,7 +53,7 @@
 
         [{if $actCategory->oxcategories__oxlongdesc->value && $oPageNavigation->actPage == 1}]
             <div id="catLongDescLocator" class="categoryDescription">[{oxeval var=$actCategory->oxcategories__oxlongdesc}]</div>
-        
+
         [{/if}]
 
         [{if $oView->hasVisibleSubCats()}]

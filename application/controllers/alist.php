@@ -1090,6 +1090,7 @@ public function getArticleList2($cat_tit)
         return $this->_oActCategory;
     }
 
+
     /**
      * Returns view canonical url
      *

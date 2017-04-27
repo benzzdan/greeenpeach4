@@ -14,7 +14,7 @@
      [{/if}]
 
 
-     [{if $oView->getTitle() == 'Productos'}]
+     [{if $oView->getTitle() == 'Productos' || 'Presonalizados'}]
       [{assign var="flag" value="true"}]
      [{/if}]
 
