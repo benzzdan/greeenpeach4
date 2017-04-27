@@ -50,7 +50,7 @@
 
         [{if $actCategory->oxcategories__oxlongdesc->value && $oPageNavigation->actPage == 1}]
             <div id="catLongDescLocator" class="categoryDescription">[{oxeval var=$actCategory->oxcategories__oxlongdesc}]</div>
-            <hr/>
+        
         [{/if}]
 
         [{if $oView->hasVisibleSubCats()}]

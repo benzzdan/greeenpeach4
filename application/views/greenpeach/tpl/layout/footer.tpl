@@ -13,7 +13,22 @@
     <footer id="footer">
 
       <div class="bottombanner">
-          <a href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017</div>
+        <div class="row">
+          <div class="container">
+
+            <div class="col-md-6">
+              <img src="[{$oViewConf->getImageUrl()}]icon-whatsapp1.svg" alt="icon" style="width:100%; max-width:30px;" /> &nbsp; <a href="tel:3338091918">+52 133 380 919 18</a> &nbsp; | &nbsp; <a href="tel:3339544216">+52 133 395 442 16</a>
+              <img src="[{$oViewConf->getImageUrl()}]icon-email1.svg" alt="icon" style="width:100%; max-width:30px; margin-left: 30px;" /> &nbsp; <a href="mailto:venta@greenpeach.mx">ventas@greenpeach.mx</a>
+            </div>
+            <div class="col-md-6">
+              <span>Síguenos:</span>
+              <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-facebook3.png" /></a> &nbsp;
+              <a href="https://www.instagram.com/greenpeachsuperfoods/" class="hvr-float"><img alt="instagram" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-ig3.png" /></a> &nbsp;
+              <a style="margin-left: 50px;" href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
+            </div>
+          </div>
+            </div>
+        </div>
         <!-- <div class="[{if $blFullwidth}]container[{else}]container-fluid[{/if}]">
             <div class="row">
                 <div class="col-xs-12 col-md-8">
@@ -163,15 +178,17 @@
         [{/block}]
         [{/block}]
         [{/if}] -->
-        <script type="text/javascript">
+        <!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){
+        z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='https://v2.zopim.com/?4lOioMvuh1x1KL5wWzaxs8u1kACiTapI';z.t=+new Date;$.
+        type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zendesk Chat Script-->
 
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="https://v2.zopim.com/?4ftxr270fd2PRpIP04phV81iq5eHHNrN";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-
-        </script>
     </footer>
 [{/block}]
 

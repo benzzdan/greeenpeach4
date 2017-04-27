@@ -103,33 +103,33 @@ transition: 0.5s;
 }
 
 .footerbox
-{ background-color:#EFEFEF; width:100%; text-align:center; color:#777777; line-height:50px; font-size:18px;}  
+{ background-color:#EFEFEF; width:100%; text-align:center; color:#777777; line-height:50px; font-size:18px;}
 
 .footerbox2
-{ background-color:#EFEFEF; width:100%; text-align:center; color:#777777; line-height:50px; font-size:14px;}  
+{ background-color:#EFEFEF; width:100%; text-align:center; color:#777777; line-height:50px; font-size:14px;}
 
 .footerbox2 a
-{ color:#777777; } 
+{ color:#777777; }
 
 .footerbox2 a:hover
 { color:#1ed6b3; -webkit-transition: 0.5s;
 -moz-transition: 0.5s;
 -o-transition: 0.5s;
 -ms-transition: 0.5s;
-transition: 0.5s;} 
+transition: 0.5s;}
 
 .footerbox a
-{ color:#777777; } 
+{ color:#777777; }
 
 .footerbox a:hover
 { color:#1ed6b3; -webkit-transition: 0.5s;
 -moz-transition: 0.5s;
 -o-transition: 0.5s;
 -ms-transition: 0.5s;
-transition: 0.5s;} 
+transition: 0.5s;}
 
 .footerbtn a
-{ color:#EEEEEE; } 
+{ color:#EEEEEE; }
 
 .footerbtn a:hover
 { color:#FFFFFF;
@@ -137,17 +137,17 @@ transition: 0.5s;}
 -moz-transition: 0.5s;
 -o-transition: 0.5s;
 -ms-transition: 0.5s;
-transition: 0.5s;} 
+transition: 0.5s;}
 
 .footerlinks a
-{ color:#777777; line-height:45px; } 
+{ color:#777777; line-height:45px; }
 
 .footerlinks a:hover
 { color:#1ed6b3; -webkit-transition: 0.5s;
 -moz-transition: 0.5s;
 -o-transition: 0.5s;
 -ms-transition: 0.5s;
-transition: 0.5s;} 
+transition: 0.5s;}
 
 .textform
 {
@@ -163,8 +163,8 @@ margin:0px; width:18px; height:18px; vertical-align:middle; background-color:tra
 { font-family: 'Signika', sans-serif; padding:0px 40px; text-align:center; color:#FFFFFF;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block ; vertical-align:middle;}
 
 .btn:hover
-{ background-color:#0CAA80; 
-color:#FFFFFF; 
+{ background-color:#0CAA80;
+color:#FFFFFF;
 -webkit-transition: 0.5s;
 -moz-transition: 0.5s;
 -o-transition: 0.5s;
@@ -174,8 +174,6 @@ transition: 0.5s;}
 .terminos
 { text-align:left; line-height:40px;}
 
-.bottombanner
-{ font-family: 'Signika', sans-serif; font-size:12px; text-align:center;  color:#777777; line-height:35px;}
 
 .bottombanner a
 { color:#777777; }
@@ -208,7 +206,7 @@ transition: 0.5s;
 .carritotexto
 {
 	color:#9b9691; line-height:24px; text-align:left; font-size:18px; font-weight:400; padding:0px; }
-	
+
 .carritotit
 { color:#1ed6b3; padding-bottom:10px; border-bottom:2px solid #1ed6b3; font-family: 'Signika', sans-serif; font-size:24px; text-align:left;}
 
@@ -218,15 +216,15 @@ transition: 0.5s;
 .cantidad
 {
 	color:#9b9691; line-height:18px; text-align:center; font-size:14px; font-weight:400; padding:0px; }
-	
+
 .texto14
 {
 	color:#9b9691; line-height:18px; font-size:14px; font-weight:400; padding:0px; }
-	
+
 .precio
 {
 	color:#9b9691; line-height:24px; text-align:center; font-size:18px; font-weight:400; padding:0px; }
-	
+
 .total
 { color:#1ed6b3; font-weight:400; font-family: 'Signika', sans-serif; font-size:18px; text-align:right; padding:10px; }
 
@@ -258,7 +256,7 @@ transition: 0.5s;
 @media handheld, only screen and (max-width: 800px) {
 .topbanner
 { background-color:#F8F8F8; color:#1dc3ac; font-size:12px; width:98%; padding:2px 1%; font-family: 'Signika', sans-serif; }
-	
+
 .logo-greenpeach
 { width:100%; max-width:90px; border:0px; }
 

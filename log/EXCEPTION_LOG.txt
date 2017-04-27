@@ -3370,3 +3370,36 @@ oxSystemComponentException-oxException (time: 2017-04-25 18:07:53): [0]: EXCEPTI
 
  Faulty component --> widget/product/boxproduct.tpl
 ---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-26 13:14:43): [0]: Function 'getActiveView' does not exist or is not accessible! (oePayPalOxViewConfig)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%36^366^366ECF91%%page.tpl.php(32): oxSuperCfg->__call('getActiveView', Array)
+#1 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%36^366^366ECF91%%page.tpl.php(32): oePayPalOxViewConfig->getActiveView()
+#2 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%F0^F0F^F0F92504%%list.tpl.php(204): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/list/list....', '3aed01d53aa5175...')
+#6 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(aList))
+#7 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('alist', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#9 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#10 /opt/lampp/htdocs/gp4/oxseo.php(44): require('/opt/lampp/htdo...')
+#11 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-26 13:14:43): [0]: Function 'getActiveView' does not exist or is not accessible! (oePayPalOxViewConfig)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%36^366^366ECF91%%page.tpl.php(32): oxSuperCfg->__call('getActiveView', Array)
+#1 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%36^366^366ECF91%%page.tpl.php(32): oePayPalOxViewConfig->getActiveView()
+#2 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%40^405^405277AF%%start.tpl.php(71): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/shop/start...', 'ox|0|0|1|0')
+#6 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Start))
+#7 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('start', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#9 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#10 {main}
+
+ Faulty component --> 
+---------------------------------------------

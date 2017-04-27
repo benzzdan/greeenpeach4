@@ -175,6 +175,10 @@ body {
     display: inline-block;
 
   }
+/*
+  #footer{
+    border-bottom: none !impor
+  }*/
 
 
   .textform {
@@ -223,7 +227,7 @@ a:hover {
 }*/
 
 #header {
-  max-height: 171px;
+  max-height: 188px;
 }
 
 
@@ -299,6 +303,8 @@ transition: 0.5s;
 #footer {
     border-top: none !important;
     padding: 0 !important;
+    border-bottom: none !important;
+
 }
 
 
@@ -530,4 +536,15 @@ border-color: #1FD5B2 !important;
 
 .carousel-inner {
   top: -20px !important;
+}
+
+
+/*
+.container {
+  min-height: 780px;
+}*/
+
+
+.quienes {
+  margin-top: 32px;
 }

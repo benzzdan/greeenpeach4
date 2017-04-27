@@ -13,12 +13,18 @@
       [{include file="widget/slider/slider.tpl"}]
      [{/if}]
 
-     <!-- true if template list.tpl is active -->
-     [{if $oView->getTemplateName() == 'page/list/list.tpl'}]
+
+     [{if $oView->getTitle() == 'Productos'}]
       [{assign var="flag" value="true"}]
      [{/if}]
 
-    <div id="wrapper" [{if $flag}]class="productlisting"[{/if}]>
+     [{if $oView->getTitle() == 'Green Peach'}]
+      [{assign var="flag2" value="true"}]
+     [{/if}]
+
+     <!-- true if template list.tpl is active -->
+
+    <div id="wrapper" [{if $flag}]class="productlisting"[{/if}] [{if $flag2}]style="min-height: 730px"[{/if}]>
 
 
         <div class="container">

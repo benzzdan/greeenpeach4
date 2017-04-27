@@ -131,7 +131,7 @@
             [{/if}]
 
             [{if $actCategory->oxcategories__oxlongdesc->value }]
-                <div id="catLongDescLocator" class="categoryDescription">[{oxeval var=$actCategory->oxcategories__oxlongdesc}]</div>
+                <div id="catLongDescLocator1" class="categoryDescription">[{oxeval var=$actCategory->oxcategories__oxlongdesc}]</div>
             [{/if}]
         *}]
             [{include file="widget/locator/listlocator.tpl" locator=$oView->getPageNavigationLimitedTop() attributes=$oView->getAttributes() listDisplayType=true itemsPerPage=true sort=true }]
