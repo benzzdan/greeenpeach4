@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-  
+
 </div>
 
 <!-- <div id="detailsRelated" class="detailsRelated clear">

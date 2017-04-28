@@ -24,7 +24,7 @@
 
      <!-- true if template list.tpl is active -->
 
-    <div id="wrapper" [{if $flag}]class="productlisting"[{/if}] [{if $flag2}]style="min-height: 730px"[{/if}]>
+    <div id="wrapper" [{if $flag2}]style="min-height: 730px; margin-top: 34px;"[{/if}]>
 
 
         <div class="container">

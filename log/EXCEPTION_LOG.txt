@@ -3425,3 +3425,31 @@ oxException (time: 2017-04-26 22:01:22): [0]: Could not instantiate mail functio
 
 
 ---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-27 12:04:15): [0]: Function 'getValues' does not exist or is not accessible! (oxAttributeList)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(645): oxSuperCfg->__call('getValues', Array)
+#1 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%5E^5E9^5E9B9D5B%%productmain.tpl.php(645): oxAttributeList->getValues()
+#2 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%A5^A59^A595DDB8%%fullproductinfo.tpl.php(7): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%08^08A^08ABD53A%%details.tpl.php(99): Smarty->_smarty_include(Array)
+#6 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#7 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%79^790^7907FF72%%details.tpl.php(6): Smarty->_smarty_include(Array)
+#8 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#9 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('widget/product/...', 'ox|0|0|0|0')
+#10 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(oePayPalOxwArticleDetails))
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('oxwarticledetai...', NULL, Array, Array)
+#12 /opt/lampp/htdocs/gp4/core/oxwidgetcontrol.php(73): oxShopControl->start('oxwarticledetai...', NULL, Array, Array)
+#13 /opt/lampp/htdocs/gp4/core/smarty/plugins/function.oxid_include_widget.php(56): oxWidgetControl->start('oxwarticledetai...', NULL, Array, Array)
+#14 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%08^08A^08ABD53A%%details.tpl.php(14): smarty_function_oxid_include_widget(Array, Object(Smarty))
+#15 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#16 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/details/de...', 'ox|0|0|0|0|6b6b...')
+#17 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Details))
+#18 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('details', NULL, NULL, NULL)
+#19 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#20 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#21 /opt/lampp/htdocs/gp4/oxseo.php(44): require('/opt/lampp/htdo...')
+#22 {main}
+
+ Faulty component --> 
+---------------------------------------------

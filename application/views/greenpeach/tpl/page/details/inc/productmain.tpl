@@ -1,5 +1,6 @@
 [{$oView->getTitle()}]
 
+
 [{oxscript include="js/pages/details.min.js" priority=10}]
 
 [{assign var="oConfig" value=$oViewConf->getConfig()}]
@@ -50,6 +51,8 @@
             [{/if}]
         </div>
 [{/oxhasrights}]
+
+
 
 <div class="detailsInfo clear" itemscope itemtype="http://schema.org/Product">
     <div class="row">
@@ -365,9 +368,26 @@
                     [{/if}]
                 [{/block}]
 
-                    <!-- long description  -->
-                      [{assign var="oLongdesc" value=$oDetailsProduct->getLongDescription()}]
-                      [{$oLongdesc->value}]
+                <br>
+
+                      <!-- get Attributes -->
+                      [{foreach from=$oDetailsProduct->getAttributes() item=oAttr name=attribute}]
+                        [{if $oAttr->oxattribute__oxtitle == 'Beneficios'}]
+                            [{assign var="myString" value=$oAttr->oxattribute__oxvalue->value}]
+                            [{assign var="atributos" value=" "|explode:$myString}]
+                            <strong>[{$oAttr->oxattribute__oxtitle->value}]:</strong><br>
+                            <ul>
+                              [{foreach from=$atributos item=benef name=beneficio}]
+                                <li>[{$benef}]</li>
+                              [{/foreach}]
+                            </ul>
+                            <br>
+                        [{else}]
+                          <strong style="margin-right: 5px;"> [{$oAttr->oxattribute__oxtitle->value}]:</strong><br><span>[{$oAttr->oxattribute__oxvalue->value}]</span><br><br>
+                        [{/if}]
+                      [{/foreach}]
+
+
 
 
 
@@ -377,13 +397,13 @@
 
 
                     [{oxhasrights ident="TOBASKET"}]
-                        [{if $oDetailsProduct->isBuyable()}]
+                        <!-- [{if $oDetailsProduct->isBuyable()}]
                             <span class="deliverytime">
                                 [{block name="details_productmain_deliverytime"}]
                                     [{include file="page/details/inc/deliverytime.tpl"}]
                                 [{/block}]
                             </span>
-                        [{/if}]
+                        [{/if}] -->
                     [{/oxhasrights}]
 
                     [{block name="details_productmain_social"}]
