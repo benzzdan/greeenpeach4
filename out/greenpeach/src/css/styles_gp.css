@@ -8,8 +8,8 @@ body {
 }
 
 .topbanner {
-    background-color: #F8F8F8;
-    color: #1ed6b3;
+    background-color: #9B9691;
+    color: #fff;
     font-size: 12px;
     width: 100%;
     padding: 5px 0px;
@@ -552,4 +552,24 @@ border-color: #1FD5B2 !important;
 
 #catLongDescLocator {
   margin-bottom: 44px;
+}
+
+
+
+.btn-primary {
+  border-color: none !important;
+}
+
+#login-btn {
+  margin-bottom: 13px;
+}
+
+
+#header .service-menu.showLogin .dropdown-menu {
+    min-width: 588px !important;
+}
+
+
+.remember {
+  margin-bottom: 10px;
 }

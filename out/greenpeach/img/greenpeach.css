@@ -22,8 +22,6 @@ img{ border:0px; margin:0px; text-decoration:none; vertical-align:middle;}
     display:none;
 }
 
-.topbanner
-{ background-color:#F8F8F8; color:#1ed6b3; font-size:12px; width:100%; padding:5px 0px; font-family: 'Signika', sans-serif; z-index:100; }
 
 .redes
 {float:right; width:20%; position:absolute; top:30px; right:0px; z-index:250; text-align:right; padding-right:10px;}
@@ -154,10 +152,7 @@ transition: 0.5s;}
 margin:10px; width:90%; background-color:transparent; border:1px solid #777777; padding:10px; color:#777777; font-family: 'Signika', sans-serif;
 }
 
-.checkbox
-{
-margin:0px; width:18px; height:18px; vertical-align:middle; background-color:transparent; border:1px solid #777777; padding:10px; color:#777777; font-family: 'Signika', sans-serif;
-}
+
 
 .btn
 { font-family: 'Signika', sans-serif; padding:0px 40px; text-align:center; color:#FFFFFF;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block ; vertical-align:middle;}
@@ -254,8 +249,6 @@ transition: 0.5s;
 
 
 @media handheld, only screen and (max-width: 800px) {
-.topbanner
-{ background-color:#F8F8F8; color:#1dc3ac; font-size:12px; width:98%; padding:2px 1%; font-family: 'Signika', sans-serif; }
 
 .logo-greenpeach
 { width:100%; max-width:90px; border:0px; }
