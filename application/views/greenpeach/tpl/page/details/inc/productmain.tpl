@@ -374,7 +374,7 @@
                       [{foreach from=$oDetailsProduct->getAttributes() item=oAttr name=attribute}]
                         [{if $oAttr->oxattribute__oxtitle == 'Beneficios'}]
                             [{assign var="myString" value=$oAttr->oxattribute__oxvalue->value}]
-                            [{assign var="atributos" value=" "|explode:$myString}]
+                            [{assign var="atributos" value="|"|explode:$myString}]
                             <strong>[{$oAttr->oxattribute__oxtitle->value}]:</strong><br>
                             <ul>
                               [{foreach from=$atributos item=benef name=beneficio}]
