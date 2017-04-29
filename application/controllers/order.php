@@ -204,15 +204,7 @@ class order extends oxUBase
         return $this->_sThisTemplate;
     }
 
-    function executeFromConekta(){
-        // todo el códiogo de conecta
-        // token = $_SESSION[token];
-        // /conekta/enviaPago(token);
-        // if conekcta envia pago == true
-        // $this->execute();
-        // else
-        // SESSION['error'] = 'tu token ya no es valido';
-        }
+
 
         public function saveOrder(){
           if (!$this->getSession()->checkSessionChallenge()) {

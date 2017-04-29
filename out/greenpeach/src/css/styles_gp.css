@@ -54,10 +54,6 @@ body {
 { font-family: 'Signika', sans-serif; padding: 6px 19px;text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block !important; vertical-align:middle;}
 
 
-.btn:hover {
-
-    background-color: #0CAA80;
-}
 
 .hvr-underline-from-center {
   display: inline-block;
