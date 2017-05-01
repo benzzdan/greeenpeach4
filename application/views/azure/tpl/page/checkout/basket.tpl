@@ -48,7 +48,7 @@
                     [{block name="checkout_basket_vouchers"}]
                         [{oxscript include="js/widgets/oxinputvalidator.js" priority=10 }]
                         [{oxscript add="$('form.js-oxValidate').oxInputValidator();"}]
-                        <div id="basketVoucher">
+                      <div id="basketVoucher">
                             <form name="voucher" action="[{$oViewConf->getSelfActionLink()}]" method="post" class="js-oxValidate">
                                 <div class="couponBox" id="coupon">
                                     [{foreach from=$Errors.basket item=oEr key=key}]

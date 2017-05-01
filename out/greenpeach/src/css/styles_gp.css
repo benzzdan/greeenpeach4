@@ -1,5 +1,4 @@
 body {
-  text-align: center;
   vertical-align: top;
   font-family: 'Signika', sans-serif;
   font-weight: 400;
@@ -48,8 +47,41 @@ body {
   margin-right: 37px;
 }
 
+.btn-gp:hover{
+  background-color: #0CAA80;
+color: #FFFFFF;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+.btn-gp-reg:hover {
+  background-color: #e47736;
+color: #FFFFFF;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+}
+.btn-gp-log:hover {
+  background-color: #0CAA80;
+color: #FFFFFF;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+}
+
+
+
 .btn-gp
 { font-family: 'Signika', sans-serif; text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block ; vertical-align:middle;}
+.btn-gp-log
+{ font-family: 'Signika', sans-serif; text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:13px; display:inline-block ; vertical-align:middle;}
+.btn-gp-reg
+{ font-family: 'Signika', sans-serif; text-align:center; color:#FFFFFF !important;  background-color:#ff9557; border-radius:10px; font-size:13px; display:inline-block ; vertical-align:middle;}
 .btn-gp-env
 { font-family: 'Signika', sans-serif; padding: 6px 19px;text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block !important; vertical-align:middle;}
 
@@ -197,7 +229,7 @@ body {
     color: #777777;
 }
 
-.checkbox {
+/*.checkbox {
     position: relative;
     left: 43%;
     top: -23px;
@@ -206,7 +238,7 @@ body {
     border: 1px solid #777777;
     padding: 10px;
     color: #777777;
-  }
+  }*/
 
 .col-2-3, .col-8-12 {
         width: 66.66%;}
@@ -223,7 +255,8 @@ a:hover {
 }*/
 
 #header {
-  max-height: 188px;
+  max-height: 192px;
+  border-bottom: 1px solid #ddd;
 }
 
 
@@ -307,8 +340,9 @@ transition: 0.5s;
 .contactanos {
   background-color: #EFEFEF;
   font-size: 15px;
-  margin-bottom: 46px;
+  margin-bottom: 9%;
 }
+
 
 
 iframe {
@@ -322,7 +356,7 @@ iframe {
     margin-top: 70px;
 }
 
-input[type="checkbox"] {
+.terms-check {
   width: 18px;
     height: 18px;
 }
@@ -499,6 +533,9 @@ margin-bottom: 14px;
 .productlisting{
   background: url("../../img/green-peach-fondo-01.jpg") top center repeat;
 }
+.contacto-page{
+  background-color: #EFEFEF !important;
+}
 
 
 .mas-info {
@@ -548,12 +585,14 @@ border-color: #1FD5B2 !important;
 
 #catLongDescLocator {
   margin-bottom: 44px;
+  margin-top: 17px;
 }
 
 
 
 .btn-primary {
   border-color: none !important;
+
 }
 
 #login-btn {
@@ -562,10 +601,120 @@ border-color: #1FD5B2 !important;
 
 
 #header .service-menu.showLogin .dropdown-menu {
-    min-width: 588px !important;
+    min-width: 588px;
 }
 
 
 .remember {
   margin-bottom: 10px;
+}
+
+
+.addthis_inline_share_toolbox {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+
+.basketItemDesc{
+  margin-top: 13%;
+margin-right: 26%;
+}
+
+
+.float-right{
+  float: right;
+}
+
+
+
+.footerbtn {
+  font-family: 'Signika', sans-serif;
+padding: 0px 40px;
+text-align: center;
+color: #FFFFFF;
+background-color: #1ed6b3;
+border-radius: 10px;
+font-size: 24px;
+display: inline-block;
+vertical-align: middle;
+}
+
+
+.footerbtn:hover a{
+  color: #FFFFFF;
+
+}
+
+.footerbtn:hover {
+    background-color: #0CAA80;
+}
+
+
+
+.distribuidores {
+  padding: 0px 43px 43px 43px;
+}
+
+
+
+#productinfo {
+  margin-top: 4%;
+  min-height: 700px;
+}
+
+
+.nodisponible{
+  margin: 0px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    background-color: #d75232;
+    font-size: 14px;
+    font-family: 'Signika', sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.disponible {
+  margin: 0px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    background-color: #32D764;
+    font-size: 14px;
+    font-family: 'Signika', sans-serif;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.space48 {
+  height: 48px;
+  width: 100%;
+}
+
+
+
+.no-left-padding {
+  padding-left: 0px !important;
+}
+
+
+ .col-xs-12 {
+   min-height: 0px !important;
+ }
+
+
+.account {
+  margin-top: 4%;
+}
+
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
 }

@@ -31,7 +31,7 @@
                 <div class="input-group">
                     <input id="loginPasword" type="password" name="lgn_pwd" class="form-control" value="" placeholder="[{oxmultilang ident="PASSWORD"}]">
                     <span class="input-group-btn">
-                        <a class="forgotPasswordOpener btn btn-default" href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=forgotpwd"}]" title="[{oxmultilang ident="FORGOT_PASSWORD"}]">?</a>
+                        <a class="forgotPasswordOpener btn btn-default" style="height: 34px;"href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=forgotpwd"}]" title="[{oxmultilang ident="FORGOT_PASSWORD"}]">?</a>
                     </span>
                 </div>
             </div>
@@ -39,14 +39,14 @@
             [{if $oViewConf->isFunctionalityEnabled( "blShowRememberMe" )}]
                 <div class="remember">
                   <input type="checkbox" value="1" name="lgn_cook" id="remember">
-                  <span><strong>Recordar contraseña</strong></span>
+                  <span style="color: #777777;">Recordar contraseña</span>
                 </div>
             [{/if}]
 
-            <button id="login-btn" type="submit" class="btn ">[{oxmultilang ident="LOGIN"}]</button>
+            <button type="submit" class="btn btn-gp-log">[{oxmultilang ident="LOGIN"}]</button>
 
             [{if !$oxcmp_user}]
-                <a class="btn " id="registerLink" role="button" href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=register"}]" title="[{oxmultilang ident="REGISTER"}]">[{oxmultilang ident="REGISTER"}]</a>
+                <a class="btn btn-gp-reg" id="registerLink" role="button" href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=register"}]" title="[{oxmultilang ident="REGISTER"}]">[{oxmultilang ident="REGISTER"}]</a>
             [{/if}]
 
             [{if $oViewConf->getShowFbConnect()}]

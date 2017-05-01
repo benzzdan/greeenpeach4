@@ -1,3 +1,5 @@
+[{if $oxcmp_user}]
+
 <div class="topPopList">
     [{block name="widget_header_servicebox_flyoutbox"}]
         <span class="lead">[{oxmultilang ident="ACCOUNT"}]</span>
@@ -7,7 +9,7 @@
                     <li>
                         <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account"}]">[{oxmultilang ident="MY_ACCOUNT"}]</a>
                     </li>
-                    [{if $oViewConf->getShowCompareList()}]
+                    <!-- [{if $oViewConf->getShowCompareList()}]
                         <li>
                             <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=compare"}]">[{oxmultilang ident="MY_PRODUCT_COMPARISON"}]</a> [{if $oView->getCompareItemsCnt()}]<span class="badge">[{$oView->getCompareItemsCnt()}]</span>[{/if}]
                         </li>
@@ -32,9 +34,10 @@
                         <li>
                             <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_downloads"}]"><span>[{oxmultilang ident="MY_DOWNLOADS"}]</span></a>
                         </li>
-                    [{/if}]
+                    [{/if}] -->
                 [{/block}]
             </ul>
         </div>
     [{/block}]
 </div>
+[{/if}]

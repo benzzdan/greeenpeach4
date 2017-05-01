@@ -23,7 +23,7 @@
 
 [{if $oViewConf->getShowVouchers() && $oViewConf->getActiveClassName() == 'basket'}]
     [{block name="checkout_basket_vouchers"}]
-        <div id="basketVoucher" class="pull-left">
+        <!-- <div id="basketVoucher" class="pull-left">
             <form name="voucher" action="[{$oViewConf->getSelfActionLink()}]" method="post" class="js-oxValidate form-inline" role="form" novalidate="novalidate">
                 <div class="couponBox" id="coupon">
                     <div class="hidden">
@@ -56,7 +56,7 @@
                     [{/foreach}]
                 </div>
             </form>
-        </div>
+        </div> -->
     [{/block}]
 [{/if}]
 

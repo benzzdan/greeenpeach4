@@ -13,9 +13,7 @@
     <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account"}]">
         [{block name="dd_layout_page_header_icon_menu_account_button"}]
             [{if !$oxcmp_user}]
-                <div id="my_acc">
-                  <img src="[{$oViewConf->getImageUrl('man-user.svg')}]"  class ="hvr-float" alt="" style="width: 30px; height: 30px; position: relative; top: -1px;" />
-                </div>
+              Iniciar Sesión
             [{else}]
                 [{oxmultilang ident="MY_ACCOUNT"}]
             [{/if}]
@@ -25,7 +23,11 @@
 
         [{/block}]
     </button>
-    <ul class="dropdown-menu dropdown-menu-right pull-right" role="menu">
+    [{if !$oxcmp_user}]
+    <ul class="dropdown-menu dropdown-menu-right pull-right" style="min-width: 472px"role="menu">
+      [{else}]
+      <ul class="dropdown-menu dropdown-menu-right pull-right"  role="menu">
+      [{/if}]
         [{block name="dd_layout_page_header_icon_menu_account_list"}]
             <li>
                 <div class="row">
@@ -36,14 +38,14 @@
                                 <div class="divider"></div>
                                 <div class="text-right">
                                     <a class="btn btn-danger" role="button" href="[{$oViewConf->getLogoutLink()}]" title="[{oxmultilang ident="LOGOUT"}]">
-                                        <i class="fa fa-power-off"></i> [{oxmultilang ident="LOGOUT"}]
+                                      [{oxmultilang ident="LOGOUT"}]
                                     </a>
                                 </div>
                             [{/if}]
                         </div>
                     </div>
                     [{if !$oxcmp_user}]
-                        <div class="col-xs-12 col-sm-7">
+                        <div class="col-xs-12 col-sm-12">
                             <div class="service-menu-box clearfix">
                                 [{include file="widget/header/loginbox.tpl"}]
                             </div>

@@ -1,6 +1,6 @@
 [{assign var="template_title" value="MY_ACCOUNT"|oxmultilangassign}]
 [{capture append="oxidBlock_content"}]
-    <div class="accountDashboardView">
+    <div class="accountDashboardView" style="margin-top: 4%">
         <h1 id="accountMain" class="page-header">[{oxmultilang ident="MY_ACCOUNT"}]
             "[{$oxcmp_user->oxuser__oxusername->value}]"</h1>
 
@@ -34,16 +34,8 @@
                         </div>
                         <div class="panel-body">[{oxmultilang ident="UPDATE_YOUR_BILLING_SHIPPING_SETTINGS"}]</div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <a id="linkAccountOrder" href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_order"}]">[{oxmultilang ident="ORDER_HISTORY"}]</a>
-                            <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_order"}]" class="btn btn-default btn-xs pull-right">
-                                <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                        <div class="panel-body">[{oxmultilang ident="ORDERS"}] [{$oView->getOrderCnt()}]</div>
-                    </div>
-                    [{if $oView->isEnabledDownloadableFiles()}]
+
+                    <!-- [{if $oView->isEnabledDownloadableFiles()}]
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <a id="linkAccountDownloads" href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_downloads"}]">[{oxmultilang ident="MY_DOWNLOADS"}]</a>
@@ -53,63 +45,38 @@
                             </div>
                             <div class="panel-body">[{oxmultilang ident="MY_DOWNLOADS_DESC"}]</div>
                         </div>
-                    [{/if}]
-
-                    <!--testing -->
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_company"}]">[{oxmultilang ident="PAGE_ACCOUNT_DASHBOARD_COMPANY"}]</a>
-                        <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_company"}]" class="btn btn-default btn-xs pull-right">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                      </div>
-                      <div class="panel-body">
-                        [{$oxcmp->oxuser__oxcompany->value}]
-                      </div>
-                    </div>
+                    [{/if}] -->
 
 
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_address"}]">[{oxmultilang ident="PAGE_ACCOUNT_DASHBOARD_ADDRESS"}]</a>
-                        <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_address"}]" class="btn btn-default btn-xs pull-right">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                      </div>
-                      <div class="panel-body">
-                        <p>
-                          [{$oxcmp->oxuser__oxstreet->value}]
-                        </p>
-                        <p>
-                          [{$oxcmp->oxuser__oxstreetnr->value}]
-                        </p>
-                        <p>
-                          [{$oxcmp->oxuser__oxcity->value}]
-                        </p>
-                        <p>
-                          [{$oxcmp->oxuser__oxzip->value}]
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_phone"}]">[{oxmultilang ident="PAGE_ACCOUNT_DASHBOARD_PHONE"}]</a>
-                        <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_phone"}]" class="btn btn-default btn-xs pull-right">
-                            <i class="fa fa-arrow-right"></i>
-                        </a>
-                      </div>
-                      <div class="panel-body">
-                        [{$oxcmp_user->oxuser__oxfon->value }]
-                      </div>
-                    </div>
 
 
 
                 [{/block}]
             </div>
-            <div class="col-xs-12 col-md-6">
+             <div class="col-xs-12 col-md-6">
+               <div class="panel panel-default">
+                 <div class="panel-heading">
+                   <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_phone"}]">[{oxmultilang ident="PHONE"}]</a>
+                   <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_phone"}]" class="btn btn-default btn-xs pull-right">
+                       <i class="fa fa-arrow-right"></i>
+                   </a>
+                 </div>
+                 <div class="panel-body">
+                   [{$oxcmp_user->oxuser__oxfon->value }]
+                 </div>
+               </div>
+
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <a id="linkAccountOrder" href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_order"}]">[{oxmultilang ident="ORDER_HISTORY"}]</a>
+                       <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_order"}]" class="btn btn-default btn-xs pull-right">
+                           <i class="fa fa-arrow-right"></i>
+                       </a>
+                   </div>
+                   <div class="panel-body">[{oxmultilang ident="ORDERS"}] [{$oView->getOrderCnt()}]</div>
+               </div>
+
+               <!--
                 [{block name="account_dashboard_col2"}]
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -154,7 +121,7 @@
                         </div>
                     [{/if}]
                 [{/block}]
-            </div>
+            </div> -->
         </div>
     </div>
 

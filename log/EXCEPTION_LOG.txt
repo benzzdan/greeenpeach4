@@ -3453,3 +3453,429 @@ oxSystemComponentException-oxException (time: 2017-04-27 12:04:15): [0]: Functio
 
  Faulty component --> 
 ---------------------------------------------
+oxException (time: 2017-04-28 22:38:05): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(410): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 22:50:46): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(410): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 22:53:25): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 22:56:00): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(389): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:05:34): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(402): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:08:44): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(401): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:15:44): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(401): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:27:36): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(397): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:28:49): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(397): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:30:45): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(388): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-28 23:35:10): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(388): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-30 10:40:55): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-30 10:42:47): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-30 13:53:32): [0]: Function 'getBasket' does not exist or is not accessible! (Basket)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%57^57E^57E920AC%%basketcontents.tpl.php(42): oxSuperCfg->__call('getBasket', Array)
+#1 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%57^57E^57E920AC%%basketcontents.tpl.php(42): Basket->getBasket()
+#2 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%52^524^524E7B19%%basket.tpl.php(148): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/checkout/b...', 'ox|0|0|0|0')
+#6 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Basket))
+#7 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('basket', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#9 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#10 /opt/lampp/htdocs/gp4/oxseo.php(44): require('/opt/lampp/htdo...')
+#11 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-04-30 13:53:56): [0]: Function 'getVouchers' does not exist or is not accessible! (Basket)
+ 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%57^57E^57E920AC%%basketcontents.tpl.php(42): oxSuperCfg->__call('getVouchers', Array)
+#1 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%57^57E^57E920AC%%basketcontents.tpl.php(42): Basket->getVouchers()
+#2 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1870): include('/opt/lampp/htdo...')
+#3 /opt/lampp/htdocs/gp4/tmp/smarty/26fb13bf9b529d5177d9776f533a4e1f^%%52^524^524E7B19%%basket.tpl.php(148): Smarty->_smarty_include(Array)
+#4 /opt/lampp/htdocs/gp4/core/smarty/Smarty.class.php(1264): include('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(516): Smarty->fetch('page/checkout/b...', 'ox|0|0|0|0')
+#6 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(361): oxShopControl->_render(Object(Basket))
+#7 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('basket', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#9 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#10 /opt/lampp/htdocs/gp4/oxseo.php(44): require('/opt/lampp/htdo...')
+#11 {main}
+
+ Faulty component --> 
+---------------------------------------------
+oxException (time: 2017-04-30 14:38:57): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-30 14:41:01): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-30 14:53:23): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(388): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-30 14:54:34): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxException (time: 2017-04-30 22:03:25): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/lampp/htdocs/gp4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/lampp/htdocs/gp4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/lampp/htdocs/gp4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/lampp/htdocs/gp4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/lampp/htdocs/gp4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/lampp/htdocs/gp4/application/controllers/order.php(403): order->saveOrder()
+#10 /opt/lampp/htdocs/gp4/core/oxview.php(522): order->execute()
+#11 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-05-01 00:52:52): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------
+oxSystemComponentException-oxException (time: 2017-05-01 00:52:52): [0]: EXCEPTION_SYSTEMCOMPONENT_CLASSNOTFOUND 
+ Stack Trace: #0 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxsystemcompone...', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxSystemCompone...')
+#2 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/lampp/htdocs/gp4/core/oxutilsobject.php(178): oxNew('oxSystemCompone...')
+#4 [internal function]: oxUtilsObject->oxNew('account_company')
+#5 /opt/lampp/htdocs/gp4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#6 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(404): oxNew('account_company')
+#7 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('account_company', NULL, NULL, NULL)
+#8 /opt/lampp/htdocs/gp4/core/oxshopcontrol.php(126): oxShopControl->_process('account_company', NULL, NULL, NULL)
+#9 /opt/lampp/htdocs/gp4/core/oxid.php(40): oxShopControl->start()
+#10 /opt/lampp/htdocs/gp4/index.php(26): Oxid::run()
+#11 {main}
+
+ Faulty component --> account_company
+---------------------------------------------

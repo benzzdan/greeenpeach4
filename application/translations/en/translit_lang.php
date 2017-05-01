@@ -40,4 +40,8 @@ $aLang = array(
     'LOGIN' => 'Iniciar Sesión',
     'ITEMS_IN_BASKET' => 'Productos seleccionados',
     'ITEM_IN_BASKET' => 'Producto seleccionado',
+    'ARTICLE' => 'Articulo',
+    'CONTINUE_SHOPPING' => 'Seguir comprando',
+    'STATE' => 'Estado',
+    'PAYPALMSG' => 'Mostrar carrito en paypal',
 );

@@ -147,6 +147,10 @@
 
         [{block name="custom_style"}]
           [{oxstyle include="css/styles_gp.css"}]
+          [{oxstyle include="css/slider.css"}]
+          [{oxstyle include="css/grids.css"}]
+          [{oxstyle include="css/greenpeach.css"}]
+          [{oxstyle include="css/sss.css"}]
         [{/block}]
 
 
@@ -212,35 +216,6 @@
         [{/foreach}]
         [{oxstyle}]
 
-        [{oxscript add="/** Super Simple Slider by @intllgnt **/
-
-        ;(function($, window, document, undefined ) {
-
-
-
-        	$(window).load(function() {
-
-        	slider.css({paddingBottom: get_height(target)}).click(function(e) {
-        	clicked = $(e.target);
-        	if (clicked.is(next)) { next_slide() }
-        	else if (clicked.is(prev)) { prev_slide() }
-        	});
-
-        	animate_slide(target);
-
-        	$(document).keydown(function(e) {
-        	key = e.keyCode;
-        	if (key === 39) { next_slide() }
-        	else if (key === 37) { prev_slide() }
-        	});
-
-        	});
-        // End
-
-        });
-
-        };
-        })(jQuery, window, document);"}]
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -348,6 +323,7 @@
         [{foreach from=$oxidBlock_pageScript item="_block"}]
             [{$_block}]
         [{/foreach}]
+
 
     </body>
 </html>

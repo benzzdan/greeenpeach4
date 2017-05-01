@@ -26,7 +26,7 @@
                                                 <table class="table table-striped">
                                                     <thead>
                                                         <tr>
-                                                            <th>[{oxmultilang ident="ARTICLE"}]</th>
+                                                            <th class="text-center">[{oxmultilang ident="ARTICLE"}]</th>
                                                             <th class="text-center">[{oxmultilang ident="DD_MINIBASKET_MODAL_TABLE_PRICE"}]</th>
                                                         </tr>
                                                     </thead>
@@ -35,7 +35,7 @@
                                                             [{block name="widget_minibasket_product"}]
                                                                 [{assign var="minibasketItemTitle" value=$_product->getTitle()}]
                                                                 <tr>
-                                                                    <td>
+                                                                    <td class="text-center">
                                                                         <a href="[{$_product->getLink()}]" title="[{$minibasketItemTitle|strip_tags}]">
                                                                             <span class="item">
                                                                                 [{if $_product->getAmount() > 1}]
@@ -46,7 +46,7 @@
                                                                         </a>
                                                                     </td>
                                                                     <td class="text-center">
-                                                                        <strong class="price">[{oxprice price=$_product->getPrice() currency=$currency}] *</strong>
+                                                                        <strong class="price">[{oxprice price=$_product->getPrice() currency=$currency}]</strong>
                                                                     </td>
                                                                 </tr>
                                                             [{/block}]
@@ -55,7 +55,7 @@
                                                     <tfoot>
                                                         <tr>
                                                                 [{block name="widget_minibasket_total"}]
-                                                                    <td><strong>[{oxmultilang ident="TOTAL"}]</strong></td>
+                                                                    <td class="text-center"><strong>[{oxmultilang ident="TOTAL"}]</strong></td>
                                                                     <td class="text-center">
                                                                         <strong class="price">
                                                                             [{if $oxcmp_basket->isPriceViewModeNetto()}]
@@ -63,7 +63,7 @@
                                                                             [{else}]
                                                                                 [{$oxcmp_basket->getFProductsPrice()}]
                                                                             [{/if}]
-                                                                            [{$currency->sign}] *
+                                                                            [{$currency->sign}]
                                                                         </strong>
                                                                     </td>
                                                                 [{/block}]
@@ -77,7 +77,7 @@
                                 [{/if}]
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">[{oxmultilang ident="DD_MINIBASKET_CONTINUE_SHOPPING"}]</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">[{oxmultilang ident="CONTINUE_SHOPPING"}]</button>
                                 <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=basket"}]" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="[{oxmultilang ident="DISPLAY_BASKET"}]">
                                     <i class="fa fa-shopping-cart"></i>
                                 </a>
@@ -142,7 +142,7 @@
                 [{include file="widget/minibasket/countdown.tpl"}]
 
                 [{block name="dd_layout_page_header_icon_menu_minibasket_functions"}]
-                    <p class="functions clear text-center">
+                    <p class="functions clear text-center float-right">
                         [{if $oxcmp_user}]
                             <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=payment"}]" class="btn btn-primary">[{oxmultilang ident="CHECKOUT"}]</a>
                         [{else}]

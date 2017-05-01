@@ -12,14 +12,14 @@
     <thead>
         <tr>
             [{if $editable}]<th></th>[{/if}]
-            <th>[{oxmultilang ident="PRODUCT"}]</th>
+            <th class="text-center">[{oxmultilang ident="PRODUCT"}]</th>
             [{if $oView->isWrapping()}]
                 <!-- <th>[{oxmultilang ident="WRAPPING"}]</th> -->
             [{/if}]
-            <th>[{oxmultilang ident="QUANTITY"}]</th>
-            <th class="unitPrice">[{oxmultilang ident="UNIT_PRICE"}]</th>
+            <th class="text-center">[{oxmultilang ident="QUANTITY"}]</th>
+            <th class="text-center">[{oxmultilang ident="UNIT_PRICE"}]</th>
             <!-- <th class="vatPercent">[{oxmultilang ident="VAT"}]</th> -->
-            <th>[{oxmultilang ident="TOTAL"}]</th>
+            <th class="text-center">[{oxmultilang ident="TOTAL"}]</th>
         </tr>
     </thead>
 
@@ -59,18 +59,18 @@
                                         <b>[{$basketitem->getTitle()}]</b>
                                         [{if $editable}]</a>[{/if}]
                                     [{if $basketitem->isSkipDiscount()}] <sup><a href="#SkipDiscounts_link" >**</a></sup>[{/if}]
-                                    <div class="smallFont">
+                                    <!-- <div class="smallFont">
                                         [{oxmultilang ident="PRODUCT_NO"}] [{$basketproduct->oxarticles__oxartnum->value}]
-                                    </div>
-                                    <div class="smallFont">
+                                    </div> -->
+                                    <!-- <div class="smallFont">
                                         [{assign var=sep value=", "}]
                                         [{assign var=result value=""}]
-                                        [{foreach key=oArtAttributes from=$oAttributes->getArray() item=oAttr name=attributeContents}]
+                                         [{foreach key=oArtAttributes from=$oAttributes->getArray() item=oAttr name=attributeContents}]
                                             [{assign var=temp value=$oAttr->oxattribute__oxvalue->value}]
                                             [{assign var=result value=$result$temp$sep}]
                                         [{/foreach}]
                                         [{$result|trim:$sep}]
-                                    </div>
+                                    </div> -->
 
                                     [{if !$basketitem->isBundle() || !$basketitem->isDiscountArticle()}]
                                         [{assign var="oSelections" value=$basketproduct->getSelections(null,$basketitem->getSelList())}]
@@ -154,7 +154,7 @@
 
                     [{block name="checkout_basketcontents_basketitem_quantity"}]
                         [{* product quantity manager *}]
-                        <td class="quantity">
+                        <td class="text-center" style="padding-top: 3%">
                             [{if $editable}]
                                 <input type="hidden" name="aproducts[[{$basketindex}]][aid]" value="[{$basketitem->getProductId()}]">
                                 <input type="hidden" name="aproducts[[{$basketindex}]][basketitemid]" value="[{$basketindex}]">
@@ -164,8 +164,8 @@
                                 [{/if}]
 
                                 [{if !$basketitem->isBundle() || !$basketitem->isDiscountArticle()}]
-                                    <p>
-                                        <input id="am_[{$smarty.foreach.basketContents.iteration}]" type="number" class="textbox" name="aproducts[[{$basketindex}]][am]" value="[{$basketitem->getAmount()}]" size="3" min="0"[{if $oConfig->getConfigParam('blAllowUnevenAmounts')}] step="any"[{/if}]>
+                                    <p class="text-center" style="margin-top: 7px;">
+                                        <input id="am_[{$smarty.foreach.basketContents.iteration}]" type="number" class="textbox" name="aproducts[[{$basketindex}]][am]" value="[{$basketitem->getAmount()}]" size="3" min="0" style="width: 56px;text-align: center;">
                                     </p>
                                 [{/if}]
                             [{else}]
@@ -179,13 +179,13 @@
 
                     [{block name="checkout_basketcontents_basketitem_unitprice"}]
                         [{* product price *}]
-                        <td class="unitPrice">
+                        <td class="text-center" style="padding-top: 3%;">
                             [{if $basketitem->getFUnitPrice()}][{$basketitem->getFUnitPrice()}]&nbsp;[{$currency->sign}][{/if}]
                             [{if !$basketitem->isBundle()}]
                                 [{assign var=dRegUnitPrice value=$basketitem->getRegularUnitPrice()}]
                                 [{assign var=dUnitPrice value=$basketitem->getUnitPrice()}]
                                 [{if $dRegUnitPrice->getPrice() > $dUnitPrice->getPrice()}]
-                                    <br><del class="text-danger">[{$basketitem->getFRegularUnitPrice()}]&nbsp;[{$currency->sign}]</del>
+                                    <p class="text-center cart-section">[{$basketitem->getFRegularUnitPrice()}]&nbsp;[{$currency->sign}]</p>
                                 [{/if}]
                             [{/if}]
                         </td>
@@ -200,8 +200,8 @@
 
                     [{block name="checkout_basketcontents_basketitem_totalprice"}]
                         [{* product quantity * price *}]
-                        <td class="totalPrice">
-                            [{$basketitem->getFTotalPrice()}]&nbsp;[{$currency->sign}]
+                        <td class="text-center" style="padding-top: 3%">
+                                [{$basketitem->getFTotalPrice()}]&nbsp;[{$currency->sign}]
                         </td>
                     [{/block}]
                 </tr>

@@ -126,16 +126,6 @@ transition: 0.5s;}
 -ms-transition: 0.5s;
 transition: 0.5s;}
 
-.footerbtn a
-{ color:#EEEEEE; }
-
-.footerbtn a:hover
-{ color:#FFFFFF;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;}
 
 .footerlinks a
 { color:#777777; line-height:45px; }
@@ -154,17 +144,7 @@ margin:10px; width:90%; background-color:transparent; border:1px solid #777777; 
 
 
 
-.btn
-{ font-family: 'Signika', sans-serif; padding:0px 40px; text-align:center; color:#FFFFFF;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block ; vertical-align:middle;}
 
-.btn:hover
-{ background-color:#0CAA80;
-color:#FFFFFF;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;}
 
 .terminos
 { text-align:left; line-height:40px;}
@@ -223,7 +203,7 @@ transition: 0.5s;
 .total
 { color:#1ed6b3; font-weight:400; font-family: 'Signika', sans-serif; font-size:18px; text-align:right; padding:10px; }
 
-.btncomprar
+/*.btncomprar
 { display:inline-block; width:100%; padding:2%; font-family: 'Signika', sans-serif; font-size:24px; background-color:#1ed6b3; color:#FFFFFF; border-radius:5px; }
 
 .btncomprar:hover
@@ -233,7 +213,7 @@ transition: 0.5s;
 -o-transition: 0.5s;
 -ms-transition: 0.5s;
 transition: 0.5s;
-}
+}*/
 
 .nombreproducto
 { display:inline-block; width:100%; padding:5% 2%; font-family: 'Signika', sans-serif; font-size:16px; background-color:#1ed6b3; color:#FFFFFF; }

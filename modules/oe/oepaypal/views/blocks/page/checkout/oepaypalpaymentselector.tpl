@@ -7,7 +7,7 @@
             <label for="payment_[{$sPaymentID}]"><b>[{$paymentmethod->oxpayments__oxdesc->value}]</b></label>
         </dt>
         <dd class="[{if $oView->getCheckedPaymentId() == $paymentmethod->oxpayments__oxid->value}]activePayment[{/if}]">
-            
+
             <div class="paypalDescBox">
                 <a href="#"><img class="paypalPaymentImg"
                                  src="[{$oViewConf->getModuleUrl('oepaypal','out/img/')}][{oxmultilang ident="OEPAYPAL_LOGO_IMG"}]"
@@ -25,7 +25,7 @@
             <p class="paypalExpressCheckoutMsg">
                 <input type="checkbox" name="displayCartInPayPal" value="1"
                 [{if $oViewConf->sendOrderInfoToPayPalDefault()}]checked[{/if}]>
-                [{oxmultilang ident="OEPAYPAL_DISPLAY_BASKET_IN_PAYPAL"}]
+                [{oxmultilang ident="PAYPALMSG"}]
             </p>
             [{/if}]
         </dd>

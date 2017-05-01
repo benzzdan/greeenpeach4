@@ -14,13 +14,13 @@
 <textarea name="comentario" value="Mensaje" type="text" maxlength="1500" class="textform" onfocus="(this.value == 'Mensaje') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Mensaje')" rows="6">Mensaje</textarea><grammarly-btn><div data-reactroot="" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" style="visibility: hidden; z-index: 2;"><div class="_e725ae-transform_wrap"><div title="Protected by Grammarly" class="_e725ae-status">&nbsp;</div></div></div></grammarly-btn>
 <div style="width:100%; height:5px;"></div>
 <center>
-<div class="terminos" style="text-align:center;">
+<div class="terminos">
 <a href="#">Acepto terminos y condiciones</a>
-&nbsp;
-<input type="checkbox" checked="checked" class="checkbox">
+<span style="margin-left: 10px;"><input type="checkbox" checked="checked" >
+</span>
 </div>
-<div class="footerbtn">
-<a href="javascript:verifica();" class="btn">Enviar</a>
-</div>
+
+<button class="btn btn-gp" type="submit" name="button">Enviar</button>
+
 </center>
 </form>

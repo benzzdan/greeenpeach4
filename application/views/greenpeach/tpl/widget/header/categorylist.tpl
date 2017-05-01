@@ -91,7 +91,7 @@
 
                             <li>
                                 <a href="javascript:void(null)" class="search-toggle" rel="nofollow">
-                                    <i class="fa fa-search"></i>
+                                    <i class="fa fa-search" style="display: none"></i>
                                 </a>
                             </li>
 

@@ -14,17 +14,20 @@
      [{/if}]
 
 
-     [{if $oView->getTitle() == 'Productos' || 'Presonalizados'}]
+     [{if $oView->getTitle() == 'Productos'}]
       [{assign var="flag" value="true"}]
      [{/if}]
 
      [{if $oView->getTitle() == 'Green Peach'}]
       [{assign var="flag2" value="true"}]
      [{/if}]
+     [{if $oView->getTitle() == 'Contacto'}]
+      [{assign var="flag3" value="true"}]
+     [{/if}]
 
      <!-- true if template list.tpl is active -->
 
-    <div id="wrapper" [{if $flag2}]style="min-height: 730px; margin-top: 34px;"[{/if}]>
+    <div id="wrapper" [{if $flag == true}]class="productlisting"[{elseif $flag3 == true}]class="contacto-page"[{/if}]style=[{if $flag2}]"min-height: 730px;"[{/if}]>
 
 
         <div class="container">
@@ -51,7 +54,7 @@
                             </div>
                         [{/if}]
 
-                        <div class="col-xs-12 [{if $sidebar}]col-md-9[{/if}]">
+                        <div class="col-xs-12 [{if $sidebar}]col-md-9[{/if}]" id="theone">
 
                             <div id="content">
                                 [{block name="content_main"}]

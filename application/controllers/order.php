@@ -289,10 +289,11 @@ class order extends oxUBase
 
       if ($oSession->getVariable('paymentid') == 'oxidcreditcard'){
 
-        require_once(dirname(__DIR__).'/../conekta/conekta-php/lib/Conekta.php');
+        require_once(dirname(__DIR__).'/../conekta/conekta_php/lib/Conekta.php');
         //require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
         \Conekta\Conekta::setApiKey("key_qcxP1NJhhTz94mfx4zza6w");
         \Conekta\Conekta::setApiVersion("2.0.0");
+
         try{
 
           $customer = \Conekta\Customer::create(
@@ -308,16 +309,12 @@ class order extends oxUBase
             )//payment_sources
           )//customer
         );
+      }catch(\Conekta\ErrorList $errorList){
+        foreach($errorList->details as &$errorDetail){
+          echo $errorDetail->getMessage() . "\r\n";
+        }
+      }
 
-
-/*****************************************************/
-
-/*Todo: Realizar un catch para agarrar el error de $customer, por si ya se uso el token o algo asi*/
-
-//Tambien agregar cuando la orden no se complete del lado de conekta no se haga el registro de la orden en oxid
-
-
-/********************************************************/
 
 
 
@@ -350,66 +347,60 @@ foreach($content as $item){
 
       //create order
 
-      $order = \Conekta\Order::create(
-      array(
-      "line_items" => $basketItems, //line_items
-      "shipping_lines" => array(
-      array(
-      "amount" => 0,
-      "carrier" => "GreenPeach"
-      )
-      ), //shipping_lines
-      "currency" => "MXN",
-      "customer_info" => array(
-      "customer_id" => $customer->id,
-      ), //customer_info
-      "shipping_contact" => array(
-      "phone" => $phone,
-      "receiver" => $fname,
-      "address" => array(
-      "street1" => $street,
-      "city" => $city,
-      "state" => $state,
-      "country" => "MX",
-      "postal_code" => $zip,
-      "residential" => true
-      )//address
-      ), //shipping_contact
-      "charges" => array(
-      array(
-      "payment_method" => array(
-      'type' => 'default',
-      'token_id' => $token_id,
-      // "object" => "card_payment",
-      // "type" => "card",
-      // "name"=> "Jorge Lopez",
-      // "exp_month"=> "12",
-      // "exp_year"=> "19",
-      // "auth_code"=> "490884",
-      // "last4"=> "4242",
-      // "brand"=> "visa",
-      // "issuer"=> "",
-      // "account_type"=> "",
-      // "country"=> "MX",
-
-      )//payment_method
-      ) //first charge
-      ) //charges
-      )//order
+      try{
+        $order = \Conekta\Order::create(
+        array(
+          "line_items" => $basketItems, //line_items
+          "shipping_lines" => array(
+            array(
+              "amount" => 0,
+              "carrier" => "GreenPeach"
+            )
+          ), //shipping_lines
+          "currency" => "MXN",
+          "customer_info" => array(
+            "customer_id" => $customer->id,
+          ), //customer_info
+          "shipping_contact" => array(
+            "phone" => $phone,
+            "receiver" => $fname,
+            "address" => array(
+              "street1" => $street,
+              "city" => $city,
+              "state" => $state,
+              "country" => "MX",
+              "postal_code" => $zip,
+              "residential" => true
+            )//address
+          ), //shipping_contact
+          "charges" => array(
+            array(
+              "payment_method" => array(
+                'type' => 'default',
+                'token_id' => $token_id,
+              )//payment_method
+            ) //first charge
+          ) //charges
+        )//order
       );
 
-      if($order){
 
-        return $this->saveOrder();
-        }
-      }catch(Exception $e){
-      echo $e->getMessage();
-        }
+    return $this->saveOrder();
+
+    }catch(\Conekta\ErrorList $errorList){
+      foreach($errorList->details as &$errorDetail){
+        echo $errorDetail->getMessage() . "\r\n";
       }
+    }
+
+
+
+
+    } //ends if credicard payment
+
+      //in case anything else save the Order(paypal)
 
       return $this->saveOrder();
-
-      /////ends my code
 
 
 }

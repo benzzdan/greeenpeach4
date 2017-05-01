@@ -12,7 +12,7 @@
                 <input id="displayCartInPayPal" type="hidden" name="displayCartInPayPal" value="[{if $oViewConf->sendOrderInfoToPayPalDefault()}]1[{else}]0[{/if}]"/>
             [{/if}]
         </form>
-        <p class="paypalExpressCheckoutMsg">[{oxmultilang ident="OEPAYPAL_OR"}]</p>
+        <p class="paypalExpressCheckoutMsg">[{oxmultilang ident="PAYPALMSG1"}]</p>
     </div>
 [{/if}]
 [{$smarty.block.parent}]

@@ -7,7 +7,7 @@
         [{assign var="order" value=$oView->getOrder()}]
         [{assign var="basket" value=$oView->getBasket()}]
 
-        <div id="thankyouPage">
+        <div id="thankyouPage" class="text-center">
             <h3 class="blockHead">[{oxmultilang ident="THANK_YOU"}]</h3>
 
             [{block name="checkout_thankyou_info"}]

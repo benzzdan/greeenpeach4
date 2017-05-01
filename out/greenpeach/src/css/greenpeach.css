@@ -1,9 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-body
-{ margin:0px; padding:0px; border:0px; text-align:center; vertical-align:top; font-family: 'Signika', sans-serif; font-weight:400; background-color:#fefefe; -webkit-animation: bugfix infinite 1s;
-}
 
 a{ margin:0px; border:0px; text-decoration:none;}
 
@@ -72,16 +69,7 @@ transition: 0.5s;}
 -ms-transition: 0.5s;
 transition: 0.5s;}
 
-.footerbtn a
-{ color:#EEEEEE; }
 
-.footerbtn a:hover
-{ color:#FFFFFF;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;}
 
 .footerlinks a
 { color:#777777; line-height:40px; font-size: 18px;}
@@ -109,43 +97,10 @@ margin:10px; width:50%; background-color:transparent; border:1px solid #777777; 
 margin:5px; width:100%; background-color:transparent; border:1px solid #777777; padding:10px; color:#777777; font-family: 'Signika', sans-serif;
 }
 
-.checkbox
-{
-margin:0px; width:18px; height:18px; vertical-align:middle; background-color:transparent; border:1px solid #777777; padding:10px; color:#777777; font-family: 'Signika', sans-serif;
-}
 
-.btn
-{ font-family: 'Signika', sans-serif; padding:0px 40px; text-align:center; color:#FFFFFF;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block ; vertical-align:middle;}
 
-.btn:hover
-{ background-color:#0CAA80;
-color:#FFFFFF;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;}
 
-.btn2
-{ font-family: 'Signika', sans-serif; padding:10px; text-align:center; color:#FFFFFF;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block ; vertical-align:middle;}
 
-.btn2:hover
-{ background-color:#0CAA80;
-color:#FFFFFF;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;}
-
-.btn:hover
-{ background-color:#0CAA80;
-color:#FFFFFF;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;}
 
 .terminos
 { text-align:left; line-height:40px;}

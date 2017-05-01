@@ -24,7 +24,7 @@
                 <p class="paypalExpressCheckoutMsg">
                     <input type="checkbox" id="displayCartInPayPal" name="displayCartInPayPal" value="1"
                     [{if $oViewConf->sendOrderInfoToPayPalDefault()}]checked[{/if}]>
-                    <label for="displayCartInPayPal">[{oxmultilang ident="OEPAYPAL_DISPLAY_BASKET_IN_PAYPAL"}]</label>
+                    <label for="displayCartInPayPal">[{oxmultilang ident="PAYPALMSG"}]</label>
                 </p>
             [{/if}]
         </div>

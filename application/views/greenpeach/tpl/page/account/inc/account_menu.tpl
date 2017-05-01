@@ -5,7 +5,7 @@
                 <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_password"}]" title="[{oxmultilang ident="CHANGE_PASSWORD"}]">[{oxmultilang ident="CHANGE_PASSWORD"}]</a>
             </li>
             <li class="list-group-item[{if $active_link == "newsletter"}] active[{/if}]">
-                <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_newsletter"}]" title="[{oxmultilang ident="NEWSLETTER_SETTINGS"}]">[{oxmultilang ident="NEWSLETTER_SETTINGS"}]</a>
+                <a class="inactiveLink" href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_newsletter"}]" title="[{oxmultilang ident="NEWSLETTER_SETTINGS"}]">[{oxmultilang ident="NEWSLETTER_SETTINGS"}]</a>
             </li>
             <li class="list-group-item[{if $active_link == "billship"}] active[{/if}]">
                 <a href="[{oxgetseourl ident=$oViewConf->getSslSelfLink()|cat:"cl=account_user"}]" title="[{oxmultilang ident="BILLING_SHIPPING_SETTINGS"}]">[{oxmultilang ident="BILLING_SHIPPING_SETTINGS"}]</a>
@@ -13,7 +13,7 @@
             <li class="list-group-item[{if $active_link == "orderhistory"}] active[{/if}]">
                 <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_order"}]" title="[{oxmultilang ident="ORDER_HISTORY"}]">[{oxmultilang ident="ORDER_HISTORY"}]</a>
             </li>
-            [{if $oViewConf->getShowCompareList()}]
+            <!-- [{if $oViewConf->getShowCompareList()}]
                 <li class="list-group-item[{if $active_link == "compare"}] active[{/if}]">
                     <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=compare"}]" title="[{oxmultilang ident="MY_PRODUCT_COMPARISON"}]">[{oxmultilang ident="MY_PRODUCT_COMPARISON"}][{if $oView->getCompareItemCount() > 0}] <span class="badge">[{$oView->getCompareItemCount()}]</span>[{/if}]</a>
                 </li>
@@ -35,14 +35,7 @@
                 <li class="list-group-item[{if $active_link == "downloads"}] active[{/if}]">
                     <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_downloads"}]" title="[{oxmultilang ident="MY_DOWNLOADS"}]">[{oxmultilang ident="MY_DOWNLOADS"}]</a>
                 </li>
-            [{/if}]
-
-
-
-            <!-- testing -->
-                <li class="list-group-item[{if $active_link == "company"}] active[{/if}]">
-                    <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account_company"}]" title="[{oxmultilang ident="PAGE_ACCOUNT_DASHBOARD_COMPANY"}]">[{oxmultilang ident="PAGE_ACCOUNT_DASHBOARD_COMPANY"}]</a>
-                </li>
+            [{/if}] -->
 
         [{/block}]
     </ul>
