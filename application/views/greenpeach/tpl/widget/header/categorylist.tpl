@@ -83,9 +83,9 @@
 
                             <li>
                                 <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=basket"}]" rel="nofollow">
-                                    <svg class="shopping-bag-mini[{if $oxcmp_basket->getItemsCount()}] filled[{/if}]" viewBox="0 0 64 64">
+                                    <!-- <svg class="shopping-bag-mini[{if $oxcmp_basket->getItemsCount()}] filled[{/if}]" viewBox="0 0 64 64">
                                         <use xlink:href="#shoppingBagMini" /> [{* svg icon included in base.tpl *}]
-                                    </svg>
+                                    </svg> -->
                                 </a>
                             </li>
 
