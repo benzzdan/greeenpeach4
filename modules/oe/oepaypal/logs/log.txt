@@ -1916,3 +1916,60 @@ array (
   'PAYMENTINFO_0_ACK' => 'Success',
 )
 
+======================= Request to PayPal [2017-05-01 10:48:10] ======================= #
+
+SESS ID: oktnvko99hu130isfbdgnhkhl1
+array (
+  'VERSION' => '84.0',
+  'PWD' => 'S8D7PMW3B9HK9UBB',
+  'USER' => 'daniel_api1.ottersite.com',
+  'SIGNATURE' => 'AFcWxV21C7fd0v3bYYYRCpSSRl31An4cs2PYrYay1luYHpG-8CmDT0PC',
+  'CALLBACKVERSION' => '84.0',
+  'LOCALECODE' => 'en_US',
+  'SOLUTIONTYPE' => 'Mark',
+  'BRANDNAME' => 'Greenpeach',
+  'CARTBORDERCOLOR' => '2b8da4',
+  'RETURNURL' => 'http://23.251.145.139/greeenpeach4/index.php?lang=0&sid=oktnvko99hu130isfbdgnhkhl1&rtoken=884aeb6d&shp=oxbaseshop&cl=oePayPalStandardDispatcher&fnc=getExpressCheckoutDetails',
+  'CANCELURL' => 'http://23.251.145.139/greeenpeach4/index.php?lang=0&sid=oktnvko99hu130isfbdgnhkhl1&rtoken=884aeb6d&shp=oxbaseshop&cl=payment',
+  'PAYMENTREQUEST_0_PAYMENTACTION' => 'Sale',
+  'NOSHIPPING' => '0',
+  'PAYMENTREQUEST_0_AMT' => '201.36',
+  'PAYMENTREQUEST_0_CURRENCYCODE' => 'MXN',
+  'PAYMENTREQUEST_0_ITEMAMT' => '201.36',
+  'PAYMENTREQUEST_0_SHIPPINGAMT' => '0.00',
+  'PAYMENTREQUEST_0_SHIPDISCAMT' => '0.00',
+  'L_SHIPPINGOPTIONISDEFAULT0' => 'true',
+  'L_SHIPPINGOPTIONNAME0' => 'Estándar',
+  'L_SHIPPINGOPTIONAMOUNT0' => '0.00',
+  'PAYMENTREQUEST_0_DESC' => 'Your order at Greenpeach in the amount of 201.36 MXN',
+  'PAYMENTREQUEST_0_CUSTOM' => 'Your order at Greenpeach in the amount of 201.36 MXN',
+  'ADDROVERRIDE' => '1',
+  'MAXAMT' => '202.36',
+  'L_PAYMENTREQUEST_0_NAME0' => 'Goji Berry',
+  'L_PAYMENTREQUEST_0_AMT0' => '50.34',
+  'L_PAYMENTREQUEST_0_QTY0' => '4',
+  'L_PAYMENTREQUEST_0_ITEMURL0' => 'http://23.251.145.139/greeenpeach4/Productos/Empacados/Goji-Berry.html',
+  'L_PAYMENTREQUEST_0_NUMBER0' => '02',
+  'EMAIL' => 'admin@greenpeach.com',
+  'PAYMENTREQUEST_0_SHIPTONAME' => 'John Doe',
+  'PAYMENTREQUEST_0_SHIPTOSTREET' => 'durero  3626',
+  'PAYMENTREQUEST_0_SHIPTOCITY' => 'Zapopan',
+  'PAYMENTREQUEST_0_SHIPTOZIP' => '47050',
+  'PAYMENTREQUEST_0_SHIPTOPHONENUM' => '217-8918712',
+  'PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE' => 'MX',
+  'PAYMENTREQUEST_0_SHIPTOSTATE' => 'JA',
+  'METHOD' => 'SetExpressCheckout',
+)
+
+======================= Response from PayPal [2017-05-01 10:48:20] ======================= #
+
+SESS ID: oktnvko99hu130isfbdgnhkhl1
+array (
+  'TOKEN' => 'EC-29F14717NT350711C',
+  'TIMESTAMP' => '2017-05-01T15:48:20Z',
+  'CORRELATIONID' => '5cd9de1d7b50c',
+  'ACK' => 'Success',
+  'VERSION' => '84.0',
+  'BUILD' => '32996991',
+)
+

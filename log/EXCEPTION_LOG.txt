@@ -3879,3 +3879,23 @@ oxSystemComponentException-oxException (time: 2017-05-01 00:52:52): [0]: EXCEPTI
 
  Faulty component --> account_company
 ---------------------------------------------
+oxException (time: 2017-05-01 10:46:44): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxemail.php(566): oxEmail->send()
+#6 /opt/bitnami/apache2/htdocs/greeenpeach4/application/models/oxorder.php(1733): oxEmail->sendOrderEmailToUser(Object(oePayPalOxOrder))
+#7 /opt/bitnami/apache2/htdocs/greeenpeach4/application/models/oxorder.php(599): oxOrder->_sendOrderByEmail(Object(oePayPalOxUser), Object(oePayPalOxBasket), Object(oxUserPayment))
+#8 /opt/bitnami/apache2/htdocs/greeenpeach4/application/controllers/order.php(243): oxOrder->finalizeOrder(Object(oePayPalOxBasket), Object(oePayPalOxUser))
+#9 /opt/bitnami/apache2/htdocs/greeenpeach4/application/controllers/order.php(388): order->saveOrder()
+#10 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxview.php(522): order->execute()
+#11 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxshopcontrol.php(355): oxView->executeFunction('execute')
+#12 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxshopcontrol.php(126): oxShopControl->_process('order', 'execute', NULL, NULL)
+#13 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/bitnami/apache2/htdocs/greeenpeach4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
