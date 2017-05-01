@@ -2,8 +2,6 @@ body {
   vertical-align: top;
   font-family: 'Signika', sans-serif;
   font-weight: 400;
-  background-color: #EFEFEF !important;
-
 }
 
 .topbanner {
@@ -193,6 +191,8 @@ color: #FFFFFF;
 
   #header .header-box {
     padding-top: 13px;
+    padding-bottom: 0;
+    max-height: 126px;
   }
 
 
@@ -307,7 +307,7 @@ a:hover {
 
 
 .contact-box {
-  padding: 10px 39px;
+  padding: 10px 26px;
 }
 
 
@@ -340,7 +340,7 @@ transition: 0.5s;
 .contactanos {
   background-color: #EFEFEF;
   font-size: 15px;
-  margin-bottom: 9%;
+padding-bottom: 3%;
 }
 
 
@@ -436,6 +436,10 @@ position: relative;
 padding: 9px!important;
 left: 25px!important;
 
+}
+
+#mainnav {
+  height: 66px;
 }
 
 /*
@@ -697,6 +701,10 @@ vertical-align: middle;
   width: 100%;
 }
 
+.space30 {
+  height: 30px;
+}
+
 
 
 .no-left-padding {
@@ -717,4 +725,39 @@ vertical-align: middle;
 .inactiveLink {
    pointer-events: none;
    cursor: default;
+}
+
+
+
+.alert {
+  padding: 15px;
+margin-bottom: 20px;
+border: 1px solid transparent;
+border-radius: 4px;
+margin-left: 15% !important;
+margin-right: 15% !important;
+text-align: center !important;
+margin-top: 2%;
+}
+
+
+.footer-logo {
+  text-align: center;
+}
+
+
+.textform3 {
+  width: 71%;
+background-color: transparent;
+border: 1px solid #777777;
+padding: 10px;
+color: #777777;
+font-family: 'Signika', sans-serif;
+margin-right: 3%;
+    font-size: 12px;
+}
+
+
+.start-page {
+  height: 0px;
 }

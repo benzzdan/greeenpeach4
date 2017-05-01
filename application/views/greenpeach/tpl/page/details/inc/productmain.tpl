@@ -248,7 +248,8 @@
                                                     <div class="input-group">
 
                                                       <span>Agregar el carrito: </span>
-                                                      <input id="am_1" type="number" class="textbox" name="aproducts[908fea79adeb237994aa3d3b593ae936][am]" value="3" size="3" min="0" style="width: 56px;text-align: center;">
+                                                      <!-- <input id="am_1" type="number" class="textbox" value="0" size="3" min="0" style="width: 56px;text-align: center;"> -->
+                                                        <input id="amountToBasket" type="number" name="am" value="1" autocomplete="off" class="textbox" style="width: 56px;text-align: center;">
                                                     </div>
                                                     <div class="space50">
 

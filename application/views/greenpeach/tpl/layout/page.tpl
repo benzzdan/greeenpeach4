@@ -24,10 +24,12 @@
      [{if $oView->getTitle() == 'Contacto'}]
       [{assign var="flag3" value="true"}]
      [{/if}]
+     [{if $oView->getTemplateName() == 'page/shop/start.tpl'}]
+      [{assign var="flag4" value="true"}]
+     [{/if}]
 
-     <!-- true if template list.tpl is active -->
 
-    <div id="wrapper" [{if $flag == true}]class="productlisting"[{elseif $flag3 == true}]class="contacto-page"[{/if}]style=[{if $flag2}]"min-height: 730px;"[{/if}]>
+    <div id="wrapper" [{if $flag == true}]class="productlisting"[{elseif $flag3 == true}]class="contacto-page"[{elseif $flag4 == true}]class="start-page"[{/if}]style=[{if $flag2}]"min-height: 730px;"[{/if}]>
 
 
         <div class="container">

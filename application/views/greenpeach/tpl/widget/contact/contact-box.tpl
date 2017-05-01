@@ -1,5 +1,6 @@
 
         <div class="contactanos">
+
               <div class="contact-label text-center">
                 <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" />
               </div>
@@ -10,12 +11,12 @@
               [{/if}]
                 <div class="col-md-6" style="padding-left: 16%">
                   <div class="footer-logo">
-                    <img src="[{$oViewConf->getImageUrl()}]/logo-greenpeachsuperfoods-footer.svg" style="width: 130px; height: 100px;margin-bottom: 20px;"/>
+                    <img src="[{$oViewConf->getImageUrl()}]/logo-greenpeachsuperfoods-footer.svg" style="width: 130px; height: 127px;margin-bottom: 20px;"/>
                   </div>
                   <p>
                     Suscríbete para recibir actualizaciones y noticias:
                   </p>
-                    <input name="email" value="E-mail" type="text" maxlength="80" class="textform2"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 15px;"><span style="color:#FFF;">Suscribir</span></a>
+                    <input name="email" value="E-mail" type="text" maxlength="80" class="textform3"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 15px;"><span style="color:#FFF;">Suscribir</span></a>
                   </span>
           <table cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:310px;  margin-top: 28px;">
             <tbody>
