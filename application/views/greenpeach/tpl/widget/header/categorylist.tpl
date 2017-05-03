@@ -22,11 +22,11 @@
                             [{block name="layout_header_logo"}]
                                 [{assign var="slogoImg" value=$oViewConf->getViewThemeParam('sLogoFile')}]
                                 [{assign var=oConf value=$oView->getConfig()}]
-                                [{assign var=slogoImg value=$oConf->getImageUrl(false,null,null,'logo-greenpeachsuperfoods.png')}]
+                                [{assign var=slogoImg value=$oConf->getImageUrl(false,null,null,'logo-greenpeachsuperfoods.svg')}]
                                 [{assign var="sLogoWidth" value=$oViewConf->getViewThemeParam('sLogoWidth')}]
                                 [{assign var="sLogoHeight" value=$oViewConf->getViewThemeParam('sLogoHeight')}]
                                 <a href="[{$oViewConf->getHomeLink()}]" title="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" id="logo_gp">
-                                    <img src="[{$slogoImg}]" alt="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" style="width:95px;height:95px;top: -41px; position: relative; ">
+                                    <img src="[{$slogoImg}]" alt="[{$oxcmp_shop->oxshops__oxtitleprefix->value}]" style="width:95px;height:92px;top: -41px; position: relative; ">
                                 </a>
                             [{/block}]
 
