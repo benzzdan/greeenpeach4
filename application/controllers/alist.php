@@ -863,6 +863,16 @@ public function getArticleList2($cat_tit)
 }
 
 
+public function getCat($cat_tit){
+  $cat = oxNew('oxCategory');
+  $cat->load2($cat_tit);
+
+  return $cat;
+}
+
+
+
+
 
 
 /************************************************/

@@ -131,7 +131,7 @@
             </div> -->
 
             <!-- [{* List types: grid|line|infogrid *}] -->
-            [{include file="widget/product/list.tpl" type=$oView->getListDisplayType() listId="productList" products=$oView->getArticleList()}]
+            [{include file="widget/product/list.tpl" type=$oView->getListDisplayType() listId="productList" cat=$oView->getActiveCategory() products=$oView->getArticleList()}]
             <!-- [{include file="widget/locator/listlocator.tpl" locator=$oView->getPageNavigationLimitedBottom() place="bottom"}] -->
         <!-- [{/if}] -->
     [{/block}]

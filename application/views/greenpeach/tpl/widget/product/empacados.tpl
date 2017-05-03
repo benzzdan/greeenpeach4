@@ -7,11 +7,11 @@
 [{/if}]
 
 [{if $type == 'infogrid'}]
-    [{assign var="iProductsPerLine" value=2}]
+    [{assign var="iProductsPerLine" value=4}]
 [{elseif $type == 'grid'}]
     [{assign var="iProductsPerLine" value=4}]
 [{elseif $type == 'line'}]
-    [{assign var="iProductsPerLine" value=1}]
+    [{assign var="iProductsPerLine" value=4}]
 [{/if}]
 
 <div class="boxwrapper" id="boxwrapper_[{$listId}]">
