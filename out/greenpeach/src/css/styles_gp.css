@@ -95,7 +95,7 @@ color: #FFFFFF;
 .btn-gp-reg
 { font-family: 'Signika', sans-serif; text-align:center; color:#FFFFFF !important;  background-color:#ff9557; border-radius:10px; font-size:13px; display:inline-block ; vertical-align:middle;}
 .btn-gp-env
-{ font-family: 'Signika', sans-serif; padding: 6px 19px;text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block !important; vertical-align:middle;}
+{ font-family: 'Signika', sans-serif; padding: 6px 19px;text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block !important; vertical-align:middle; margin-left: 13%;}
 
 
 
@@ -363,12 +363,12 @@ iframe {
     position:absolute;
 }
 
-
+/*
 #contactanos-label {
     width: 41%;
     max-width: 450px;
     margin-top: 58px;
-}
+}*/
 
 .terms-check {
   width: 18px;
@@ -609,14 +609,18 @@ border-radius: 5px;
 }*/
 
 
-.quienes {
+/*.quienes {
   margin-top: 32px;
-}
+}*/
 
-
+/*
 #catLongDescLocator {
   margin-bottom: 44px;
   margin-top: 17px;
+}*/
+
+.titulo-sec {
+
 }
 
 
