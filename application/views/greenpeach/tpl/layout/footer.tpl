@@ -6,26 +6,30 @@
     [{if $oxcmp_user}]
         [{assign var="force_sid" value=$oView->getSidForWidget()}]
     [{/if}]
-
-
-
+[{if $oView->getTemplateName() == 'page/shop/start.tpl'}]
+   [{assign var='fflag' value=true}]
+[{/if}]
 
     <footer id="footer">
-
       <div class="bottombanner">
         <div class="row">
           <div class="container">
-
+        [{if $fflag == true}]
+           <div class="col-md-12" style="text-align: center">
+                <a style="margin-left: 50px;" href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
+           </div>
+            [{else}]
             <div class="col-md-6">
               <img src="[{$oViewConf->getImageUrl()}]icon-whatsapp1.svg" alt="icon" style="width:100%; max-width:30px;" /> &nbsp; <a href="tel:3338091918">+52 133 380 919 18</a> &nbsp; | &nbsp; <a href="tel:3339544216">+52 133 395 442 16</a>
               <img src="[{$oViewConf->getImageUrl()}]icon-email1.svg" alt="icon" style="width:100%; max-width:30px; margin-left: 30px;" /> &nbsp; <a href="mailto:venta@greenpeach.mx">ventas@greenpeach.mx</a>
             </div>
             <div class="col-md-6">
-              <span>Síguenos:</span>
+              <span>Síguenos: </span>
               <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-facebook3.png" /></a> &nbsp;
               <a href="https://www.instagram.com/greenpeachsuperfoods/" class="hvr-float"><img alt="instagram" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-ig3.png" /></a> &nbsp;
               <a style="margin-left: 50px;" href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
             </div>
+        [{/if}]
           </div>
             </div>
         </div>

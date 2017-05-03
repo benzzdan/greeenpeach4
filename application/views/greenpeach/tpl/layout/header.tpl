@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-xs-7 col-sm-6 col-md-4 col-md-push-4 menus-col">
                         [{block name="layout_header_top"}]
-                            <div class="menu-dropdowns pull-right">
+                            <div class="menu-dropdowns pull-right" style="position: relative; right: -40%;">
                                 <!-- [{block name="dd_layout_page_header_icon_menu_languages"}]
                                     [{* Language Dropdown*}]
                                     [{oxid_include_widget cl="oxwLanguageList" lang=$oViewConf->getActLanguageId() _parent=$oView->getClassName() nocookie=1 _navurlparams=$oViewConf->getNavUrlParams() anid=$oViewConf->getActArticleId()}]

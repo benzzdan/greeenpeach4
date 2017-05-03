@@ -28,13 +28,18 @@
       [{assign var="flag4" value="true"}]
      [{/if}]
 
+     [{if $oView->getTemplateName() == 'page/checkout/basket.tpl'}]
 
+        <div id="wrapper" [{if $flag == true}]class="productlisting"[{elseif $flag3 == true}]class="contacto-page"[{elseif $flag4 == true}]class="start-page"[{/if}]style="margin-bottom: 6%;">
+     [{else}]
     <div id="wrapper" [{if $flag == true}]class="productlisting"[{elseif $flag3 == true}]class="contacto-page"[{elseif $flag4 == true}]class="start-page"[{/if}]style=[{if $flag2}]"min-height: 730px;"[{/if}]>
-
+      [{/if}]
 
         <div class="container">
 
-                <div class="content-box">
+
+                          <div class="content-box">
+
 
 
 

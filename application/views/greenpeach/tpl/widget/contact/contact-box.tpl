@@ -2,7 +2,7 @@
         <div class="contactanos">
 
               <div class="contact-label text-center">
-                <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" />
+                <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" class="img-responsive" />
               </div>
               [{if $oView->getTitle() == 'Contacto'}]
                 <div class="row" style="margin-top: 54px;">

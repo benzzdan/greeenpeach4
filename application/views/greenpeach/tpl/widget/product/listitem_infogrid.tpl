@@ -62,7 +62,7 @@
                 [{block name="widget_product_listitem_infogrid_titlebox"}]
                     <div class="title">
                         <a id="[{$testid}]" href="[{$_productLink}]" class="title" title="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">
-                            <span>[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]</span>
+                            <span class="nombre-prod">[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]</span>
                         </a>
                     </div>
                 [{/block}]

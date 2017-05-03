@@ -55,7 +55,7 @@
 
 
 <div class="detailsInfo clear" itemscope itemtype="http://schema.org/Product">
-    <div class="row">
+    <div class="row" style="margin-left: 7%">
         <div class="col-xs-12 col-md-4 details-col-left text8">
             [{* article picture with zoom *}]
             [{block name="details_productmain_zoom"}]

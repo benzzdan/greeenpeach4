@@ -15,12 +15,13 @@
 <div style="width:100%; height:5px;"></div>
 <center>
 <div class="terminos">
-<a href="#">Acepto terminos y condiciones</a>
+<a style="margin-left: 3%"href="#">Acepto terminos y condiciones</a>
 <span style="margin-left: 10px;"><input type="checkbox" checked="checked" >
 </span>
+<span style="margin-left: 18%"><button class="btn btn-gp" type="submit" name="button">Enviar</button></span>
 </div>
 
-<button class="btn btn-gp" type="submit" name="button">Enviar</button>
+
 
 </center>
 </form>
