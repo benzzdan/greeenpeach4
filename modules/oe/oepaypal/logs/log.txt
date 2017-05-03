@@ -1973,3 +1973,60 @@ array (
   'BUILD' => '32996991',
 )
 
+======================= Request to PayPal [2017-05-02 23:06:18] ======================= #
+
+SESS ID: 1vlq1k9h2829pe1ft5i7m1c5f3
+array (
+  'VERSION' => '84.0',
+  'PWD' => 'S8D7PMW3B9HK9UBB',
+  'USER' => 'daniel_api1.ottersite.com',
+  'SIGNATURE' => 'AFcWxV21C7fd0v3bYYYRCpSSRl31An4cs2PYrYay1luYHpG-8CmDT0PC',
+  'CALLBACKVERSION' => '84.0',
+  'LOCALECODE' => 'en_US',
+  'SOLUTIONTYPE' => 'Mark',
+  'BRANDNAME' => 'Greenpeach',
+  'CARTBORDERCOLOR' => '2b8da4',
+  'RETURNURL' => 'http://www.greenpeach.mx/index.php?lang=0&sid=1vlq1k9h2829pe1ft5i7m1c5f3&rtoken=ba7d37b2&shp=oxbaseshop&cl=oePayPalStandardDispatcher&fnc=getExpressCheckoutDetails',
+  'CANCELURL' => 'http://www.greenpeach.mx/index.php?lang=0&sid=1vlq1k9h2829pe1ft5i7m1c5f3&rtoken=ba7d37b2&shp=oxbaseshop&cl=payment',
+  'PAYMENTREQUEST_0_PAYMENTACTION' => 'Sale',
+  'NOSHIPPING' => '0',
+  'PAYMENTREQUEST_0_AMT' => '6950.00',
+  'PAYMENTREQUEST_0_CURRENCYCODE' => 'MXN',
+  'PAYMENTREQUEST_0_ITEMAMT' => '6950.00',
+  'PAYMENTREQUEST_0_SHIPPINGAMT' => '0.00',
+  'PAYMENTREQUEST_0_SHIPDISCAMT' => '0.00',
+  'L_SHIPPINGOPTIONISDEFAULT0' => 'true',
+  'L_SHIPPINGOPTIONNAME0' => 'Estándar',
+  'L_SHIPPINGOPTIONAMOUNT0' => '0.00',
+  'PAYMENTREQUEST_0_DESC' => 'Your order at Greenpeach in the amount of 6,950.00 MXN',
+  'PAYMENTREQUEST_0_CUSTOM' => 'Your order at Greenpeach in the amount of 6,950.00 MXN',
+  'ADDROVERRIDE' => '1',
+  'MAXAMT' => '6951.00',
+  'L_PAYMENTREQUEST_0_NAME0' => 'Acai berry en polvo orgánico',
+  'L_PAYMENTREQUEST_0_AMT0' => '1390.00',
+  'L_PAYMENTREQUEST_0_QTY0' => '5',
+  'L_PAYMENTREQUEST_0_ITEMURL0' => 'http://www.greenpeach.mx/Productos/A-granel/Acai-berry-en-polvo-org-nico.html',
+  'L_PAYMENTREQUEST_0_NUMBER0' => '17',
+  'EMAIL' => 'admin@greenpeach.com',
+  'PAYMENTREQUEST_0_SHIPTONAME' => 'John Doe',
+  'PAYMENTREQUEST_0_SHIPTOSTREET' => 'durero  3626',
+  'PAYMENTREQUEST_0_SHIPTOCITY' => 'Zapopan',
+  'PAYMENTREQUEST_0_SHIPTOZIP' => '47050',
+  'PAYMENTREQUEST_0_SHIPTOPHONENUM' => '217-8918712',
+  'PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE' => 'MX',
+  'PAYMENTREQUEST_0_SHIPTOSTATE' => 'JA',
+  'METHOD' => 'SetExpressCheckout',
+)
+
+======================= Response from PayPal [2017-05-02 23:06:19] ======================= #
+
+SESS ID: 1vlq1k9h2829pe1ft5i7m1c5f3
+array (
+  'TOKEN' => 'EC-1HY18803AU248464C',
+  'TIMESTAMP' => '2017-05-03T04:06:19Z',
+  'CORRELATIONID' => '3cebdefab9b1b',
+  'ACK' => 'Success',
+  'VERSION' => '84.0',
+  'BUILD' => '32996991',
+)
+

@@ -3899,3 +3899,23 @@ oxException (time: 2017-05-01 10:46:44): [0]: Could not instantiate mail functio
 
 
 ---------------------------------------------
+oxException (time: 2017-05-02 18:07:40): [0]: Could not instantiate mail function. 
+ Stack Trace: #0 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxutilsobject.php(188): oxUtilsObject->_getObject('oxexception', 0, Array)
+#1 [internal function]: oxUtilsObject->oxNew('oxException')
+#2 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxfunctions.php(368): call_user_func_array(Array, Array)
+#3 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxemail.php(2083): oxNew('oxException')
+#4 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxemail.php(415): oxEmail->_sendMail()
+#5 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxemail.php(852): oxEmail->send()
+#6 /opt/bitnami/apache2/htdocs/greeenpeach4/application/models/oxuser.php(1127): oxEmail->sendNewsletterDbOptInMail(Object(oePayPalOxUser))
+#7 /opt/bitnami/apache2/htdocs/greeenpeach4/application/components/oxcmp_user.php(493): oxUser->setNewsSubscription('1', true)
+#8 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxview.php(522): oxcmp_user->createUser()
+#9 /opt/bitnami/apache2/htdocs/greeenpeach4/application/controllers/oxubase.php(649): oxView->executeFunction('createuser')
+#10 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxshopcontrol.php(415): oxUBase->init()
+#11 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxshopcontrol.php(346): oxShopControl->_initializeViewObject('user', 'createuser', NULL, NULL)
+#12 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxshopcontrol.php(126): oxShopControl->_process('user', 'createuser', NULL, NULL)
+#13 /opt/bitnami/apache2/htdocs/greeenpeach4/core/oxid.php(40): oxShopControl->start()
+#14 /opt/bitnami/apache2/htdocs/greeenpeach4/index.php(26): Oxid::run()
+#15 {main}
+
+
+---------------------------------------------
