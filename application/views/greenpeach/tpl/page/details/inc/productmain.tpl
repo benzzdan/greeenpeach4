@@ -278,7 +278,7 @@
         </div>
 
 
-        <div class="col-xs-12 col-sm-8 col-md-5 col-lg-6 details-col-middle" style="text-align: left;">
+        <div class="col-xs-12 col-sm-8 col-md-5 col-lg-6 details-col-middle" style="text-align: left; margin-left:3%">
             [{block name="details_productmain_title"}]
                 <h1 id="productTitle" itemprop="name">
                     [{$oDetailsProduct->oxarticles__oxtitle->value}] [{$oDetailsProduct->oxarticles__oxvarselect->value}]
