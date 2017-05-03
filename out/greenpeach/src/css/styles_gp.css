@@ -19,6 +19,15 @@ body {
   margin-right: 50px;
 }
 
+#logo_gp:hover {
+  opacity: 0.8;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
 #navigation li a:hover {
     /*border-bottom: thick solid #1ed6b3;*/
     color: #1ed6b3;
