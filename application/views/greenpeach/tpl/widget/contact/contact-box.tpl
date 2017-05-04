@@ -1,7 +1,7 @@
 
         <div class="contactanos">
 
-              <div class="contact-label text-center">
+              <div class="contact-label text-center titulo-sec">
                 <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" class="img-responsive" />
               </div>
               [{if $oView->getTitle() == 'Contacto'}]
