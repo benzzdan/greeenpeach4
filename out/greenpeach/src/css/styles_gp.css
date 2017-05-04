@@ -635,7 +635,8 @@ float: right;
 }*/
 
 .titulo-sec {
-
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 
@@ -816,9 +817,6 @@ margin-right: 3%;
 }
 
 
-body.fixed-header #header #mainnav {
-  left: 14%;
-}
 
 
 .img-responsive {

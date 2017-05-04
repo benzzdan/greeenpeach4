@@ -7,7 +7,7 @@
               [{if $oView->getTitle() == 'Contacto'}]
                 <div class="row" style="margin-top: 54px;">
               [{else}]
-                <div class="row" style="margin-top: 54px;margin-right: 15%; margin-left: 15%;">
+                <div class="container" style="margin-top: 54px;">
               [{/if}]
                 <div class="col-md-6" style="padding-left: 16%">
                   <div class="footer-logo">

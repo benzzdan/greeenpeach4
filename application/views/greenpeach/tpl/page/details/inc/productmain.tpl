@@ -194,7 +194,7 @@
                                                 <div class="col-md-6">
                                                   [{assign var="article" value=$oDetailsProduct}]
                                                   [{if $article->oxarticles__ottpricegranel->value gt 0}]
-                                                  <span>Precio +10 piezas: </span>
+                                                  <span>Precio +5k: </span>
                                                   <label id="productPriceGranel" class="price">
                                                     <span class="text8b">
 
