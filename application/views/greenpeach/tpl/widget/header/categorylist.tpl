@@ -9,6 +9,10 @@
 
         <nav id="mainnav" class="navbar navbar-default" role="navigation">
 
+          <div class="container">
+
+
+
                 [{block name="dd_widget_header_categorylist_navbar_list"}]
                     <div class="navbar-header">
                         [{block name="dd_widget_header_categorylist_navbar_header"}]
@@ -108,6 +112,7 @@
 
                     </div>
                 [{/block}]
+                        </div>
         </nav>
     [{/if}]
 [{/block}]

@@ -45,11 +45,11 @@ transition: 0.5s;
     color: #9b9691;
     text-decoration: none;
 }
-
+/*
 #navigation {
   position: relative;
   top: -8px;
-}
+}*/
 
 .navbar {
   border: none !important;
@@ -269,7 +269,8 @@ a:hover {
 }*/
 
 #header {
-  max-height: 192px;
+  height: 145px;
+  width: 100%;
   border-bottom: 1px solid #D9D9D9;
 }
 
@@ -442,6 +443,7 @@ height: 452px;
 
 nav#mainnav.navbar.navbar-default.fadeIn {
   box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  min-height: 68px;
 
 }
 
@@ -461,9 +463,13 @@ left: 25px!important;
 nav#mainnav.navbar.navbar-default.fadeIn div.navbar-collapse ul#navigation{
   top: 10px;
 }
+nav#mainnav.navbar.navbar-default.fadeIn div.collapse.navbar-collapse.navbar-ex1-collapse {
+  padding-top: 12px;
+}
 
 #mainnav {
-  height: 66px;
+  max-height: 36px;
+  width: 100%;
 }
 
 /*
@@ -854,3 +860,47 @@ font-weight: 400;
     min-height: 0px!important;
     padding-left: 0 !important;
     padding-right: 0!important;}
+
+
+
+
+/*override style_min.css*/
+
+.navbar-right {
+  margin-right: 2% !important;
+}
+
+#carrito:active {
+  box-shadow: none !important;
+}
+.btn-group.open .dropdown-toggle {
+  box-shadow: none !important;
+}
+
+.btn:active, .btn.active {
+    box-shadow: none !important;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+  border-color: transparent !important;
+}
+
+
+.dropdown-toggle {
+  background-color: transparent !important;
+}
+
+#myaccount {
+  color: #9b9691;
+}
+
+#myaccount:hover {
+  color: #1ed6b3;
+}
+
+
+
+#mainnav .navbar-header {
+  padding-bottom: 0 !important;
+      max-height: 74px;
+}

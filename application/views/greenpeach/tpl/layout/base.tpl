@@ -287,11 +287,11 @@
         </div>
         [{/block}]
 
-            <div class="main-row">
+    
                 [{foreach from=$oxidBlock_pageBody item="_block"}]
                     [{$_block}]
                 [{/foreach}]
-            </div>
+
 
         [{foreach from=$oxidBlock_pagePopup item="_block"}]
             [{$_block}]

@@ -10,7 +10,7 @@
 [{math equation="a+b+c+d" a=$oView->getCompareItemsCnt() b=$noticeListCount c=$wishListCount d=$recommListCount assign="notificationsCounter"}]
 
 <div class="btn-group service-menu [{if !$oxcmp_user}]showLogin[{/if}]">
-    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account"}]">
+    <button id="myaccount" type="button" class="btn dropdown-toggle" data-toggle="dropdown" data-href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=account"}]">
         [{block name="dd_layout_page_header_icon_menu_account_button"}]
             [{if !$oxcmp_user}]
               Iniciar Sesión
@@ -24,7 +24,7 @@
         [{/block}]
     </button>
     [{if !$oxcmp_user}]
-    <ul class="dropdown-menu dropdown-menu-right pull-right" style="min-width: 472px"role="menu">
+    <ul class="dropdown-menu dropdown-menu-right pull-right" style="min-width: 472px; margin-right: 11%"role="menu">
       [{else}]
       <ul class="dropdown-menu dropdown-menu-right pull-right"  role="menu">
       [{/if}]
