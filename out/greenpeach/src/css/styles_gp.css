@@ -892,6 +892,7 @@ font-weight: 400;
 
 #myaccount {
   color: #9b9691;
+  font-size: 16px;eibcccfigb
 }
 
 #myaccount:hover {
@@ -903,4 +904,10 @@ font-weight: 400;
 #mainnav .navbar-header {
   padding-bottom: 0 !important;
       max-height: 74px;
+}
+
+
+
+#mainnav .nav>li>a {
+  font-size: 17px !important;
 }
