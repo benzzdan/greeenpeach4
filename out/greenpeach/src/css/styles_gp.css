@@ -95,7 +95,7 @@ color: #FFFFFF;
 .btn-gp-reg
 { font-family: 'Signika', sans-serif; text-align:center; color:#FFFFFF !important;  background-color:#ff9557; border-radius:10px; font-size:13px; display:inline-block ; vertical-align:middle;}
 .btn-gp-env
-{ font-family: 'Signika', sans-serif; padding: 6px 19px;text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:24px; display:inline-block !important; vertical-align:middle; margin-left: 13%;}
+{ font-family: 'Signika', sans-serif; padding: 6px 19px;text-align:center; color:#FFFFFF !important;  background-color:#1ed6b3; border-radius:10px; font-size:18px; display:inline-block !important; vertical-align:middle; margin-left: 20%;}
 
 
 
@@ -323,6 +323,8 @@ a:hover {
 
 .contact-box {
   padding: 10px 26px;
+    padding-right: 11%;
+    padding-left: 0;
 }
 
 
@@ -364,12 +366,10 @@ iframe {
     position:absolute;
 }
 
-/*
+
 #contactanos-label {
-    width: 41%;
-    max-width: 450px;
-    margin-top: 58px;
-}*/
+    margin-top: 5%;
+}
 
 .terms-check {
   width: 18px;
@@ -910,4 +910,9 @@ font-weight: 400;
 
 #mainnav .nav>li>a {
   font-size: 17px !important;
+}
+
+
+.contacto-box {
+  background-color: #EFEFEF;
 }

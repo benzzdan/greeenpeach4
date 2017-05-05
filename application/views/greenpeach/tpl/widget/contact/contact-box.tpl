@@ -1,14 +1,10 @@
+<div class="contacto-box">
 
-        <div class="contactanos">
-
-              <div class="contact-label text-center titulo-sec">
+        <div class="container center_div">
+              <div class="row" style="text-align: center">
                 <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" class="img-responsive" />
               </div>
-              [{if $oView->getTitle() == 'Contacto'}]
-                <div class="row" style="margin-top: 54px;">
-              [{else}]
-                <div class="container" style="margin-top: 54px;">
-              [{/if}]
+                <div class="row" style="margin-top: 54px; margin-bottom: 50px;">
                 <div class="col-md-6" style="padding-left: 16%">
                   <div class="footer-logo">
                     <img src="[{$oViewConf->getImageUrl()}]/logo-greenpeachsuperfoods-footer.svg" style="width: 130px; height: 127px;margin-bottom: 20px;"/>
@@ -16,7 +12,7 @@
                   <p>
                     Suscríbete para recibir actualizaciones y noticias:
                   </p>
-                    <input name="email" value="E-mail" type="text" maxlength="80" class="textform3"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 15px;"><span style="color:#FFF;">Suscribir</span></a>
+                    <input name="email" value="E-mail" type="text" maxlength="80" class="textform3"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 18px;"><span style="color:#FFF;">Suscribir</span></a>
                   </span>
           <table cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:310px;  margin-top: 28px;">
             <tbody>
@@ -35,7 +31,7 @@
                 </td>
               </tr>
               <tr>
-                <td style="width:100%; text-align:left; vertical-align:middle; line-height:20px;">
+                <td style="width:100%; text-align:left; vertical-align:middle; line-height:20px;color: #777777;">
                 Síguenos:
                  &nbsp;
                   <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:30px;" src="[{$oViewConf->getImageUrl()}]/icon-facebook2.svg"></a> &nbsp;
@@ -60,3 +56,5 @@
             </div>
           </div>
         </div>
+
+      </div>
