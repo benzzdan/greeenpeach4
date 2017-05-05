@@ -39,6 +39,7 @@ transition: 0.5s;
 
 #navigation li a {
     display: block;
+    padding: 10px 1em;
     font-size: 18px;
     background: transparent;
     color: #9b9691;
@@ -55,11 +56,7 @@ transition: 0.5s;
 }
 
 .nav > li {
-  margin-right: 62px;
-}
-
-#mainnav .nav>li>a {
-  font-size: 18px !important;
+  margin-right: 37px;
 }
 
 .btn-gp:hover{
@@ -895,7 +892,6 @@ font-weight: 400;
 
 #myaccount {
   color: #9b9691;
-  font-size: 16px;
 }
 
 #myaccount:hover {
@@ -907,11 +903,4 @@ font-weight: 400;
 #mainnav .navbar-header {
   padding-bottom: 0 !important;
       max-height: 74px;
-}
-
-
-
-
-.nav>li>a {
-  padding: 0 !important;
 }
