@@ -79,6 +79,7 @@
                             [{block name="widget_product_listitem_grid_price_value"}]
                                 [{if $product->getFPrice()}]
                                     <span class="lead text-nowrap">
+                                      $
                                         [{if $product->isRangePrice()}]
                                             [{oxmultilang ident="PRICE_FROM"}]
                                             [{if !$product->isParentNotBuyable()}]
