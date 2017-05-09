@@ -123,9 +123,9 @@
                                     <i class="fa fa-shopping-cart"></i>
                                 </button>
                             [{/oxhasrights}]
-                            <a class="btn btn-primary mas-info" href="[{$_productLink}]" style="padding: 4px 7px;">[{oxmultilang ident="MORE_INFO"}]</a>
+                            <a class="btn btn-primary mas-info" href="[{$_productLink}]" style="padding: 5px 7px;">[{oxmultilang ident="MORE_INFO"}]</a>
                         [{else}]
-                            <a class="btn btn-primary mas-info" href="[{$_productLink}]" style="padding: 4px 7px;">[{oxmultilang ident="MORE_INFO"}]</a>
+                            <a class="btn btn-primary mas-info" href="[{$_productLink}]" style="padding: 5px 7px;">[{oxmultilang ident="MORE_INFO"}]</a>
                         [{/if}]
                     </div>
                 </div>
