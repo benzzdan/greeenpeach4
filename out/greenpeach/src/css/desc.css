@@ -1,0 +1,24 @@
+.ribbon-wrapper {
+  width: 86px;
+  height: 65px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: 25px;
+}
+.ribbon-wrapper .ribbon {
+  font: bold 15px sans-serif;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  top: 12px;
+  left: -37px;
+  width: 116px;
+  background-color: #a6bd33;
+  color: #fff;
+}

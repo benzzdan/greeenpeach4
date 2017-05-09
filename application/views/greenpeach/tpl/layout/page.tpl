@@ -43,12 +43,14 @@
 
 
 
-<!--
+
                     [{if $oView->getClassName() != "start" && !$blHideBreadcrumb}]
+                      [{if $oView->getTitle() != 'Productos'}]
                         [{block name="layout_breadcrumb"}]
                             [{include file="widget/breadcrumb.tpl"}]
                         [{/block}]
-                    [{/if}] -->
+                      [{/if}]
+                    [{/if}]
 
                     [{$smarty.capture.loginErrors}]
 

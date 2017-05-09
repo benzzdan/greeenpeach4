@@ -16,7 +16,7 @@
           <div class="container">
         [{if $fflag == true}]
            <div class="col-md-12" style="text-align: center">
-                <a style="margin-left: 50px;" href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
+                <a style="margin-left: 50px;" href="[{$oViewConf->getHomeLink()}]terminos">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
            </div>
             [{else}]
             <div class="col-md-6">

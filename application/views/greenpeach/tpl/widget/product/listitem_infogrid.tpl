@@ -53,7 +53,16 @@
                 [{block name="widget_product_listitem_infogrid_gridpicture"}]
                     <div class="picture1 text-center">
                         <a href="[{$_productLink}]" title="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]">
-                            <img src="[{$oViewConf->getImageUrl('spinner.gif')}]" data-src="[{$product->getThumbnailUrl()}]" alt="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]" class="img-responsive" style="margin: auto;">
+                            <img src="[{$oViewConf->getImageUrl('spinner.gif')}]" data-src="[{$product->getThumbnailUrl()}]" alt="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]" class="product-img img-responsive" style="margin: auto;">
+                            [{assign var=descPrice value=$product->getFPrice()}]
+                            [{assign var=basePrice value=$product->getFBasePrice()}]
+                            [{if $descPrice != $basePrice}]
+                            <div class="ribbon-wrapper">
+                              <div class="ribbon">
+                                -10%
+                              </div>
+                            </div>
+                            [{/if}]
                         </a>
                     </div>
                 [{/block}]

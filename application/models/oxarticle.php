@@ -1984,6 +1984,8 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
         return $this->_oPrice;
     }
 
+
+
     /**
      * sets article user
      *
@@ -2818,6 +2820,21 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
         }
     }
 
+
+    public function getFBasePrice()
+{
+    if ( $oPrice = $this->getPrice() ) {
+        return oxRegistry::getLang()->formatCurrency($this->getBasePrice());
+    }
+}
+
+
+
+
+
+
+
+
     /**
      * Resets oxremindactive status.
      * If remindActive status is 2, reminder is already sent.
@@ -2844,6 +2861,7 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
             return oxRegistry::getLang()->formatCurrency($oPrice->getNettoPrice());
         }
     }
+
 
     /**
      * Returns true if parent is not buyable
@@ -3004,6 +3022,13 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
             }
             $oPrice->calculateDiscount();
         }
+    }
+
+    public function hasDiscount(){
+        $oDiscount = oxNew('oxDiscountList');
+      $oDiscount = oxRegistry::get("oxDiscountList");
+      $list = $oDiscount->getArticleDiscounts($this);
+      return $list;
     }
 
     /**

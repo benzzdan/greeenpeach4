@@ -853,7 +853,7 @@ public function getArticleList2($cat_tit)
 
       // load only articles which we show on screen
       $oArtList = oxNew('oxarticlelist');
-      $oArtList->setSqlLimit(0, 8);
+      $oArtList->setSqlLimit(0, 20);
       $oArtList->setCustomSorting('oxtitle asc');
 
       $sActCat = $cat->getId();
@@ -866,6 +866,12 @@ public function getArticleList2($cat_tit)
 public function getCat($cat_tit){
   $cat = oxNew('oxCategory');
   $cat->load2($cat_tit);
+
+  return $cat;
+}
+public function getCat2($cat_id){
+  $cat = oxNew('oxCategory');
+  $cat->load($cat_id);
 
   return $cat;
 }

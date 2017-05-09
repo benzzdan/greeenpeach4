@@ -27,5 +27,5 @@
         <hr>
     </div> -->
 
-    <!-- [{include file="page/details/inc/related_products.tpl"}] -->
+    [{include file="page/details/inc/related_products.tpl"}]
 </div>

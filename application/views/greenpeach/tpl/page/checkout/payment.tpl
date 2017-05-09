@@ -39,13 +39,13 @@
                             [{if $oDeliveryCostPrice && $oDeliveryCostPrice->getPrice() > 0}]
                                 [{if $oViewConf->isFunctionalityEnabled('blShowVATForDelivery') }]
                                     <div id="shipSetCost">
-                                        <b>[{oxmultilang ident="CHARGES" suffix="COLON"}] [{oxprice price=$oDeliveryCostPrice->getNettoPrice() currency=$currency}]
+                                        <b>[{oxmultilang ident="SHIPPING_COST" suffix="COLON"}] [{oxprice price=$oDeliveryCostPrice->getNettoPrice() currency=$currency}]
                                             ([{oxmultilang ident="PLUS_VAT"}] [{oxprice price=$oDeliveryCostPrice->getVatValue() currency=$currency}])
                                         </b>
                                     </div>
                                 [{else}]
                                     <div id="shipSetCost">
-                                        <b>[{oxmultilang ident="CHARGES" suffix="COLON"}] [{oxprice price=$oDeliveryCostPrice->getBruttoPrice() currency=$currency}]</b>
+                                        <b>[{oxmultilang ident="SHIPPING_COST" suffix="COLON"}] [{oxprice price=$oDeliveryCostPrice->getBruttoPrice() currency=$currency}]</b>
                                     </div>
                                 [{/if}]
                             [{/if}]

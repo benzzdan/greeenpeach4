@@ -111,15 +111,6 @@ margin:5px; width:100%; background-color:transparent; border:1px solid #777777; 
 .bottombanner a
 { color:#FFFFFF; }
 
-.bottombanner a:hover
-{
-color:#ECE9E1;
--webkit-transition: 0.5s;
--moz-transition: 0.5s;
--o-transition: 0.5s;
--ms-transition: 0.5s;
-transition: 0.5s;
-}
 
 .terminos a
 { color:#777777; }

@@ -1,4 +1,4 @@
-[{if $oView->getAlsoBoughtTheseProducts()}]
+<!-- [{if $oView->getAlsoBoughtTheseProducts()}]
     [{include file="widget/product/list.tpl" type="grid" listId="alsoBought" head="CUSTOMERS_ALSO_BOUGHT"|oxmultilangassign subhead="PAGE_DETAILS_CUSTOMERS_ALSO_BOUGHT_SUBHEADER"|oxmultilangassign products=$oView->getAlsoBoughtTheseProducts()}]
 [{/if}]
 
@@ -7,7 +7,7 @@
         [{capture append="oxidBlock_productbar"}]
             [{include file="widget/product/list.tpl" type="grid" listId="accessories" products=$oView->getAccessoires() head="ACCESSORIES"|oxmultilangassign subhead="WIDGET_PRODUCT_RELATED_PRODUCTS_ACCESSORIES_SUBHEADER"|oxmultilangassign}]
         [{/capture}]
-    [{/if}]
+    [{/if}] -->
 [{/block}]
 
 [{block name="details_relatedproducts_similarproducts"}]
@@ -16,18 +16,18 @@
     [{/if}]
 [{/block}]
 
-[{block name="details_relatedproducts_crossselling"}]
+<!-- [{block name="details_relatedproducts_crossselling"}]
     [{if $oView->getCrossSelling()|count}]
         [{capture append="oxidBlock_productbar"}]
             [{include file="widget/product/list.tpl" type="grid" listId="cross" products=$oView->getCrossSelling() head="HAVE_YOU_SEEN"|oxmultilangassign subhead="WIDGET_PRODUCT_RELATED_PRODUCTS_CROSSSELING_SUBHEADER"|oxmultilangassign}]
         [{/capture}]
     [{/if}]
-[{/block}]
+[{/block}] -->
 
-[{if $oxidBlock_productbar}]
+<!-- [{if $oxidBlock_productbar}]
     <div id="relProducts" class="relatedProducts">
         [{foreach from=$oxidBlock_productbar item="_block"}]
             [{$_block}]
         [{/foreach}]
     </div>
-[{/if}]
+[{/if}] -->

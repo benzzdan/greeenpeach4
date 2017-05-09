@@ -333,7 +333,7 @@ a:hover {
 { font-family: 'Signika', sans-serif; font-size:12px; text-align:center;  color:#FFFFFF;    background-color: #9B9691; line-height:35px;}
 
 .bottombanner a
-{ color:#FFFFFF; }
+{ color:#9B9691; }
 
 .bottombanner a:hover
 {
@@ -492,7 +492,7 @@ nav#mainnav.navbar.navbar-default.fadeIn div.collapse.navbar-collapse.navbar-ex1
     padding-bottom: 10px;
     border-bottom: 2px solid #1ed6b3;
     font-family: 'Signika', sans-serif;
-    font-size: 24px;
+    font-size: 27px !important;
 }
 
 
@@ -641,8 +641,8 @@ float: right;
 }*/
 
 .titulo-sec {
-  margin-top: 4%;
-  margin-bottom: 4%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 
@@ -835,7 +835,7 @@ margin-right: 3%;
 width: 100%;
 padding: 3% 2%;
 font-family: 'Signika', sans-serif;
-font-size: 16px;
+font-size: 19px;
 color: #635f5b;
 }
 
@@ -915,4 +915,15 @@ font-weight: 400;
 
 .contacto-box {
   background-color: #EFEFEF;
+}
+
+
+.at-share-btn-elements {
+  margin-bottom: 5%;
+}
+
+
+
+#breadcrumb {
+  margin-left: 7%;
 }

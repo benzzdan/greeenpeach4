@@ -1,5 +1,9 @@
-[{$oView->getTitle()}]
 
+  [{assign var=categ value=$oView->getActiveCategory()}]
+  [{assign var=catName value=$categ->getTitle()}]
+<!-- <p>
+  [{$catName}]
+</p> -->
 
 [{oxscript include="js/pages/details.min.js" priority=10}]
 
@@ -100,6 +104,10 @@
 
               <!-- para checar el stock -->
 
+            <p>
+              En existencia:  <strong>[{$oDetailsProduct->oxarticles__oxstock->value}] piezas</strong>
+            </p>
+
               [{block name="details_productmain_stockstatus"}]
               [{if $oDetailsProduct->getStockStatus() == -1}]
               <span class="stockFlag nodisponible">
@@ -140,34 +148,41 @@
                               <div class="pricebox" style="text-align: left;">
 
 
-                                <!-- discount price -->
 
-
-                                  <!-- [{block name="details_productmain_tprice"}]
-                                      [{oxhasrights ident="SHOWARTICLEPRICE"}]
-                                          [{assign var=tprice value=$oDetailsProduct->getTPrice()}]
-                                          [{assign var=price  value=$oDetailsProduct->getPrice()}]
-                                          [{if $tprice && $tprice->getBruttoPrice() > $price->getBruttoPrice()}]
-                                              <del>[{$oDetailsProduct->getFTPrice()}] [{$currency->sign}]</del>
-                                              <br/>
-                                          [{/if}]
-                                      [{/oxhasrights}]
-                                  [{/block}]
-
-                                  [{block name="details_productmain_watchlist"}][{/block}] -->
+                                  <!-- [{block name="details_productmain_watchlist"}][{/block}] -->
 
 
                                       <!--  main price-->
 
 
 
+
                                   [{block name="details_productmain_price"}]
                                       [{oxhasrights ident="SHOWARTICLEPRICE"}]
+
                                           [{block name="details_productmain_price_value"}]
                                               [{if $oDetailsProduct->getFPrice()}]
                                               <div class="row">
                                                 <div class="col-md-6 no-left-padding">
+                                                  [{if $catName === 'Empacados'}]
                                                   <span>Precio: </span><br>
+                                                  [{else}]
+                                                      <span>Precio 1kg: </span><br>
+                                                  [{/if}]
+                                                  [{assign var=descPrice value=$oDetailsProduct->getFPrice()}]
+                                                  [{assign var=basePrice value=$oDetailsProduct->getFBasePrice()}]
+                                                  [{if $descPrice != $basePrice}]
+                                                  <!-- discount price -->
+                                                    [{block name="details_productmain_tprice"}]
+                                                        [{oxhasrights ident="SHOWARTICLEPRICE"}]
+                                                            [{assign var=tprice value=$oDetailsProduct->getTPrice()}]
+                                                            [{assign var=price  value=$oDetailsProduct->getPrice()}]
+                                                                <del><span>$ </span>[{$oDetailsProduct->getFBasePrice()}] [{$currency->sign}]</del>
+                                                                <br/>
+                                                        [{/oxhasrights}]
+                                                    [{/block}]
+                                                  [{/if}]
+
                                                   <label id="productPrice" class="price">
                                                     [{assign var="sFrom" value=""}]
                                                     [{assign var="fPrice" value=$oDetailsProduct->getFPrice()}]
@@ -194,7 +209,12 @@
                                                 <div class="col-md-6">
                                                   [{assign var="article" value=$oDetailsProduct}]
                                                   [{if $article->oxarticles__ottpricegranel->value gt 0}]
-                                                  <span>Precio +5kg: </span>
+                                                  [{if $catName === 'Empacados'}]
+                                                  <span>Precio +10 piezas: </span>
+                                                  [{else}]
+                                                        <span>Precio +5kg: </span>
+                                                  [{/if}]
+
                                                   <label id="productPriceGranel" class="price">
                                                     <span class="text8b">
 

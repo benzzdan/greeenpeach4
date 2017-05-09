@@ -151,6 +151,7 @@
           [{oxstyle include="css/grids.css"}]
           [{oxstyle include="css/greenpeach.css"}]
           [{oxstyle include="css/sss.css"}]
+          [{oxstyle include="css/desc.css"}]
         [{/block}]
 
 
@@ -287,7 +288,7 @@
         </div>
         [{/block}]
 
-    
+
                 [{foreach from=$oxidBlock_pageBody item="_block"}]
                     [{$_block}]
                 [{/foreach}]

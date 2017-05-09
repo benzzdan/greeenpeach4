@@ -1,3 +1,4 @@
+
 <div class="contacto-box">
 
         <div class="container center_div">
@@ -10,7 +11,7 @@
                     <img src="[{$oViewConf->getImageUrl()}]/logo-greenpeachsuperfoods-footer.svg" style="width: 130px; height: 127px;margin-bottom: 20px;"/>
                   </div>
                   <p>
-                    Suscríbete para recibir actualizaciones y noticias:
+                    Regístrate para recibir nuestras promociones, nuevos productos y más información:
                   </p>
                     <input name="email" value="E-mail" type="text" maxlength="80" class="textform3"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 18px;"><span style="color:#FFF;">Suscribir</span></a>
                   </span>
@@ -34,23 +35,23 @@
                 <td style="width:100%; text-align:left; vertical-align:middle; line-height:20px;color: #777777;">
                 Síguenos:
                  &nbsp;
-                  <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:30px;" src="[{$oViewConf->getImageUrl()}]/icon-facebook2.svg"></a> &nbsp;
-                  <a href="https://www.instagram.com/greenpeachsuperfoods/" class="hvr-float"><img alt="instagram" style="width:100%; max-width:30px;" src="[{$oViewConf->getImageUrl()}]/icon-ig2.svg"></a>
+                  <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:30px;" src="[{$oViewConf->getImageUrl()}]/icon-facebook2.png"></a> &nbsp;
+                  <a href="https://www.instagram.com/greenpeachsuperfoods/" class="hvr-float"><img alt="instagram" style="width:100%; max-width:30px;" src="[{$oViewConf->getImageUrl()}]/icon-ig2.png"></a>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="col-md-6" style="text-align: left">
-            <form class="contact-box" action="index.html" method="post" name="contactbox">
+            <form class="contact-box" action="[{$oViewConf->sendContactInfo()}]" method="post" name="contactbox">
                 <input type="text" name="nombre" value="" placeholder="Nombre" class="cont-input"><br>
                 <input type="text" name="email" value="" placeholder="E-mail" class="cont-input"><br>
                 <input type="text" name="tel" value="" placeholder="Teléfono" class="cont-input"><br>
                 <textarea name="comentario" rows="8" cols="40" placeholder="Mensaje" class="cont-input"></textarea>
                 <div class="form-footer">
                   <a href="#" style="margin-left: 9px;padding-right: 10px;">Acepto con los terminos y condiciones</a>
-                  <span><input type="checkbox" name="name" id="terminos-check"></span>
-                  <span><button type="button" name="button" class="btn btn-gp-env">Enviar</button></span>
+                  <span><input type="checkbox" name="name" id="terminos-check" checked></span>
+                  <span><button type="submit" name="button" class="btn btn-gp-env">Enviar</button></span>
                 </div>
               </form>
             </div>
