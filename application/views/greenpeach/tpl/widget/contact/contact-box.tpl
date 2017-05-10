@@ -13,7 +13,7 @@
                   <p>
                     Regístrate para recibir nuestras promociones, nuevos productos y más información:
                   </p>
-                    <input name="email" value="E-mail" type="text" maxlength="80" class="textform3"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 18px;"><span style="color:#FFF;">Suscribir</span></a>
+                    <input name="email" placeholder="Email" type="text" maxlength="80" class="textform3"><a href="#" class="btn-gp btn" style="padding:11px 11px; font-size: 18px;"><span style="color:#FFF;">Suscribir</span></a>
                   </span>
           <table cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:310px;  margin-top: 28px;">
             <tbody>

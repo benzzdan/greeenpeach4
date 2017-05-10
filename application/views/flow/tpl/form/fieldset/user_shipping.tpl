@@ -177,7 +177,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-lg-3" for="[{$countrySelectId}]">[{oxmultilang ident="STATE"}]</label>
+            <label class="control-label col-lg-3" for="[{$countrySelectId}]">Estado</label>
             <div class="col-lg-9">
                 [{include file="form/fieldset/state.tpl"
                     countrySelectId="delCountrySelect"

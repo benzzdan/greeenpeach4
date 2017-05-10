@@ -16,6 +16,8 @@
         [{assign var="blShowToBasket" value=false}]
     [{/if}]
 
+
+
     <form name="tobasket[{$testid}]" [{if $blShowToBasket}]action="[{$oViewConf->getSelfActionLink()}]" method="post"[{else}]action="[{$_productLink}]" method="get"[{/if}]>
         <div class="hidden">
             [{$oViewConf->getNavFormParams()}]
@@ -57,9 +59,10 @@
                             [{assign var=descPrice value=$product->getFPrice()}]
                             [{assign var=basePrice value=$product->getFBasePrice()}]
                             [{if $descPrice != $basePrice}]
+                            [{assign var=discount value=$product->getDiscountPercent()}]
                             <div class="ribbon-wrapper">
                               <div class="ribbon">
-                                -10%
+                                -[{$discount}]%
                               </div>
                             </div>
                             [{/if}]

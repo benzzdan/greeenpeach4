@@ -230,6 +230,9 @@
         <script type="text/javascript" src="[{$oViewConf->getResourceUrl()}]js/sss.min.js">
 
         </script>
+        <script type="text/javascript" src="[{$oViewConf->getResourceUrl()}]js/errors.js">
+
+        </script>
 
 
         <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>
@@ -249,6 +252,7 @@
           var conektaErrorResponseHandler = function(response) {
             var $form = $("#payment");
             $form.find(".card-errors").text(response.message_to_purchaser);
+            $form.find(".card-errors").addClass('alert alert-danger');
             $form.find("button").prop("disabled", false);
             console.log(response);
             return $.post(token.id);
@@ -271,6 +275,7 @@
               return false ;
             }catch(error){
               document.getElementById("demo").innerHTML = error.message;
+              document.getElementById("errorConekta").classList.add('alert', 'alert-danger');
             }
 
           });

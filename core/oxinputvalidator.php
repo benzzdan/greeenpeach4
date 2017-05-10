@@ -691,4 +691,6 @@ class oxInputValidator extends oxSuperCfg
 
         return $this->_oCompanyVatInValidator;
     }
+
+
 }

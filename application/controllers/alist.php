@@ -869,11 +869,54 @@ public function getCat($cat_tit){
 
   return $cat;
 }
+
 public function getCat2($cat_id){
   $cat = oxNew('oxCategory');
   $cat->load($cat_id);
 
   return $cat;
+}
+
+
+
+
+public function dist_fnc(){
+  // define variables and set to empty values
+
+
+if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["cel"]) && !empty($_POST["cel"])) {
+  $nombre = $_POST["nombre"];
+  $email = $_POST["email"];
+  $cel = $_POST["cel"];
+  $apellidos = $_POST["apellidos"];
+  $ciudad = $_POST["ciudad"];
+  $empresa = $_POST["empresa"];
+
+  $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $cel . "<br>" . "Ciudad: " . $ciudad;
+  $subject = "Contacto Distribuidor";
+  $to = "bensondaniel664@gmail.com"; // this is your Email address
+
+  $oEmail = oxNew('oxEmail');
+
+  $oEmail->setBody($message);
+
+
+  $oEmail->setSubject($subject);
+
+  $oEmail->setRecipient($to,'Benson');
+  $oEmail->setReplyTo($email, $nombre);
+
+  $this->sentDistribuidores = $oEmail->send();
+}
+
+
+
+}
+
+protected $sentDistribuidores = false;
+
+public function getSentDistribuidores(){
+  return $this->sentDistribuidores;
 }
 
 

@@ -1,9 +1,6 @@
 
   [{assign var=categ value=$oView->getActiveCategory()}]
   [{assign var=catName value=$categ->getTitle()}]
-<!-- <p>
-  [{$catName}]
-</p> -->
 
 [{oxscript include="js/pages/details.min.js" priority=10}]
 

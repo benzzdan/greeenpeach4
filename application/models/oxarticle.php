@@ -3024,11 +3024,11 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
         }
     }
 
-    public function hasDiscount(){
-        $oDiscount = oxNew('oxDiscountList');
+    public function getFDiscountName(){
+        // $oDiscount = oxNew('oxDiscountList');
       $oDiscount = oxRegistry::get("oxDiscountList");
       $list = $oDiscount->getArticleDiscounts($this);
-      return $list;
+      return reset($list)->oxdiscount__oxtitle->value;
     }
 
     /**
@@ -5005,5 +5005,13 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
             $sFullField = $this->_getFieldLongName($sField);
             $this->_aSortingFieldsOnLoad[$sFullField] = $this->$sFullField->value;
         }
+    }
+
+    public function getDiscountPercent(){
+      $descPrice = $this->getFPrice();
+      $basePrice = $this->getFBasePrice();
+
+      //echo $descPrice.' * 100)/'.$basePrice;
+      return 100 - round(($descPrice * 100)/$basePrice);
     }
 }

@@ -92,9 +92,9 @@
             [{oxscript add="$('input,select,textarea').not('[type=submit]').jqBootstrapValidation();"}]
 
             <form action="[{$oViewConf->getSslSelfLink()}]" class="form-horizontal js-oxValidate payment" id="payment" name="order" method="post" novalidate="novalidate">
-
-                      <div class="card-errors">
-                        <p id="demo"></p>
+                      <div class="card-errors" id="errorConekta">
+                        <p id="demo">
+                        </p>
                       </div>
                 <div class="hidden">
                     [{$oViewConf->getHiddenSid()}]
