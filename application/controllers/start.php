@@ -101,7 +101,7 @@ class Start extends oxUBase
      * Tag cloud
      *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @var array
      */
     protected $_sTagCloud = null;
@@ -402,4 +402,47 @@ class Start extends oxUBase
 
         return $oList;
     }
+
+
+    public function contacto_fnc(){
+
+
+      if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"])) {
+        $nombre = $_POST["nombre"];
+        $email = $_POST["email"];
+        $tel = $_POST["tel"];
+        $comentario = $_POST["comentario"];
+
+
+        $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
+        $subject = "<h1>Contacto</h1>";
+        $to = "bensondaniel664@gmail.com"; // this is your Email address
+
+        $oEmail = oxNew('oxEmail');
+
+        $oEmail->setBody($message);
+
+
+        $oEmail->setSubject($subject);
+
+        $oEmail->setRecipient($to,'Benson');
+        $oEmail->setReplyTo($email, $nombre);
+
+        $this->sentContacto = $oEmail->send();
+      }
+
+
+    }
+
+
+    protected $sentContacto = false;
+
+    public function getSentContacto(){
+      return $this->sentContacto;
+    }
+
+
+
+
+
 }

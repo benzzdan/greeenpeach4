@@ -924,11 +924,22 @@ font-weight: 400;
 
 
 
-#breadcrumb {
+/*#breadcrumb {
   margin-left: 7%;
+}*/
+
+.breadcrumb {
+  font-size: 16px !important;
 }
 
-/*
-#card-errors {
-  display: none;
-}*/
+
+
+
+body.cl-thankyou ol.checkoutSteps li.passed .num, body.is-checkout ol.checkoutSteps li.passed .num {
+
+background-color: #666666 !important;
+}
+
+body.cl-thankyou ol.checkoutSteps li.active .num, body.is-checkout ol.checkoutSteps li.active .num {
+    background-color: #009EC0 !important;
+}

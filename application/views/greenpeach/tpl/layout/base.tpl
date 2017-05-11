@@ -152,6 +152,8 @@
           [{oxstyle include="css/greenpeach.css"}]
           [{oxstyle include="css/sss.css"}]
           [{oxstyle include="css/desc.css"}]
+          [{oxstyle include="css/styles_oxxo.css"}]
+
         [{/block}]
 
 

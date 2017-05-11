@@ -32,7 +32,16 @@ class order extends oxUBase
      *
      * @var object
      */
+
+
+    protected $_getOxxoRef = null;
+
+
     protected $_oPayment = null;
+
+
+
+
 
     /**
      * Active basket
@@ -164,6 +173,7 @@ class order extends oxUBase
     public function render()
 
     {
+
 
 
 
@@ -398,12 +408,96 @@ foreach($content as $item){
 
     } //ends if credicard payment
 
+
+    //PAGO OXXO
+
+  if ($oSession->getVariable('paymentid') == 'oxpayoxxo'){
+
+
+
+    require_once(dirname(__DIR__).'/../conekta/conekta_php/lib/Conekta.php');
+    //require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
+    \Conekta\Conekta::setApiKey("key_iuzqkqDnzzQjWyPporzBzA");
+    \Conekta\Conekta::setApiVersion("2.0.0");
+
+
+  //Getting items array for line items
+
+  $oBasket = $this->getSession()->getBasket();
+  $content = $oBasket->getContents();
+  $basketItems = array();
+  foreach($content as $item){
+    $basketItems[] = array(
+      "name" => $item->getTitle(),
+      "unit_price" => $item->getUnitPrice()->getPrice() * 100,
+      "quantity" => $item->getAmount()
+    );
+  }
+
+  //Getting shipping info, from current user definined by the billing address, still need to implement when user
+  //specifies shipping info
+        $oUser = $this->getUser();
+        $name = $oUser->oxuser__oxfname->value . " " . $oUser->oxuser__oxlname->value;
+        $email = $oUser->oxuser__oxusername->value;
+        $street = $oUser->oxuser__oxstreet->value;
+        $city = $oUser->oxuser__oxcity->value;
+        $id = $oUser->oxuser__oxstateid->value;
+        $state = $oUser->getStateTitle($id);
+        $zip = $oUser->oxuser__oxzip->value;
+        $data = $this->getSession()->getVariable('dynvalue');
+
+        $order = \Conekta\Order::create(
+          array(
+            "line_items" => $basketItems,
+            "shipping_lines" => array(
+              array(
+                "amount" => 0,
+                "carrier" => "GreenPeach"
+              )
+            ), //shipping_lines
+            "currency" => "MXN",
+            "customer_info" => array(
+              "name" => $name,
+              "email" => $email,
+              "phone" => $phone
+            ), //customer_info
+            "shipping_contact" => array(
+              "phone" => $phone,
+              "receiver" => $fname,
+              "address" => array(
+                "street1" => $street,
+                "city" => $city,
+                "state" => $state,
+                "country" => "MX",
+                "postal_code" => $zip,
+                "residential" => true
+              )//address
+            ), //shipping_contact
+            "charges" => array(
+                array(
+                    "payment_method" => array(
+                            "type" => "oxxo_cash"
+                    )//payment_method
+                ) //first charge
+            ) //charges
+          )//order
+        );
+
+
+          oxRegistry::getSession()->setVariable('oxxoref', $order->charges[0]->payment_method->reference);
+
+  }
+
+
+
+
       //in case anything else save the Order(paypal)
 
       return $this->saveOrder();
 
 
 }
+
 
     /**
      * Template variable getter. Returns payment object
@@ -771,4 +865,9 @@ foreach($content as $item){
 
         return $blValid;
     }
+
+
+
+
+
 }

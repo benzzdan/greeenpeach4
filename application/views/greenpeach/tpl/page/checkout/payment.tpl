@@ -120,6 +120,8 @@
                                             [{include file="page/checkout/inc/payment_oxidcreditcard.tpl"}]
                                         [{elseif $sPaymentID == "oxiddebitnote"}]
                                             [{include file="page/checkout/inc/payment_oxiddebitnote.tpl"}]
+                                        [{elseif $sPaymentID == "oxpayoxxo"}]
+                                            [{include file="page/checkout/inc/payment_other.tpl"}]
                                         [{else}]
                                             [{include file="page/checkout/inc/payment_other.tpl"}]
                                         [{/if}]

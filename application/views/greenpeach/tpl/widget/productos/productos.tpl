@@ -66,6 +66,7 @@
   <div class="col-md-6" style="text-align: right">
     <img src="[{$oViewConf->getImageUrl('icon-cards.png')}]" alt="envios" />
     <span><img src="[{$oViewConf->getImageUrl('icon-paypal.png')}]" alt="" /></span>
+    <span><img src="[{$oViewConf->getImageUrl('img-oxxo.png')}]" alt="" /></span>
 
   </div>
 

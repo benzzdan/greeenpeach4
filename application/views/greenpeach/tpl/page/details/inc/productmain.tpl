@@ -101,9 +101,15 @@
 
               <!-- para checar el stock -->
 
+                [{if $catName === 'Empacados'}]
             <p>
               En existencia:  <strong>[{$oDetailsProduct->oxarticles__oxstock->value}] piezas</strong>
             </p>
+               [{else}]
+               <p>
+                 En existencia:  <strong>[{$oDetailsProduct->oxarticles__oxstock->value}] kg</strong>
+               </p>
+               [{/if}]
 
               [{block name="details_productmain_stockstatus"}]
               [{if $oDetailsProduct->getStockStatus() == -1}]

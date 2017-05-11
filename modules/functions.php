@@ -20,6 +20,6 @@
  * @version   OXID eShop CE
  */
 
- // add in required classes for Twitter
- require_once __DIR__ . "/greenpeachtwitter/vendor/twitter.class.php";
- require_once __DIR__ . "/greenpeachtwitter/vendor/OAuth.php";
+ // // add in required classes for Twitter
+ // require_once __DIR__ . "/greenpeachtwitter/vendor/twitter.class.php";
+ // require_once __DIR__ . "/greenpeachtwitter/vendor/OAuth.php";

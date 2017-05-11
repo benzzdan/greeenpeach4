@@ -7,6 +7,15 @@
         [{assign var="order" value=$oView->getOrder()}]
         [{assign var="basket" value=$oView->getBasket()}]
 
+
+
+
+
+[{if $oView->getOxxoRef()}]
+    [{include file="oxxorecibo.tpl"}]
+[{/if}]
+
+
         <div id="thankyouPage" class="text-center">
             <h3 class="blockHead">[{oxmultilang ident="THANK_YOU"}]</h3>
 

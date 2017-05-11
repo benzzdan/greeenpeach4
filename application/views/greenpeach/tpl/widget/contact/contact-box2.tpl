@@ -1,6 +1,7 @@
 
 <div class="contacto-box">
-  [{if $oView->getSentContacto()}]
+
+  [{if $oView->getSentContacto2()}]
         <div class="alert alert-success">
           <p>GRACIAS TU MENSAJE HA SIDO ENVIADO</p>
         </div>
@@ -50,7 +51,9 @@
         <div class="col-md-6" style="text-align: left">
             <form class="contact-box" action="[{ $oViewConf->getSelfActionLink() }]" method="post" name="contactbox">
                   <input type="hidden" name="cl" value="[{ $oViewConf->getActiveClassName() }]">
-                  <input type="hidden" name="fnc" value="contacto_fnc">
+                  <input type="hidden" name="fnc" value="contacto2_fnc">
+                  [{assign var=cat value=$oView->getActiveCategory() }]
+              <input type="hidden" name="cnid" value="[{$cat->getId()}]">
                 <input type="text" name="nombre" value="" placeholder="Nombre" class="cont-input"><br>
                 <input type="text" name="email" value="" placeholder="E-mail" class="cont-input"><br>
                 <input type="text" name="tel" value="" placeholder="Teléfono" class="cont-input"><br>

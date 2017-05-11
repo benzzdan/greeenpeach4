@@ -920,6 +920,44 @@ public function getSentDistribuidores(){
 }
 
 
+public function contacto2_fnc(){
+
+
+  if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"])) {
+    $nombre = $_POST["nombre"];
+    $email = $_POST["email"];
+    $tel = $_POST["tel"];
+    $comentario = $_POST["comentario"];
+
+
+    $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
+    $subject = "<h1>Contacto</h1>";
+    $to = "bensondaniel664@gmail.com"; // this is your Email address
+
+    $oEmail = oxNew('oxEmail');
+
+    $oEmail->setBody($message);
+
+
+    $oEmail->setSubject($subject);
+
+    $oEmail->setRecipient($to,'Benson');
+    $oEmail->setReplyTo($email, $nombre);
+
+    $this->sentContacto2 = $oEmail->send();
+  }
+
+
+}
+
+
+protected $sentContacto2 = false;
+
+public function getSentContacto2(){
+  return $this->sentContacto2;
+}
+
+
 
 
 

@@ -340,4 +340,11 @@ class Thankyou extends oxUBase
 
         return $aPaths;
     }
+
+
+
+
+    public function getOxxoRef(){
+      return oxRegistry::getSession()->getVariable('oxxoref');
+    }
 }
