@@ -14,7 +14,7 @@ class webhook extends oxUBase {
       $subject = "Confirmación de Pago OXXO Green Peach Super Foods";
       $to = "bensondaniel664@gmail.com";
       $oEmail = oxNew('oxEmail');
-      $oEmail->setBody($msg)
+      $oEmail->setBody($msg);
       $oEmail->setSubject($subject);
       $oEmail->setRecipient($to,'Benson');
       //$oEmail->setReplyTo($email, $nombre);
