@@ -22,7 +22,7 @@ class webhook extends oxUBase {
       // $oEmail->setReplyTo($email, $nombre);
       // $oEmail->send();
       // mail("bensondaniel664@gmail.com","Pago confirmado",$msg);
-        http_response_code(777); // Return 200 OK
+        http_response_code(200); // Return 200 OK
     }
   }
 
