@@ -12,7 +12,7 @@ class webhook extends oxUBase {
     if ($data->type == 'charge.paid'){
       // $msg = "Tu pago ha sido comprobado.";
       // mail("bensondaniel664@gmail.com","Pago confirmado",$msg);
-      echo "Pagado";
+      http_response_code(777);
     }
   }
 
