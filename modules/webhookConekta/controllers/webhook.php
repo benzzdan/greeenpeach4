@@ -12,7 +12,7 @@ class webhook extends oxUBase {
     if ($data->type == 'charge.paid'){
       $payment_method = $data->charges->data->object->payment_method->type;
       $msg = "Tu pago ha sido comprobado.";
-      mail("client@email.com","Pago ". $payment_method ." confirmado",$msg);
+      mail("bensondaniel664@gmail.com","Pago ". $payment_method ." confirmado",$msg);
       // $msg = "Tu pago ha sido comprobado.";
       // $subject = "Confirmación de Pago OXXO Green Peach Super Foods";
       // $to = "bensondaniel664@gmail.com";
