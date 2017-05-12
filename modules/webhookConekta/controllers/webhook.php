@@ -11,19 +11,18 @@ class webhook extends oxUBase {
 
     if ($data->type == 'charge.paid'){
       $payment_method = $data->charges->data->object->payment_method->type;
+
       $msg = "Tu pago ha sido comprobado.";
-      mail("bensondaniel664@gmail.com","Pago ". $payment_method ." confirmado",$msg);
-      // $msg = "Tu pago ha sido comprobado.";
-      // $subject = "Confirmación de Pago OXXO Green Peach Super Foods";
-      // $to = "bensondaniel664@gmail.com";
-      // $nombre = "Daniel";
-      // $email = "bensondaniel664@gmail.com";
-      // $oEmail = oxNew('oxEmail');
-      // $oEmail->setBody($msg);
-      // $oEmail->setSubject($subject);
-      // $oEmail->setRecipient($to,'Benson');
-      // $oEmail->setReplyTo($email, $nombre);
-      // $oEmail->send();
+      $subject = $data->charges->data->object->payment_method->type;
+      $to = "bensondaniel664@gmail.com";
+      $nombre = "Daniel";
+      $email = "bensondaniel664@gmail.com";
+      $oEmail = oxNew('oxEmail');
+      $oEmail->setBody($msg);
+      $oEmail->setSubject($subject);
+      $oEmail->setRecipient($to,'Benson');
+      $oEmail->setReplyTo($email, $nombre);
+      $oEmail->send();
 
     }
   }
