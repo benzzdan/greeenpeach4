@@ -175,9 +175,6 @@ class order extends oxUBase
     {
 
 
-
-
-
         if ($this->getIsOrderStep()) {
             $oBasket = $this->getBasket();
             $myConfig = $this->getConfig();
@@ -363,7 +360,7 @@ foreach($content as $item){
           "line_items" => $basketItems, //line_items
           "shipping_lines" => array(
             array(
-              "amount" => 0,
+              "amount" => $this->getBasket()->getDeliveryCost()->getPrice() * 100,
               "carrier" => "GreenPeach"
             )
           ), //shipping_lines
@@ -395,7 +392,10 @@ foreach($content as $item){
       );
 
 
+    oxRegistry::getSession()->setVariable('oxxoref', null);
+
     return $this->saveOrder();
+
 
     }catch(\Conekta\ErrorList $errorList){
       foreach($errorList->details as &$errorDetail){
@@ -451,7 +451,7 @@ foreach($content as $item){
             "line_items" => $basketItems,
             "shipping_lines" => array(
               array(
-                "amount" => 0,
+                "amount" => $this->getBasket()->getDeliveryCost()->getPrice() * 100,
                 "carrier" => "GreenPeach"
               )
             ), //shipping_lines

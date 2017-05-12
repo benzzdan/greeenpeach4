@@ -345,6 +345,6 @@ class Thankyou extends oxUBase
 
 
     public function getOxxoRef(){
-      return oxRegistry::getSession()->getVariable('oxxoref');
+          return oxRegistry::getSession()->getVariable('oxxoref');
     }
 }
