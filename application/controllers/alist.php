@@ -893,7 +893,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) 
   $empresa = $_POST["empresa"];
 
   $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $cel . "<br>" . "Ciudad: " . $ciudad;
-  $subject = "Contacto Distribuidor";
+  $subject = "Contacto";
   $to = "bensondaniel664@gmail.com"; // this is your Email address
 
   $oEmail = oxNew('oxEmail');
@@ -904,6 +904,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) 
   $oEmail->setSubject($subject);
 
   $oEmail->setRecipient($to,'Benson');
+
   $oEmail->setReplyTo($email, $nombre);
 
   $this->sentDistribuidores = $oEmail->send();
