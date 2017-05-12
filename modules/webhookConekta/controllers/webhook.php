@@ -11,7 +11,7 @@ class webhook extends oxUBase {
 
     if ($data->type == 'charge.paid'){
       $payment_method = $data->charges->data->object->payment_method->type;
-      $amount = $data->id;
+      $amount = $data->data->object->amount;
       $msg = "Hemos recibido tu pago, en breve te enviaremos tu pedido<br>
       ¡Gracias por tu compra en Green Peach Super Foods!<br>
       Tu pedido fue por " . $amount;
