@@ -10,24 +10,24 @@ class webhook extends oxUBase {
     http_response_code(200); // Return 200 OK
 
     if ($data->type == 'charge.paid'){
-      // $payment_method = $data->charges->data->object->payment_method->type;
-      // $amount = $data->object->amount;
-      // $msg = "Hemos recibido tu pago, en breve te enviaremos tu pedido<br>
-      // ¡Gracias por tu compra en Green Peach Super Foods!<br>
-      // Tu pedido fue por " . $amount;
-      // $subject = $payment_method . "Pago en OXXO comprobado - Green Peach";
-      // $to = "bensondaniel664@gmail.com";
-      // $nombre = "Daniel";
-      // $email = "bensondaniel664@gmail.com";
-      // $oEmail = oxNew('oxEmail');
-      // $oEmail->setBody($msg);
-      // $oEmail->setSubject($subject);
-      // $oEmail->setRecipient($to,'Benson');
-      // $oEmail->setReplyTo($email, $nombre);
-      // $oEmail->send();
       $payment_method = $data->charges->data->object->payment_method->type;
-        $msg = "Tu pago ha sido comprobado.";
-        mail("bensondaniel664@gmail.com","Pago ". $payment_method ." confirmado",$msg);
+      $amount = $data->object->id;
+      $msg = "Hemos recibido tu pago, en breve te enviaremos tu pedido<br>
+      ¡Gracias por tu compra en Green Peach Super Foods!<br>
+      Tu pedido fue por " . $amount;
+      $subject = $payment_method . "Pago en OXXO comprobado - Green Peach";
+      $to = "bensondaniel664@gmail.com";
+      $nombre = "Daniel";
+      $email = "bensondaniel664@gmail.com";
+      $oEmail = oxNew('oxEmail');
+      $oEmail->setBody($msg);
+      $oEmail->setSubject($subject);
+      $oEmail->setRecipient($to,'Benson');
+      $oEmail->setReplyTo($email, $nombre);
+      $oEmail->send();
+      // $payment_method = $data->charges->data->object->payment_method->type;
+      //   $msg = "Tu pago ha sido comprobado.";
+      //   mail("bensondaniel664@gmail.com","Pago ". $payment_method ." confirmado",$msg);
     }
   }
 
