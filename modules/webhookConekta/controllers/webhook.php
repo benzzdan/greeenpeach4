@@ -14,7 +14,7 @@ class webhook extends oxUBase {
       $amount = $data->data->object->amount / 100;
       $msg = "Hemos recibido tu pago, en breve te enviaremos tu pedido<br>
       ¡Gracias por tu compra en Green Peach Super Foods!<br>
-      Tu pedido fue por:  <strong>$" . $amount . "MXN</strong>";
+      Tu pedido fue por:  <strong>$" . (float)$amount . " MXN</strong>";
       $subject = $payment_method . "Pago en OXXO comprobado - Green Peach";
       $to = "bensondaniel664@gmail.com";
       $nombre = "Daniel";
