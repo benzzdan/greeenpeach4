@@ -35,6 +35,7 @@ $aLang = array(
 'ACCOUNT_INFORMATION' => 'Información de la cuenta',
 'ADD' => 'añadir',
 'ADDITIONAL_INFO' => 'Información Adicional',
+'ADDRESS' => 'Calle, Interior',
 'ADDRESSES' => 'Direcciones',
 'ADD_TAGS' => 'Añadir etiquetas:',
 'ADD_THIS_PAGE_TO' => 'Añadir esta página a',
