@@ -2,13 +2,15 @@
     [{assign var="blScrollable" value=true}]
 [{/if}]
 
+
+
 [{block name="widget_minibasket"}]
     [{if $oxcmp_basket->getProductsCount()}]
         [{oxhasrights ident="TOBASKET"}]
             [{assign var="currency" value=$oView->getActCurrency()}]
 
             [{if $_prefix == 'modal'}]
-                <div class="modal fade basketFlyout" id="basketModal" tabindex="-1" role="dialog" aria-labelledby="basketModalLabel" aria-hidden="true">
+                <div class="modal fade basketFlyout" id="basketModal" tabindex="-1" role="dialog" aria-labelledby="basketModalLabel" aria-hidden="true">z
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -77,7 +79,10 @@
                                 [{/if}]
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">[{oxmultilang ident="CONTINUE_SHOPPING"}]</button>
+                              [{assign var=cat value=$oView->getCat('Productos')}]
+
+                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">[{oxmultilang ident="CONTINUE_SHOPPING"}]</button> -->
+                                <a href="[{$cat->getLink()}]" class="btn btn-default">[{oxmultilang ident="CONTINUE_SHOPPING"}]</a>
                                 <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=basket"}]" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="[{oxmultilang ident="DISPLAY_BASKET"}]">
                                     <i class="fa fa-shopping-cart"></i>
                                 </a>

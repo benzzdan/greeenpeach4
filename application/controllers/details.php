@@ -47,7 +47,7 @@ class Details extends oxUBase
      * If tags will be changed
      *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @var bool
      */
     protected $_blEditTags = null;
@@ -56,7 +56,7 @@ class Details extends oxUBase
      * All tags
      *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @var array
      */
     protected $_aTags = null;
@@ -180,7 +180,7 @@ class Details extends oxUBase
      * Array of id to form recommendation list.
      *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
-     *             
+     *
      * @var array
      */
     protected $_aSimilarRecommListIds = null;
@@ -341,7 +341,7 @@ class Details extends oxUBase
                     $sUrl = $oRss->getRecommListsUrl($oProduct);
                     $this->addRssFeed($sTitle, $sUrl, 'recommlists');
                 }
-                // END deprecated                
+                // END deprecated
 
                 return $this->_sThisTemplate;
         }
@@ -458,7 +458,7 @@ class Details extends oxUBase
 
     /**
      * Adds article to selected recommendation list
-     * 
+     *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
      *
      * @return null
@@ -946,7 +946,7 @@ class Details extends oxUBase
      * Return array of id to form recommend list.
      *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
-     *             
+     *
      * @return array
      */
     public function getSimilarRecommListIds()
@@ -1114,7 +1114,7 @@ class Details extends oxUBase
      * Template variable getter. Returns current tag
      *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @return string
      */
     public function getTag()
@@ -1185,6 +1185,14 @@ class Details extends oxUBase
         }
 
         return $this->_oCaptcha;
+    }
+
+
+    public function getCat($cat_tit){
+      $cat = oxNew('oxCategory');
+      $cat->load2($cat_tit);
+
+      return $cat;
     }
 
     /**
@@ -1516,9 +1524,9 @@ class Details extends oxUBase
 
     /**
      * Checks if rating functionality is on and allowed to user
-     * 
+     *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @return bool
      */
     public function canChangeTags()
@@ -1535,7 +1543,7 @@ class Details extends oxUBase
      * Returns tag cloud manager class
      *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @return oxTagCloud
      */
     public function getTagCloudManager()
@@ -1639,7 +1647,7 @@ class Details extends oxUBase
      * Recommendation list bread crumb
      *
      * @deprecated since v5.3 (2016-06-17); Listmania will be moved to an own module.
-     *             
+     *
      * @return array
      */
     protected function _getRecommendationListBredCrumb()
@@ -1657,7 +1665,7 @@ class Details extends oxUBase
      * Tag bread crumb
      *
      * @deprecated v5.3 (2016-05-04); Tags will be moved to own module.
-     *             
+     *
      * @return array
      */
     protected function _getTagBreadCrumb()

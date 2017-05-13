@@ -158,8 +158,6 @@
                                       <!--  main price-->
 
 
-
-
                                   [{block name="details_productmain_price"}]
                                       [{oxhasrights ident="SHOWARTICLEPRICE"}]
 
