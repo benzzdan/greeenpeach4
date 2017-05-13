@@ -492,7 +492,7 @@ foreach($content as $item){
 
 
       //in case anything else save the Order(paypal)
-      oxRegistry::getSession()->setVariable('oxxoref', null); //quitar lo de oxxo
+
       return $this->saveOrder();
 
 
