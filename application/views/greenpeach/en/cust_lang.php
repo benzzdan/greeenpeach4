@@ -9,5 +9,6 @@ $aLang = array(
     'PAGE_ACCOUNT_DASHBOARD_ADDRESS' => "Address",
     'WIDGET_TWITTER_FEED_HEADER' => 'Twitter Feed',
     'PAGE_ACCOUNT_DASHBOARD_PHONE'   => "Phone Nummer",
-      'WIDGET_PRODUCT_RELATED_PRODUCTS_CROSSSELING_SUBHEADER' => 'Ver productos relacionados',
+    'WIDGET_PRODUCT_RELATED_PRODUCTS_CROSSSELING_SUBHEADER' => 'Ver productos relacionados',
+    
 );

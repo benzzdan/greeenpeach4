@@ -159,6 +159,10 @@
                                 <input type="hidden" name="aproducts[[{$basketindex}]][aid]" value="[{$basketitem->getProductId()}]">
                                 <input type="hidden" name="aproducts[[{$basketindex}]][basketitemid]" value="[{$basketindex}]">
                                 <input type="hidden" name="aproducts[[{$basketindex}]][override]" value="1">
+                                <input type="hidden" name="stock" value="[{$oArticle->oxarticles__oxstock->value}]">
+                                <input type="hidden" name="basketId" value="[{$basketindex}]">
+
+
                                 [{if $basketitem->isBundle()}]
                                     <input type="hidden" name="aproducts[[{$basketindex}]][bundle]" value="1">
                                 [{/if}]

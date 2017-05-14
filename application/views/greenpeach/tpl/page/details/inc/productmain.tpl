@@ -1,4 +1,7 @@
 
+
+
+
   [{assign var=categ value=$oView->getActiveCategory()}]
   [{assign var=catName value=$categ->getTitle()}]
 
@@ -38,7 +41,7 @@
 [{/if}]
 
 [{oxhasrights ident="TOBASKET"}]
-    <form class="js-oxProductForm" action="[{$oViewConf->getSelfActionLink()}]" method="post">
+    <form id="basketAdd" class="js-oxProductForm" action="[{$oViewConf->getSelfActionLink()}]" method="post">
         <div class="hidden">
             [{$oViewConf->getHiddenSid()}]
             [{$oViewConf->getNavFormParams()}]
@@ -90,6 +93,15 @@
                     </div>
                 [{/if}]
             [{/block}]
+
+
+              [{if $oView->getNoStockMessage()}]
+                  [{assign var=msg value=$oView->getNoStockMessage()}]
+                  <div class="alert alert-danger">
+                    ¡NO HAY SUFICIENTES ARTICULOS!
+                  </div>
+              [{/if}]
+
 
             [{block name="details_productmain_morepics"}]
                 [{include file="page/details/inc/morepics.tpl"}]
@@ -270,13 +282,14 @@
 
                                                       <span>Agregar el carrito: </span>
                                                       <!-- <input id="am_1" type="number" class="textbox" value="0" size="3" min="0" style="width: 56px;text-align: center;"> -->
+                                                      <input type="hidden" name="stock" value="[{$oDetailsProduct->oxarticles__oxstock->value}]">
                                                         <input id="amountToBasket" type="number" name="am" value="1" autocomplete="off" class="textbox" style="width: 56px;text-align: center;">
                                                     </div>
                                                     <div class="space50">
 
                                                     </div>
                                                       <div class="input-group-tweak">
-                                                          <button type="submit"  class="btn btn-gp">[{oxmultilang ident="TO_CART"}]</button>
+                                                          <button id="addToBasket" type="submit"  class="btn btn-gp">[{oxmultilang ident="TO_CART"}]</button>
                                                       </div>
 
                                               [{/if}]

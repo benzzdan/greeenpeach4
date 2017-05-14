@@ -133,6 +133,8 @@ class oxcmp_basket extends oxView
      */
     public function tobasket($sProductId = null, $dAmount = null, $aSel = null, $aPersParam = null, $blOverride = false)
     {
+
+
         // adding to basket is not allowed ?
         $myConfig = $this->getConfig();
         if (oxRegistry::getUtils()->isSearchEngine()) {
@@ -143,6 +145,25 @@ class oxcmp_basket extends oxView
         if ($aProducts = $this->_getItems($sProductId, $dAmount, $aSel, $aPersParam, $blOverride)) {
 
             $this->_setLastCallFnc('tobasket');
+            //test code to avoid add to basket items when stock value is below amount
+
+            $amount = oxRegistry::getConfig()->getRequestParameter('am');
+            $stock = oxRegistry::getConfig()->getRequestParameter('stock');
+
+
+            //Todo: escribir codigo para cuando ya tienes productos en el basket y quierees agregar mas productos + los que estan en el basket y sobrepasa el stock, si te deja, evitar eso
+
+
+            
+
+            if($amount > $stock ){
+              oxRegistry::getSession()->setVariable('nostock', "¡No hay suficientes articulos en existencia!");
+              return;
+            }
+
+            //en el caso de que todo este bien se deshabilita esa variable de sesion
+            oxRegistry::getSession()->setVariable('nostock', null);
+
             $oBasketItem = $this->_addItems($aProducts);
 
             // new basket item marker
@@ -207,15 +228,31 @@ class oxcmp_basket extends oxView
         $aSel = isset($aSel) ? $aSel : oxRegistry::getConfig()->getRequestParameter('sel');
         $aPersParam = $aPersParam ? $aPersParam : oxRegistry::getConfig()->getRequestParameter('persparam');
 
+
+
         // adding articles
         if ($aProducts = $this->_getItems($sProductId, $dAmount, $aSel, $aPersParam, $blOverride)) {
 
             // information that last call was changebasket
             $oBasket = $this->getSession()->getBasket();
+
+            $stock = oxRegistry::getConfig()->getRequestParameter('stock');
+            $basketId = oxRegistry::getConfig()->getRequestParameter('basketId');
+            $basketAmount= $aProducts[$basketId]['am'];
+
+
             $oBasket->onUpdate();
 
             $this->_setLastCallFnc('changebasket');
+
+
+            if($basketAmount > $stock){
+              return;
+            }
+
             $oBasketItem = $this->_addItems($aProducts);
+
+
         }
 
     }

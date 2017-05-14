@@ -27,4 +27,5 @@ $aLang = array(
     'DD_FORM_VALIDATION_VALIDEMAIL'                         => 'Por favor ingresa un e-mail válido.',
     'WIDGET_PRODUCT_RELATED_PRODUCTS_SIMILAR_SUBHEADER'     => 'Hecha un vistazo a los productos relacionados.',
     'ORDER'                                                       => 'ORDEN',
+    'ADDRESS' => 'Dirección',
   );
