@@ -932,7 +932,7 @@ public function contacto2_fnc(){
 
 
     $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
-    $subject = "<h1>Contacto</h1>";
+    $subject = "Contacto";
     $to = "bensondaniel664@gmail.com"; // this is your Email address
 
     $oEmail = oxNew('oxEmail');

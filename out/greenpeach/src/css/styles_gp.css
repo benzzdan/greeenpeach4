@@ -56,8 +56,13 @@ position: relative;
 
   nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header a#logo_gp img {
 
-	left: 20% !important;
+    left: 20%!important;
+  top: -1px !important;
 
+}
+
+nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header button.navbar-toggle {
+    top: 1px !important;
 }
 
 #myaccountmenu {
