@@ -24,7 +24,7 @@
         [{/block}]
     </button>
     [{if !$oxcmp_user}]
-    <ul class="dropdown-menu dropdown-menu-right pull-right" style="min-width: 472px; margin-right: 11%"role="menu">
+    <ul class="dropdown-menu dropdown-menu-right pull-right" id="myaccountmenu"role="menu">
       [{else}]
       <ul class="dropdown-menu dropdown-menu-right pull-right"  role="menu">
       [{/if}]
