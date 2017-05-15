@@ -74,6 +74,8 @@ nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header button.navbar-toggle 
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent !important;
+  z-index: 10000;
+  position: relative;
 }
 
 #myaccountmenu {
