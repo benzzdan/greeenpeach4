@@ -11,7 +11,7 @@
                 <img id="contactanos-label" src="[{$oViewConf->getImageUrl()}]/tit-contacto.png" alt="contactanos" class="img-responsive" />
               </div>
                 <div class="row" style="margin-top: 54px; margin-bottom: 50px;">
-                <div class="col-md-6" style="padding-left: 16%">
+                <div class="col-md-6" style="padding-left: 16%" id="movilfooter">
                   <div class="footer-logo">
                     <img src="[{$oViewConf->getImageUrl()}]/logo-greenpeachsuperfoods-footer.svg" style="width: 130px; height: 127px;margin-bottom: 20px;"/>
                   </div>
@@ -58,7 +58,7 @@
                 <div class="form-footer">
                   <a href="#" style="margin-left: 9px;padding-right: 10px;">Acepto con los terminos y condiciones</a>
                   <span><input type="checkbox" name="name" id="terminos-check" checked></span>
-                  <span><button type="submit" name="button" class="btn btn-gp-env">Enviar</button></span>
+                  <span><button id="movilbtn" type="submit" name="button" class="btn btn-gp-env">Enviar</button></span>
                 </div>
               </form>
             </div>

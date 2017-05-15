@@ -1,3 +1,156 @@
+
+@media only screen and (max-width: 380px){
+
+  #logo-img {
+    width: 70px !important;
+  height: 70px !important;
+  top: -40px !important;
+  position: relative !important;
+  left: 20% !important;
+  }
+
+  .navbar-toggle {
+position: relative;
+    top: -37px;
+
+}
+
+.showLogin {
+  float: right;
+}
+
+
+.col-md-6 {
+  position: static !important;
+}
+
+#mainnav .navbar-collapse.navbar-ex1-collapse.collapse.in ul li {
+
+	border-bottom: none !important;
+
+}
+
+#mainnav .navbar-header {
+
+	max-height: 45px !important;
+
+}
+
+.textform3 {
+
+	width: 65%  !important;
+  }
+
+
+  #movilfooter {
+    padding: 0 !important;
+  }
+
+  #movilbtn {
+    margin-left: 3% !important;
+  }
+
+  nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header a#logo_gp img {
+
+	left: 20% !important;
+
+}
+
+
+
+
+/*div.navbar-collapse.navbar-ex1-collapse.collapse.in{
+	background-color: white !important;
+}*/
+
+
+#navigation {
+  background-color: white !important;
+}
+
+.slider {
+  display: none !important;
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 400px){
+  nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header a#logo_gp img{
+
+  width: 75px !important;
+  height: 75px!important;
+  top: -7px!important;
+  position: relative;
+  padding: 9px!important;
+  left: 25px!important;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#logo-img {
+  width: 95px;
+height: 92px;
+top: -41px;
+position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   vertical-align: top;
   font-family: 'Signika', sans-serif;
@@ -449,16 +602,6 @@ nav#mainnav.navbar.navbar-default.fadeIn {
 
 
 
-nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header a#logo_gp img{
-
-width: 75px !important;
-height: 75px!important;
-top: -7px!important;
-position: relative;
-padding: 9px!important;
-left: 25px!important;
-
-}
 
 nav#mainnav.navbar.navbar-default.fadeIn div.navbar-collapse ul#navigation{
   top: 10px;
