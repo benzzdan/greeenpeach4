@@ -15,6 +15,10 @@ position: relative;
 
 }
 
+.ribbon-wrapper {
+  left: 57px !important;
+}
+
 .showLogin {
   float: right;
 }
