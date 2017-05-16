@@ -6,7 +6,7 @@
 [{/if}]
 
 <div class="row text-center" style="margin-bottom: 15px;">
-  <img src="[{$oViewConf->getImageUrl()}]tit-distribuidores.png" alt="dist" style="width:90%; vertical-align:middle;max-width: 900px;" class="img-responsive"/>
+  <img src="[{$oViewConf->getImageUrl()}]tit-distribuidores.png" alt="dist" style="width:90%; vertical-align:middle;max-width: 900px;" class="img-responsive titulo-sec"/>
 </div>
 <div class="row">
   <div class="col-md-6">
