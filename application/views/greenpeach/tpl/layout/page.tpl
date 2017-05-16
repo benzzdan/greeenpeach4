@@ -9,9 +9,15 @@
 
     [{assign var="blFullwidth" value=$oViewConf->getViewThemeParam('blFullwidthLayout')}]
 
-     [{if $oView->getTemplateName() == 'page/shop/start.tpl'}]
+    <div class="hidden-xs">
+      [{if $oView->getTemplateName() == 'page/shop/start.tpl'}]
       [{include file="widget/slider/slider.tpl"}]
-     [{/if}]
+      [{/if}]
+    </div>
+
+<div class="visible-xs">
+  [{include file="widget/slider/slider_movil.tpl"}]
+</div>
 
 
      [{if $oView->getTitle() == 'Productos'}]
