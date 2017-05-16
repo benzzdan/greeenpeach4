@@ -9,6 +9,10 @@
   left: 20% !important;
   }
 
+  #quienesmov {
+    padding: 0px;
+  }
+
   .navbar-collapse .navbar-ex1-collapse collapse {
     z-index: 10000;
 position: relative;
@@ -130,6 +134,11 @@ padding-bottom: 13%;
   left: 25px!important;
 
   }
+
+  #quienesmov {
+    padding: 90px;
+  }
+
 
 
   #myaccountmenu {
