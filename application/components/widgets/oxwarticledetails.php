@@ -1024,6 +1024,9 @@ class oxwArticleDetails extends oxWidget
      */
     public function render()
     {
+
+
+
         $oProduct = $this->getProduct();
 
         parent::render();
@@ -1134,11 +1137,9 @@ class oxwArticleDetails extends oxWidget
 
 
 
-    public function getNoStockMessage()
+    public function getStock()
     {
-      if(oxRegistry::getSession()->getVariable('nostock')){
-        return true;
-      }
-      return false;
+      $stock = oxRegistry::getConfig()->getRequestParameter('stock');
+      return $stock;
     }
 }

@@ -150,16 +150,18 @@ class oxcmp_basket extends oxView
             $amount = oxRegistry::getConfig()->getRequestParameter('am');
             $stock = oxRegistry::getConfig()->getRequestParameter('stock');
 
-            oxRegistry::getSession()->setVariable('nostock', null);
+
             //Todo: escribir codigo para cuando ya tienes productos en el basket y quierees agregar mas productos + los que estan en el basket y sobrepasa el stock, si te deja, evitar eso
 
             if($amount > $stock ){
-              oxRegistry::getSession()->setVariable('nostock', "¡No hay suficientes articulos en existencia!");
+              oxRegistry::getSession()->setVariable('nostock', true);
               return;
+            }else {
+              //en el caso de que todo este bien se deshabilita esa variable de sesion
+              oxRegistry::getSession()->setVariable('nostock', null);
             }
 
-            //en el caso de que todo este bien se deshabilita esa variable de sesion
-            oxRegistry::getSession()->setVariable('nostock', null);
+
 
             $oBasketItem = $this->_addItems($aProducts);
 

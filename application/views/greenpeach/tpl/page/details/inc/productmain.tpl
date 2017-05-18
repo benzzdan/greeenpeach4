@@ -95,13 +95,6 @@
             [{/block}]
 
 
-              [{if $oView->getNoStockMessage()}]
-                  [{assign var=msg value=$oView->getNoStockMessage()}]
-                  <div class="alert alert-danger">
-                    ¡NO HAY SUFICIENTES ARTICULOS!
-                  </div>
-              [{/if}]
-
 
             [{block name="details_productmain_morepics"}]
                 [{include file="page/details/inc/morepics.tpl"}]
@@ -281,9 +274,11 @@
                                                     <div class="input-group">
 
                                                       <span>Agregar el carrito: </span>
+
+
                                                       <!-- <input id="am_1" type="number" class="textbox" value="0" size="3" min="0" style="width: 56px;text-align: center;"> -->
                                                       <input type="hidden" name="stock" value="[{$oDetailsProduct->oxarticles__oxstock->value}]">
-                                                        <input id="amountToBasket" type="number" name="am" value="1" autocomplete="off" class="textbox" style="width: 56px;text-align: center;">
+                                                        <input id="amountToBasket" type="number" name="am" value="1" autocomplete="off" class="textbox" style="width: 56px;text-align: center;" max="[{$oDetailsProduct->oxarticles__oxstock->value}]">
                                                     </div>
                                                     <div class="space50">
 

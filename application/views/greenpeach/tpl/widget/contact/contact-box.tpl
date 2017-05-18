@@ -37,7 +37,7 @@
                 </td>
               </tr>
               <tr>
-                <td style="width:100%; text-align:left; vertical-align:middle; line-height:20px;color: #777777;">
+                <td style="width:100%; text-align:left; vertical-align:middle; line-height:20px;color: #777777; font-size: 18px;">
                 Síguenos:
                  &nbsp;
                   <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:30px;" src="[{$oViewConf->getImageUrl()}]/icon-facebook2.png"></a> &nbsp;
