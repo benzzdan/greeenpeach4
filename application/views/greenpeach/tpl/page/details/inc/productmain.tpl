@@ -177,7 +177,7 @@
                                                   [{/if}]
                                                   [{assign var=descPrice value=$oDetailsProduct->getFPrice()}]
                                                   [{assign var=basePrice value=$oDetailsProduct->getFBasePrice()}]
-                                            
+
                                                   [{if $descPrice != $basePrice}]
                                                   <!-- discount price -->
                                                     [{block name="details_productmain_tprice"}]
@@ -422,6 +422,13 @@
                               [{/foreach}]
                             </ul>
                             <br>
+                        [{elseif $oAttr->oxattribute__oxtitle == 'Sugerencias de uso'}]
+                          [{assign var="myString" value=$oAttr->oxattribute__oxvalue->value}]
+                          [{assign var="atributos" value="|"|explode:$myString}]
+                          <strong>[{$oAttr->oxattribute__oxtitle->value}]:</strong><br>
+                          [{foreach from=$atributos item=sug name=sugerencia}]
+                            [{$sug}]<br>
+                          [{/foreach}]
                         [{else}]
                           <strong style="margin-right: 5px;"> [{$oAttr->oxattribute__oxtitle->value}]:</strong><br><span>[{$oAttr->oxattribute__oxvalue->value}]</span><br><br>
                         [{/if}]
