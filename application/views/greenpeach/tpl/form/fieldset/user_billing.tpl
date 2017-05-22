@@ -32,6 +32,11 @@
     </div>
 </div> -->
 
+    <div class="row">
+        <div class="alert alert-info">[{oxmultilang ident="COMPLETE_MARKED_FIELDS"}]</div>
+    </div>
+
+
 <div class="form-group[{if $aErrors.oxuser__oxfname}] text-danger[{/if}]">
     <label class="control-label col-lg-3[{if $oView->isFieldRequired(oxuser__oxfname)}] req[{/if}]">[{oxmultilang ident="FIRST_NAME"}]</label>
     <div class="col-lg-9">
@@ -210,11 +215,7 @@
     </div>
 [{/if}]
 
-<div class="form-group">
-    <div class="col-lg-offset-3 col-lg-9 col-xs-12">
-        <p class="alert alert-info">[{oxmultilang ident="COMPLETE_MARKED_FIELDS"}]</p>
-    </div>
-</div>
+
 
 [{if !$noFormSubmit}]
     <div class="form-group">

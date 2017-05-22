@@ -910,6 +910,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) 
   $this->sentDistribuidores = $oEmail->send();
 }
 
+return;
 
 
 }
@@ -924,7 +925,7 @@ public function getSentDistribuidores(){
 public function contacto2_fnc(){
 
 
-  if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"])) {
+  if(isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"])) {
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     $tel = $_POST["tel"];
@@ -948,6 +949,8 @@ public function contacto2_fnc(){
     $this->sentContacto2 = $oEmail->send();
   }
 
+  return;
+
 
 }
 
@@ -957,6 +960,54 @@ protected $sentContacto2 = false;
 public function getSentContacto2(){
   return $this->sentContacto2;
 }
+
+
+
+/////formulario personalizados
+
+
+
+public function perso_fnc(){
+
+
+  if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"]) && isset($_POST["apellidos"]) && !empty($_POST["apellidos"])){
+    $nombre = $_POST["nombre"];
+    $apellidos = $_POST["apellidos"];
+    $email = $_POST["email"];
+    $tel = $_POST["tel"];
+    $comentario = $_POST["comentario"];
+    $negocio = $_POST["negocio"];
+    $ciudad = $_POST["ciudad"];
+
+
+    $message = "Datos distribuidor:" . "<br><br>" . "<b>Nombre:</b> " . $nombre . "<br>". "<b>Apellidos:</b> " . $apellidos ."<br>" .  "<b>Email:</b> ". $email . "<br>" . "<b>Celular:</b> " . $tel . "<br>" . "<b>Ciudad:</b> " . $ciudad .
+    "<br>" . "<b>Negocio:</b> " . $negocio . "<br><br>" . "<b>Mensaje:</b>" . "<br><br>" . $comentario;
+    $subject = "Contacto";
+    $to = "bensondaniel664@gmail.com"; // this is your Email address
+
+    $oEmail = oxNew('oxEmail');
+
+    $oEmail->setBody($message);
+
+
+    $oEmail->setSubject($subject);
+
+    $oEmail->setRecipient($to,'Benson');
+    $oEmail->setReplyTo($email, $nombre);
+
+    $this->sentPersonalizado = $oEmail->send();
+  }
+
+
+}
+
+
+protected $sentPersonalizado = false;
+
+public function getSentPersonalizado(){
+  return $this->sentPersonalizado;
+}
+
 
 
 

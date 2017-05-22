@@ -1,4 +1,10 @@
-<form action="index.php?a=2#contact" name="contactox" id="contactox" method="post">
+
+
+<form action="[{ $oViewConf->getSelfActionLink() }]" name="contactox" id="contactox" method="post">
+  <input type="hidden" name="cl" value="[{ $oViewConf->getActiveClassName() }]">
+  <input type="hidden" name="fnc" value="perso_fnc">
+  [{assign var=cat value=$oView->getActiveCategory() }]
+<input type="hidden" name="cnid" value="[{$cat->getId()}]">
 <input name="nombre" value="Nombre" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Nombre') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Nombre')">
 <div style="width:100%; height:5px;"></div>
 <input name="apellidos" value="Apellidos" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Apellidos') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Apellidos')">

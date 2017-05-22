@@ -22,6 +22,7 @@
             [{block name="checkout_thankyou_info"}]
                 [{oxmultilang ident="THANK_YOU_FOR_ORDER"}] <span> en </span>[{$oxcmp_shop->oxshops__oxname->value}]. <br>
                 [{oxmultilang ident="REGISTERED_YOUR_ORDER" args=$order->oxorder__oxordernr->value}] <br>
+                <strong>El tiempo de entrega con pago recibido a paquetería es de hasta 3 a 5 días hábiles</strong><br>
                 [{if !$oView->getMailError()}]
                     [{oxmultilang ident="MESSAGE_YOU_RECEIVED_ORDER_CONFIRM"}]<br>
                 [{else}]<br>

@@ -407,7 +407,7 @@ class Start extends oxUBase
     public function contacto_fnc(){
 
 
-      if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"])) {
+      if(isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"])) {
         $nombre = $_POST["nombre"];
         $email = $_POST["email"];
         $tel = $_POST["tel"];
@@ -415,7 +415,7 @@ class Start extends oxUBase
 
 
         $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
-        $subject = "<h1>Contacto</h1>";
+        $subject = "Contacto";
         $to = "bensondaniel664@gmail.com"; // this is your Email address
 
         $oEmail = oxNew('oxEmail');

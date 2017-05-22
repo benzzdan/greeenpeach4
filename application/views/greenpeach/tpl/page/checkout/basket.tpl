@@ -41,7 +41,8 @@
                                 </button>
                             </form>
                         [{else}]
-                            <a href="[{$oViewConf->getHomeLink()}]" class="btn btn-default submitButton largeButton pull-left">
+                            [{assign var=cat value=$oView->getCat('Productos')}]
+                            <a href="[{$cat->getLink()}]" class="btn btn-default submitButton largeButton pull-left">
                                 <i class="fa fa-caret-left"></i> [{oxmultilang ident="CONTINUE_SHOPPING"}]
                             </a>
                         [{/if}]
@@ -85,7 +86,8 @@
                                 </div>
                             </form>
                         [{else}]
-                            <a href="[{$oViewConf->getHomeLink()}]" class="btn btn-default submitButton largeButton pull-left">
+                        [{assign var=cat value=$oView->getCat('Productos')}]
+                            <a href="[{$cat->getLink()}]" class="btn btn-default submitButton largeButton pull-left">
                                 <i class="fa fa-caret-left"></i> [{oxmultilang ident="CONTINUE_SHOPPING"}]
                             </a>
                         [{/if}]

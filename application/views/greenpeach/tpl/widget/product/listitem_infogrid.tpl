@@ -58,14 +58,15 @@
                             <img src="[{$oViewConf->getImageUrl('spinner.gif')}]" data-src="[{$product->getThumbnailUrl()}]" alt="[{$product->oxarticles__oxtitle->value}] [{$product->oxarticles__oxvarselect->value}]" class="product-img img-responsive" style="margin: auto;">
                             [{assign var=descPrice value=$product->getFPrice()}]
                             [{assign var=basePrice value=$product->getFBasePrice()}]
-                            [{if $descPrice != $basePrice}]
-                            [{assign var=discount value=$product->getDiscountPercent()}]
-                            <div class="ribbon-wrapper">
-                              <div class="ribbon">
-                                -[{$discount}]%
-                              </div>
-                            </div>
-                            [{/if}]
+
+                                [{if $descPrice != $basePrice}]
+                                [{assign var=discount value=$product->getDiscountPercent()}]
+                                <div class="ribbon-wrapper">
+                                  <div class="ribbon">
+                                    -[{$discount}]%
+                                  </div>
+                                </div>
+                                [{/if}]
                         </a>
                     </div>
                 [{/block}]

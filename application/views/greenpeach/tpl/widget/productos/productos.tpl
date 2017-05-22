@@ -57,8 +57,8 @@
 
     </div>
     <div class="row">
-      <img src="[{$oViewConf->getImageUrl('img-fedex.png')}]" alt="envios" style="width: 50px; height: 31px;margin-right: 2%;"/>
-      <img src="[{$oViewConf->getImageUrl('img-tresguerras.png')}]" alt="envios" style="width: 150px; height: 31px;"/>
+      <img src="[{$oViewConf->getImageUrl('img-fedex.png')}]" alt="envios" style="margin-right: 2%;"/>
+      <img src="[{$oViewConf->getImageUrl('img-tresguerras.png')}]" alt="envios" />
 
     </div>
 

@@ -54,9 +54,9 @@
                   <input type="hidden" name="fnc" value="contacto2_fnc">
                   [{assign var=cat value=$oView->getActiveCategory() }]
               <input type="hidden" name="cnid" value="[{$cat->getId()}]">
-                <input type="text" name="nombre" value="" placeholder="Nombre" class="cont-input"><br>
+                <b><input type="text" name="nombre" value="" placeholder="Nombre" class="cont-input"></b><br>
                 <input type="text" name="email" value="" placeholder="E-mail" class="cont-input"><br>
-                <input type="text" name="tel" value="" placeholder="Teléfono" class="cont-input"><br>
+                <b><input type="text" name="tel" value="" placeholder="Teléfono" class="cont-input"></b><br>
                 <textarea name="comentario" rows="8" cols="40" placeholder="Mensaje" class="cont-input"></textarea>
                 <div class="form-footer">
                   <a href="#" style="margin-left: 9px;padding-right: 10px;">Acepto con los terminos y condiciones</a>

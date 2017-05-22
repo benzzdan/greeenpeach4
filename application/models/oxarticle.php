@@ -5010,7 +5010,6 @@ class oxArticle extends oxI18n implements oxIArticle, oxIUrl
     public function getDiscountPercent(){
       $descPrice = $this->getFPrice();
       $basePrice = $this->getFBasePrice();
-
       //echo $descPrice.' * 100)/'.$basePrice;
       return 100 - round(($descPrice * 100)/$basePrice);
     }
