@@ -129,7 +129,7 @@ $aLang = array(
     'DD_BASKET_BACK_TO_SHOP'                                => 'back to shop',
 
     // E-Mails
-    'DD_ORDER_CUST_HEADING'                                 => 'Order',
+    'DD_ORDER_CUST_HEADING'                                 => 'Orden',
     'DD_FOOTER_FOLLOW_US'                                   => 'Follow us:',
     'DD_FOOTER_CONTACT_INFO'                                => 'Contact:',
     'DD_FORGOT_PASSWORD_HEADING'                            => 'Forgot password',

@@ -177,7 +177,7 @@
                                                   [{/if}]
                                                   [{assign var=descPrice value=$oDetailsProduct->getFPrice()}]
                                                   [{assign var=basePrice value=$oDetailsProduct->getFBasePrice()}]
-                                                  <strong>[{$descPrice}] + 21</strong>
+                                            
                                                   [{if $descPrice != $basePrice}]
                                                   <!-- discount price -->
                                                     [{block name="details_productmain_tprice"}]

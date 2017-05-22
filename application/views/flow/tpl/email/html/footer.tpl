@@ -1,4 +1,4 @@
-                                    <table class="row footer">
+                                    <!-- <table class="row footer">
                                         <tr bgcolor="#ebebeb">
                                             <td class="wrapper">
                                                 <table class="six columns">
@@ -96,6 +96,6 @@
                     </center>
                 </td>
             </tr>
-        </table>
+        </table> -->
     </body>
 </html>

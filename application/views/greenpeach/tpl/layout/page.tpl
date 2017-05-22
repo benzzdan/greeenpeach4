@@ -75,7 +75,7 @@
                             </div>
                         [{/if}]
 
-                        <div class="col-xs-12 [{if $sidebar}]col-md-9[{/if}]" id="theone">
+                        <div class="col-xs-12 [{if $sidebar}]col-md-8[{/if}]" style="margin-left: 2%;">
 
                             <div id="content">
                                 [{block name="content_main"}]

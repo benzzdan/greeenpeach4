@@ -42,6 +42,8 @@
                             </div>
                         [{/if}]
 
+
+
                         <div class="col-xs-12 [{if $sidebar}]col-md-9[{/if}]">
 
                             <div id="content">

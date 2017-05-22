@@ -1,6 +1,6 @@
 [{assign var="template_title" value="MY_ACCOUNT"|oxmultilangassign}]
 [{capture append="oxidBlock_content"}]
-    <div class="accountDashboardView" style="margin-top: 4%">
+    <div class="accountDashboardView">
         <h1 id="accountMain" class="page-header">[{oxmultilang ident="MY_ACCOUNT"}]
             "[{$oxcmp_user->oxuser__oxusername->value}]"</h1>
 

@@ -174,6 +174,10 @@ class order extends oxUBase
 
     {
 
+      // $oUser = $this->getUser();
+      // print_r($oUser->oxuser__oxstreetnr->value);
+      // die();
+
 
         if ($this->getIsOrderStep()) {
             $oBasket = $this->getBasket();
@@ -342,6 +346,7 @@ foreach($content as $item){
 //specifies shipping info
       $oUser = $this->getUser();
       $street = $oUser->oxuser__oxstreet->value;
+      $exterior = $oUser->oxuser__oxstreetnr->value;
       $city = $oUser->oxuser__oxcity->value;
       $id = $oUser->oxuser__oxstateid->value;
       $state = $oUser->getStateTitle($id);
@@ -373,6 +378,7 @@ foreach($content as $item){
             "receiver" => $fname,
             "address" => array(
               "street1" => $street,
+              "street2" => $exterior,
               "city" => $city,
               "state" => $state,
               "country" => "MX",
@@ -440,6 +446,7 @@ foreach($content as $item){
         $name = $oUser->oxuser__oxfname->value . " " . $oUser->oxuser__oxlname->value;
         $email = $oUser->oxuser__oxusername->value;
         $street = $oUser->oxuser__oxstreet->value;
+        $exterior = $oUser->oxuser__oxstreetnr->value;
         $city = $oUser->oxuser__oxcity->value;
         $id = $oUser->oxuser__oxstateid->value;
         $state = $oUser->getStateTitle($id);
@@ -466,6 +473,7 @@ foreach($content as $item){
               "receiver" => $fname,
               "address" => array(
                 "street1" => $street,
+                "street2" => $exterior,
                 "city" => $city,
                 "state" => $state,
                 "country" => "MX",
