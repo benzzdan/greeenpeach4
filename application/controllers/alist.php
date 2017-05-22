@@ -980,9 +980,9 @@ public function perso_fnc(){
     $ciudad = $_POST["ciudad"];
 
 
-    $message = "Datos distribuidor:" . "<br><br>" . "<b>Nombre:</b> " . $nombre . "<br>". "<b>Apellidos:</b> " . $apellidos ."<br>" .  "<b>Email:</b> ". $email . "<br>" . "<b>Celular:</b> " . $tel . "<br>" . "<b>Ciudad:</b> " . $ciudad .
+    $message = "Datos Producto Personalizado:" . "<br><br>" . "<b>Nombre:</b> " . $nombre . "<br>". "<b>Apellidos:</b> " . $apellidos ."<br>" .  "<b>Email:</b> ". $email . "<br>" . "<b>Celular:</b> " . $tel . "<br>" . "<b>Ciudad:</b> " . $ciudad .
     "<br>" . "<b>Negocio:</b> " . $negocio . "<br><br>" . "<b>Mensaje:</b>" . "<br><br>" . $comentario;
-    $subject = "Contacto";
+    $subject = "Contacto producto personalizado";
     $to = "bensondaniel664@gmail.com"; // this is your Email address
 
     $oEmail = oxNew('oxEmail');
