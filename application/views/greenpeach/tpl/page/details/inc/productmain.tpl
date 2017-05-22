@@ -429,6 +429,8 @@
                           [{foreach from=$atributos item=sug name=sugerencia}]
                             [{$sug}]<br>
                           [{/foreach}]
+                          <br>
+                          
                         [{else}]
                           <strong style="margin-right: 5px;"> [{$oAttr->oxattribute__oxtitle->value}]:</strong><br><span>[{$oAttr->oxattribute__oxvalue->value}]</span><br><br>
                         [{/if}]
