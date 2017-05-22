@@ -5,19 +5,19 @@
   <input type="hidden" name="fnc" value="perso_fnc">
   [{assign var=cat value=$oView->getActiveCategory() }]
 <input type="hidden" name="cnid" value="[{$cat->getId()}]">
-<input name="nombre" value="Nombre" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Nombre') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Nombre')">
+<input name="nombre"  type="text" maxlength="80" class="textform" placeholder="Nombre">
 <div style="width:100%; height:5px;"></div>
-<input name="apellidos" value="Apellidos" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Apellidos') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Apellidos')">
+<input name="apellidos" type="text" maxlength="80" class="textform" placeholder="Apellidos">
 <div style="width:100%; height:5px;"></div>
-<input name="email" value="E-mail" type="text" maxlength="80" class="textform" onfocus="(this.value == 'E-mail') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'E-mail')">
+<input name="email"  type="text" maxlength="80" class="textform" placeholder="E-mail">
 <div style="width:100%; height:5px;"></div>
-<input name="tel" value="Teléfono" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Teléfono') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Teléfono')">
+<b><input name="tel"  type="text" maxlength="80" class="textform" placeholder="Teléfono"></b>
 <div style="width:100%; height:5px;"></div>
-<input name="ciudad" value="Ciudad" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Ciudad') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Ciudad')">
+<input name="ciudad"  type="text" maxlength="80" class="textform" placeholder="Ciudad">
 <div style="width:100%; height:5px;"></div>
-<input name="negocio" value="Empresa / Negocio" type="text" maxlength="80" class="textform" onfocus="(this.value == 'Empresa / Negocio') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Empresa / Negocio')">
+<input name="negocio"  type="text" maxlength="80" class="textform" placeholder="Empresa/Negocio">
 <div style="width:100%; height:5px;"></div>
-<textarea name="comentario" value="Mensaje" type="text" maxlength="1500" class="textform" onfocus="(this.value == 'Mensaje') &amp;&amp; (this.value = '')" onblur="(this.value == '') &amp;&amp; (this.value = 'Mensaje')" rows="6">Mensaje</textarea><grammarly-btn><div data-reactroot="" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" style="visibility: hidden; z-index: 2;"><div class="_e725ae-transform_wrap"><div title="Protected by Grammarly" class="_e725ae-status">&nbsp;</div></div></div></grammarly-btn>
+<textarea name="comentario"  type="text" maxlength="1500" class="textform" placeholder="Mensaje" rows="6">Mensaje</textarea><grammarly-btn><div data-reactroot="" class="_e725ae-textarea_btn _e725ae-anonymous _e725ae-not_focused" style="visibility: hidden; z-index: 2;"><div class="_e725ae-transform_wrap"><div title="Protected by Grammarly" class="_e725ae-status">&nbsp;</div></div></div></grammarly-btn>
 <div style="width:100%; height:5px;"></div>
 <center>
 <div class="terminos">

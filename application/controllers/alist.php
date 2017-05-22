@@ -970,7 +970,7 @@ public function getSentContacto2(){
 public function perso_fnc(){
 
 
-  if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) &&  !empty($_POST["nombre"]) && isset($_POST["tel"]) && !empty($_POST["tel"]) && isset($_POST["apellidos"]) && !empty($_POST["apellidos"])){
+  if(isset($_POST["tel"]) && !empty($_POST["tel"])){
     $nombre = $_POST["nombre"];
     $apellidos = $_POST["apellidos"];
     $email = $_POST["email"];
