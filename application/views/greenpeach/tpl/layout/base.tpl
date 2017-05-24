@@ -232,6 +232,9 @@
         <script type="text/javascript" src="[{$oViewConf->getResourceUrl()}]js/sss.min.js">
         </script>
 
+        <script type="text/javascript" src="[{$oViewConf->getResourceUrl()}]js/lightbox.js">
+        </script>
+
 
 
         <script type="text/javascript" src="https://conektaapi.s3.amazonaws.com/v0.3.2/js/conekta.js"></script>

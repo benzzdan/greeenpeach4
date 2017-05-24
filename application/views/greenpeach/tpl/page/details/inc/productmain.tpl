@@ -81,12 +81,26 @@
                         [{assign var="aPictureInfo" value=$oConfig->getMasterPicturePath("product/1/`$sPictureName`")|@getimagesize}]
                     [{/if}]
 
-                    <div class="picture text-center">
+                    <div class="picture text-center hidden-xs">
                         <a href="[{$oPictureProduct->getMasterZoomPictureUrl(1)}]" id="zoom1"[{if $aPictureInfo}] data-width="[{$aPictureInfo.0}]" data-height="[{$aPictureInfo.1}]"[{/if}]>
                             <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive img-detail">
                         </a>
                     </div>
-
+                    <div class="visible-xs">
+                      <a href="#" data-toggle="modal" data-target="#lightbox">
+                        <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive img-detail">
+                      </a>
+                    </div>
+                    <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog prod-modal">
+                          <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+                          <div class="modal-content">
+                              <div class="modal-body">
+                                  <img src="" alt="" />
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                 [{else}]
                     <div class="picture text-center">
                         <img src="[{$oView->getActPicture()}]" alt="[{$oPictureProduct->oxarticles__oxtitle->value|strip_tags}] [{$oPictureProduct->oxarticles__oxvarselect->value|strip_tags}]" itemprop="image" class="img-responsive img-detail">
@@ -430,7 +444,7 @@
                             [{$sug}]<br>
                           [{/foreach}]
                           <br>
-                          
+
                         [{else}]
                           <strong style="margin-right: 5px;"> [{$oAttr->oxattribute__oxtitle->value}]:</strong><br><span>[{$oAttr->oxattribute__oxvalue->value}]</span><br><br>
                         [{/if}]
