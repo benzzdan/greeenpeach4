@@ -1155,3 +1155,11 @@ background-color: #666666 !important;
 body.cl-thankyou ol.checkoutSteps li.active .num, body.is-checkout ol.checkoutSteps li.active .num {
     background-color: #009EC0 !important;
 }
+
+
+
+
+body.fixed-header #header #mainnav.fadeIn {
+  background-color: white !important;
+  z-index: 10000;
+}
