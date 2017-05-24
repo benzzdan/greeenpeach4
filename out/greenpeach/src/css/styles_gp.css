@@ -836,10 +836,10 @@ float: right;
 }
 
 
-/*
+
 .container {
-  min-height: 780px;
-}*/
+z-index: 25000;
+}
 
 
 /*.quienes {
