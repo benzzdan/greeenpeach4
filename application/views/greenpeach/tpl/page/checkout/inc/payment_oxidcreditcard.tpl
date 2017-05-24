@@ -8,7 +8,7 @@
     </dt>
     <dd class="[{if $oView->getCheckedPaymentId() == $paymentmethod->oxpayments__oxid->value}]activePayment[{/if}]">
 
-        <div class="form-group">
+        <div class="form-group movil-form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="CREDITCARD"}]</label>
             <div class="col-lg-9">
                 <select name="dynvalue[kktype]" class="form-control selectpicker" required="required">
@@ -27,14 +27,14 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group movil-form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="NUMBER"}]</label>
             <div class="col-lg-9">
                 <input type="text" class="form-control js-oxValidate js-oxValidate_notEmpty" size="20" maxlength="64" name="dynvalue[kknumber]" value="[{$dynvalue.kknumber}]" required="required" data-conekta="card[number]">
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group movil-form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="BANK_ACCOUNT_HOLDER"}]</label>
             <div class="col-lg-9">
                 <input type="text" size="20" class="form-control js-oxValidate js-oxValidate_notEmpty" maxlength="64" name="dynvalue[kkname]" value="[{if $dynvalue.kkname}][{$dynvalue.kkname}][{else}][{$oxcmp_user->oxuser__oxfname->value}] [{$oxcmp_user->oxuser__oxlname->value}][{/if}]" required="required" data-conekta="card[name]">
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group movil-form-group">
             <label class="req control-label col-xs-12 col-lg-3">[{oxmultilang ident="VALID_UNTIL"}]</label>
             <div class="col-xs-6 col-lg-2">
                 <select name="dynvalue[kkmonth]" class="form-control selectpicker" required="required" data-conekta="card[exp_month]">
@@ -70,7 +70,7 @@
             <div class="col-sm-3"></div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group movil-form-group">
             <label class="req control-label col-lg-3">[{oxmultilang ident="CARD_SECURITY_CODE"}]</label>
             <div class="col-lg-9">
                 <input type="text" class="form-control js-oxValidate js-oxValidate_notEmpty" size="20" maxlength="64" name="dynvalue[kkpruef]" value="[{$dynvalue.kkpruef}]" required="required" data-conekta="card[cvc]">

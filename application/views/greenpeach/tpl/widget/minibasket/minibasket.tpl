@@ -82,8 +82,8 @@
                               [{assign var=cat value=$oView->getCat('Productos')}]
 
                                 <!-- <button type="button" class="btn btn-default" data-dismiss="modal">[{oxmultilang ident="CONTINUE_SHOPPING"}]</button> -->
-                                <a href="[{$cat->getLink()}]" class="btn btn-default">[{oxmultilang ident="CONTINUE_SHOPPING"}]</a>
-                                <a href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=basket"}]" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="[{oxmultilang ident="DISPLAY_BASKET"}]">
+                                <a id="modal-cont-shopping" href="[{$cat->getLink()}]" class="btn btn-default">[{oxmultilang ident="CONTINUE_SHOPPING"}]</a>
+                                <a id="modal-cart-btn" href="[{oxgetseourl ident=$oViewConf->getSelfLink()|cat:"cl=basket"}]" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="[{oxmultilang ident="DISPLAY_BASKET"}]">
                                     <i class="fa fa-shopping-cart"></i>
                                 </a>
                             </div>

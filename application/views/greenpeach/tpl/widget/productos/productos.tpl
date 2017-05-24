@@ -1,3 +1,8 @@
+<div class="visible-xs">
+  <div class="space30">
+
+  </div>
+</div>
 <div class="row text-center">
   <img src="[{$oViewConf->getImageUrl()}]tit-productos.png" alt="productos"  class="img-responsive titulo-sec"/>
 </div>
@@ -63,7 +68,7 @@
     </div>
 
   </div>
-  <div class="col-md-6" style="text-align: right">
+  <div class="col-md-6" id="movil2">
     <img src="[{$oViewConf->getImageUrl('icon-cards.png')}]" alt="envios" />
     <span><img src="[{$oViewConf->getImageUrl('icon-paypal.png')}]" alt="" /></span>
     <span><img src="[{$oViewConf->getImageUrl('img-oxxo.png')}]" alt="" /></span>

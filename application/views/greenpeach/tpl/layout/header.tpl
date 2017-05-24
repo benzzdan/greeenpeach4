@@ -12,10 +12,10 @@
 
           <nav class="navbar navbar-default" role="navigation" style="width: 100%">
               <ul class="nav navbar-nav navbar-right">
-                  <a class="hvr-float" href="http://www.facebook.com/GPSUPERFOODS/">
+                  <a class="hvr-float" href="http://www.facebook.com/GPSUPERFOODS/" target="_blank">
                     <div id="icon-face"></div>
                   </a>
-                  <a class="hvr-float" href="https://www.instagram.com/greenpeachsuperfoods/">
+                  <a class="hvr-float" href="https://www.instagram.com/greenpeachsuperfoods/" target="_blank">
                     <div id="icon-ig"></div>
                   </a>
 

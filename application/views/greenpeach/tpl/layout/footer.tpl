@@ -25,9 +25,9 @@
             </div>
             <div class="col-md-6">
               <span>Síguenos: </span>
-              <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float"><img alt="facebook" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-facebook3.png" /></a> &nbsp;
-              <a href="https://www.instagram.com/greenpeachsuperfoods/" class="hvr-float"><img alt="instagram" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-ig3.png" /></a> &nbsp;
-              <a style="margin-left: 50px;" href="#">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
+              <a href="http://www.facebook.com/GPSUPERFOODS/" class="hvr-float" target="_blank"><img alt="facebook" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-facebook3.png" /></a> &nbsp;
+              <a href="https://www.instagram.com/greenpeachsuperfoods/" class="hvr-float" target="_blank"><img alt="instagram" style="width:100%; max-width:25px;" src="[{$oViewConf->getImageUrl()}]icon-ig3.png" /></a> &nbsp;
+              <a style="margin-left: 50px;" href="#" target="_blank">Leer terminos y condiciones</a> © Green Peach Superfoods 2017
             </div>
         [{/if}]
           </div>

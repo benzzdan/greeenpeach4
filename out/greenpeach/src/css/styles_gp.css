@@ -3,12 +3,54 @@
 
 @media only screen and (max-width: 380px){
 
+  .service-menu  {
+    float: right;
+  }
+
+  .movil-form-group {
+    padding: 2%;
+  }
+
+  .form-horizontal .form-group {
+    margin: 0 !important;
+  }
+
+
+
+  nav#mainnav.navbar.navbar-default.fadeIn div.collapse.navbar-collapse.navbar-ex1-collapse {
+    padding-top: 43px !important;
+  }
+
+
+  body.cl-basket #basket_list .totalPrice {
+    position: inherit !important;
+  }
+
+  #addToBasket{
+    margin-bottom: 27%;
+  }
+
+
+  #modal-cont-shopping {
+    font-size: 15px;
+  }
+
+  #modal-cart-btn {
+    font-size: 15px;
+  }
+
+
   #logo-img {
     width: 70px !important;
   height: 70px !important;
-  top: -40px !important;
+  top: -59px !important;
   position: relative !important;
   left: 20% !important;
+  }
+
+
+  #movil2 {
+    text-align: left !important;
   }
 
   #quienesmov {
@@ -22,7 +64,7 @@ position: relative;
 
   .navbar-toggle {
 position: relative;
-    top: -37px;
+    top: -53px;
 
 }
 
@@ -49,7 +91,7 @@ position: relative;
 
 #mainnav .navbar-header {
 
-	max-height: 45px !important;
+	max-height: 19px !important;
 
 }
 
@@ -94,6 +136,7 @@ padding-bottom: 13%;
 
 #myaccount {
       margin-left: 5%;
+      padding-right: 0;
 }
 
 
@@ -129,6 +172,14 @@ padding-bottom: 13%;
 
 
 @media only screen and (min-width: 400px){
+
+
+
+
+  #movil2 {
+    text-align: right !important;
+  }
+
   nav#mainnav.navbar.navbar-default.fadeIn div.navbar-header a#logo_gp img{
 
   width: 75px !important;
@@ -672,7 +723,7 @@ nav#mainnav.navbar.navbar-default.fadeIn div.navbar-collapse ul#navigation{
   top: 10px;
 }
 nav#mainnav.navbar.navbar-default.fadeIn div.collapse.navbar-collapse.navbar-ex1-collapse {
-  padding-top: 12px;
+  padding-top: 16px;
 }
 
 #mainnav {
