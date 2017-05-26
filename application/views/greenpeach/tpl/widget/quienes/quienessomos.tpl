@@ -1,6 +1,6 @@
 <div class="row text-center">
    <div class="quienes">
-      <img src="[{$oViewConf->getImageUrl()}]tit-quienesomos.png" class="img-responsive titulo-sec"/>
+      <img src="[{$oViewConf->getImageUrl()}]tit-quienesomos.png" class="img-responsive titulo-sec" style="margin-bottom: 0"/>
    </div>
 </div>
 <div id="quienesmov" class="row">
