@@ -1241,3 +1241,8 @@ body.fixed-header #header #mainnav.fadeIn {
   background-color: white !important;
   z-index: 10000;
 }
+
+
+#beneficios {
+  margin-left: 5% !important;
+}
