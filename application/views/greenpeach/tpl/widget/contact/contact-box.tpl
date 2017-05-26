@@ -33,7 +33,7 @@
               <tr>
                 <td class="footerlinks" style="width:100%; text-align:left; vertical-align:top;">
                   <img src="[{$oViewConf->getImageUrl()}]/icon-email2.svg" alt="icon" style="width:100%; max-width:35px;">
-                  <a href="mailto:venta@greenpeach.mx">ventas@greenpeach.mx</a>
+                  <a href="mailto:ventas@greenpeach.mx">ventas@greenpeach.mx</a>
                 </td>
               </tr>
               <tr>

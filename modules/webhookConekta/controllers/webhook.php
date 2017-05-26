@@ -16,9 +16,9 @@ class webhook extends oxUBase {
       ¡Gracias por tu compra en Green Peach Super Foods!<br>
       Tu pedido fue por:  <strong>$" . (float)$amount . " MXN</strong>";
       $subject = $payment_method . "Pago en OXXO comprobado - Green Peach";
-      $to = "bensondaniel664@gmail.com";
+      $to = "ventas@greenpeach.mx";
       $nombre = "Daniel";
-      $email = "bensondaniel664@gmail.com";
+      $email = "ventas@greenpeach.mx";
       $oEmail = oxNew('oxEmail');
       $oEmail->setBody($msg);
       $oEmail->setSubject($subject);
@@ -27,7 +27,7 @@ class webhook extends oxUBase {
       $oEmail->send();
       // $payment_method = $data->charges->data->object->payment_method->type;
       //   $msg = "Tu pago ha sido comprobado.";
-      //   mail("bensondaniel664@gmail.com","Pago ". $payment_method ." confirmado",$msg);
+      //   mail("ventas@greenpeach.mx","Pago ". $payment_method ." confirmado",$msg);
     }
   }
 

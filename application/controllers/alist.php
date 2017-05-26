@@ -894,7 +894,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) 
 
   $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $cel . "<br>" . "Ciudad: " . $ciudad;
   $subject = "Contacto";
-  $to = "bensondaniel664@gmail.com"; // this is your Email address
+  $to = "ventas@greenpeach.mx"; // this is your Email address
 
   $oEmail = oxNew('oxEmail');
 
@@ -934,7 +934,7 @@ public function contacto2_fnc(){
 
     $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
     $subject = "Contacto";
-    $to = "bensondaniel664@gmail.com"; // this is your Email address
+    $to = "ventas@greenpeach.mx"; // this is your Email address
 
     $oEmail = oxNew('oxEmail');
 
@@ -983,7 +983,7 @@ public function perso_fnc(){
     $message = "Datos Producto Personalizado:" . "<br><br>" . "<b>Nombre:</b> " . $nombre . "<br>". "<b>Apellidos:</b> " . $apellidos ."<br>" .  "<b>Email:</b> ". $email . "<br>" . "<b>Celular:</b> " . $tel . "<br>" . "<b>Ciudad:</b> " . $ciudad .
     "<br>" . "<b>Negocio:</b> " . $negocio . "<br><br>" . "<b>Mensaje:</b>" . "<br><br>" . $comentario;
     $subject = "Contacto producto personalizado";
-    $to = "bensondaniel664@gmail.com"; // this is your Email address
+    $to = "ventas@greenpeach.mx"; // this is your Email address
 
     $oEmail = oxNew('oxEmail');
 

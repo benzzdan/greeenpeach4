@@ -416,7 +416,7 @@ class Start extends oxUBase
 
         $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
         $subject = "Contacto";
-        $to = "bensondaniel664@gmail.com"; // this is your Email address
+        $to = "ventas@greenpeach.mx"; // this is your Email address
 
         $oEmail = oxNew('oxEmail');
 
