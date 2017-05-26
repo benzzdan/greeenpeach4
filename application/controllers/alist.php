@@ -944,7 +944,7 @@ public function contacto2_fnc(){
     $oEmail->setSubject($subject);
 
     $oEmail->setRecipient($to,'Benson');
-    $oEmail->setReplyTo($email, $nombre);
+    $oEmail->setReplyTo($to, $nombre);
 
     $this->sentContacto2 = $oEmail->send();
   }
