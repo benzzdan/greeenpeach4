@@ -430,7 +430,7 @@
                             [{assign var="myString" value=$oAttr->oxattribute__oxvalue->value}]
                             [{assign var="atributos" value="|"|explode:$myString}]
                             <strong>[{$oAttr->oxattribute__oxtitle->value}]:</strong><br>
-                            <ul>
+                            <ul style="margin-left: 5%;">
                               [{foreach from=$atributos item=benef name=beneficio}]
                                 <li>[{$benef}]</li>
                               [{/foreach}]
