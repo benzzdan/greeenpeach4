@@ -241,7 +241,7 @@
 
         <script type="text/javascript">
           // Conekta.setLanguague("es");
-          Conekta.setPublishableKey("key_Gakvrs1xGbr5qsjR3XUT7CQ");
+          Conekta.setPublishableKey("key_YE6ssvEq3VJHMVU78oX5CrQ");
 
           var conektaSuccessResponseHandler = function(token){
             var $form = $('#payment');
