@@ -29,12 +29,12 @@ Favor de llenar el siguiente formulario y en un plazo de 24 a 48hrs nos pondremo
     [{assign var=cat value=$oView->getActiveCategory() }]
 <input type="hidden" name="cnid" value="[{$cat->getId()}]">
 <input type="hidden" name="fnc" value="dist_fnc">
-    <strong><input name="nombre" placeholder="Nombre" type="text" maxlength="80" class="textform js-oxValidate_notEmpty"/></strong>
+    <strong><input name="nombre" placeholder="Nombre *" type="text" maxlength="80" class="textform js-oxValidate_notEmpty"/></strong>
     <div style="width:100%; height:5px;"></div>
     <input name="apellidos" placeholder="Apellidos" type="text" maxlength="80" class="textform"  />
     <div style="width:100%; height:5px;"></div>
-    <strong><input name="email" placeholder="Email" type="text" maxlength="80" class="textform"/></strong>
-    <strong><input name="cel" placeholder="Celular" type="text" maxlength="80" class="textform"/></strong>
+    <strong><input name="email" placeholder="Email *" type="text" maxlength="80" class="textform"/></strong>
+    <strong><input name="cel" placeholder="Celular *" type="text" maxlength="80" class="textform"/></strong>
     <div style="width:100%; height:5px;"></div>
     <input name="tel-fijo" placeholder="Teléfono fijo" type="text" maxlength="80" class="textform"  />
     <div style="width:100%; height:5px;"></div>

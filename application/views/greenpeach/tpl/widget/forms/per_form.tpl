@@ -11,7 +11,7 @@
 <div style="width:100%; height:5px;"></div>
 <input name="email"  type="text" maxlength="80" class="textform" placeholder="E-mail">
 <div style="width:100%; height:5px;"></div>
-<b><input name="tel"  type="text" maxlength="80" class="textform" placeholder="Teléfono"></b>
+<b><input name="tel"  type="text" maxlength="80" class="textform" placeholder="Teléfono *"></b>
 <div style="width:100%; height:5px;"></div>
 <input name="ciudad"  type="text" maxlength="80" class="textform" placeholder="Ciudad">
 <div style="width:100%; height:5px;"></div>
