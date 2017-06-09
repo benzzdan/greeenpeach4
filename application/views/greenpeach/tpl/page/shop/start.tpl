@@ -1,7 +1,4 @@
-<style>
-body
-{ overflow:hidden;}
-</style>
+
 [{capture append="oxidBlock_content"}]
 <!--
     [{assign var="oConfig" value=$oViewConf->getConfig()}]
