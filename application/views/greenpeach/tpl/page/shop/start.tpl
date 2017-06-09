@@ -3,7 +3,7 @@ body
 { overflow:hidden;}
 </style>
 [{capture append="oxidBlock_content"}]
-<--
+<!--
     [{assign var="oConfig" value=$oViewConf->getConfig()}]
     [{assign var='rsslinks' value=$oView->getRssLinks()}]
     [{oxscript include="js/pages/start.min.js"}]
