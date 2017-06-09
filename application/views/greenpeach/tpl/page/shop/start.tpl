@@ -1,6 +1,9 @@
-
+<style>
+body
+{ overflow:hidden;}
+</style>
 [{capture append="oxidBlock_content"}]
-    <!-- [{assign var="oConfig" value=$oViewConf->getConfig()}]
+    [{assign var="oConfig" value=$oViewConf->getConfig()}]
     [{assign var='rsslinks' value=$oView->getRssLinks()}]
     [{oxscript include="js/pages/start.min.js"}]
 
@@ -38,9 +41,22 @@
     [{/if}]
 
 
-     [{insert name="oxid_tracker"}]  -->
+     [{insert name="oxid_tracker"}] 
 
 
 [{/capture}]
 
 [{include file="layout/page.tpl"}]
+<!-- <div id="preloader">
+<img src="https://www.greenpeach.mx/out/greenpeach/img/logo-greenpeachsuperfoods.png" style="border:0px; margin:2% 45%;" alt="green peach" />
+    <div id="loader">&nbsp;</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$('#preloader').fadeOut('slow');
+	$('body').css({'overflow':'visible'});
+})
+</script> -->
