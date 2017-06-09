@@ -3,6 +3,7 @@ body
 { overflow:hidden;}
 </style>
 [{capture append="oxidBlock_content"}]
+<--
     [{assign var="oConfig" value=$oViewConf->getConfig()}]
     [{assign var='rsslinks' value=$oView->getRssLinks()}]
     [{oxscript include="js/pages/start.min.js"}]
@@ -43,8 +44,9 @@ body
 
      [{insert name="oxid_tracker"}] 
 
+		-->
 
-[{/capture}]
+[{/capture}] 
 
 [{include file="layout/page.tpl"}]
 <!-- <div id="preloader">
