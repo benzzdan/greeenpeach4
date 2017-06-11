@@ -57,7 +57,7 @@
 
 
                     [{if $oView->getClassName() != "start" && !$blHideBreadcrumb}]
-                      [{if $oView->getTitle() != 'Productos' && $oView->getTitle() != 'Green Peach' && $oView->getTitle() != 'Clientes' && $oView->getTitle() != 'Distribuidores' && $oView->getTitle() != 'Blog' && $oView->getTitle() != 'Contacto' }]
+                      [{if $oView->getTitle() != 'Productos' && $oView->getTitle() != 'Green Peach' && $oView->getTitle() != 'Clientes' && $oView->getTitle() != 'Distribuidores' && $oView->getTitle() != 'Blog' && $oView->getTitle() != 'Contacto' && $oView->getTitle() != 'Registrar' }]
                         [{block name="layout_breadcrumb"}]
                             [{include file="widget/breadcrumb.tpl"}]
                         [{/block}]

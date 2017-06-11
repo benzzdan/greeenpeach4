@@ -154,7 +154,7 @@
 [{/block}]
 
 <div class="form-group[{if $aErrors.oxuser__oxfon}] text-danger"[{/if}]">
-    <label class="control-label col-lg-3[{if $oView->isFieldRequired(oxuser__oxfon)}] req[{/if}]">[{oxmultilang ident="PHONE"}]</label>
+    <label class="control-label col-lg-3 req">[{oxmultilang ident="PHONE"}]</label>
     <div class="col-lg-9">
         <input class="form-control" type="text" maxlength="128" name="invadr[oxuser__oxfon]" value="[{if isset( $invadr.oxuser__oxfon )}][{$invadr.oxuser__oxfon}][{else}][{$oxcmp_user->oxuser__oxfon->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxfon)}] required=""[{/if}]>
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxfon}]
