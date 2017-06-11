@@ -20,13 +20,12 @@
     [{/block}]
 
 
-
     [{block name="sidebar_tags"}]
         [{if $oView->showTags() && $oView->getClassName() != 'start' && $oView->getClassName() != 'tags'}]
             <div class="box well well-sm hidden-xs hidden-sm">
                 <section>
-                    <div class="page-header h3">[{oxmultilang ident="DD_SIDEBAR_TAGCLOUD"}]</div>
-                    [{oxid_include_widget cl="oxwTagCloud" nocookie=1 noscript=1}]
+                     <div class="page-header h3">[{oxmultilang ident="DD_SIDEBAR_TAGCLOUD"}]</div>
+                    [{oxid_include_widget cl="oxwTagCloud" nocookie=1 noscript=1}] 
                 </section>
             </div>
         [{/if}]
