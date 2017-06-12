@@ -424,7 +424,8 @@ foreach($content as $item){
 
     require_once(dirname(__DIR__).'/../conekta/conekta_php/lib/Conekta.php');
     //require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
-    \Conekta\Conekta::setApiKey("key_nByZGCqqJnn2LskFspRo3A");
+    //\Conekta\Conekta::setApiKey("key_nByZGCqqJnn2LskFspRo3A"); //prod
+    \Conekta\Conekta::setApiKey("key_iuzqkqDnzzQjWyPporzBzA"); //sandbox
     \Conekta\Conekta::setApiVersion("2.0.0");
 
 
