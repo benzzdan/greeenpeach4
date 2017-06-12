@@ -17,7 +17,7 @@
 
     [{block name="checkout_order_main"}]
         [{if !$oView->showOrderButtonOnTop()}]
-            <div class="alert alert-info">[{oxmultilang ident="MESSAGE_SUBMIT_BOTTOM"}]</div>
+            <!-- <div class="alert alert-info">[{oxmultilang ident="MESSAGE_SUBMIT_BOTTOM"}]</div> -->
         [{/if}]
 
         [{block name="checkout_order_details"}]

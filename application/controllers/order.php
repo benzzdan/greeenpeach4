@@ -424,8 +424,8 @@ foreach($content as $item){
 
     require_once(dirname(__DIR__).'/../conekta/conekta_php/lib/Conekta.php');
     //require_once("/opt/bitnami/apache2/htdocs/greenpeach2/conekta/conekta-php/lib/Conekta.php");
-    //\Conekta\Conekta::setApiKey("key_nByZGCqqJnn2LskFspRo3A"); //prod
-    \Conekta\Conekta::setApiKey("key_iuzqkqDnzzQjWyPporzBzA"); //sandbox
+     //\Conekta\Conekta::setApiKey("key_nByZGCqqJnn2LskFspRo3A"); //prod
+        \Conekta\Conekta::setApiKey("key_iuzqkqDnzzQjWyPporzBzA"); //sandbox
     \Conekta\Conekta::setApiVersion("2.0.0");
 
 
@@ -455,6 +455,8 @@ foreach($content as $item){
         $zip = $oUser->oxuser__oxzip->value;
         $data = $this->getSession()->getVariable('dynvalue');
 
+
+      try{
         $order = \Conekta\Order::create(
           array(
             "line_items" => $basketItems,
@@ -493,8 +495,23 @@ foreach($content as $item){
           )//order
         );
 
+                 oxRegistry::getSession()->setVariable('oxxoref', $order->charges[0]->payment_method->reference);
 
-          oxRegistry::getSession()->setVariable('oxxoref', $order->charges[0]->payment_method->reference);
+        return $this->saveOrder();
+
+
+
+
+
+        }catch (\Conekta\ProccessingError $error){
+          echo $error->getMesage();
+        } catch (\Conekta\ParameterValidationError $error){
+          echo $error->getMessage();
+        } catch (\Conekta\Handler $error){
+          echo $error->getMessage();
+        } catch(\Conekta\ErrorList $error){
+          echo "<div class='alert alert-info'>" . $error->getMessage() . "</div>";
+        }
 
   }
 
@@ -503,7 +520,11 @@ foreach($content as $item){
 
       //in case anything else save the Order(paypal)
 
-      return $this->saveOrder();
+  if ($oSession->getVariable('paymentid') == 'oxpaypal'){
+     return $this->saveOrder();
+  }
+
+     
 
 
 }

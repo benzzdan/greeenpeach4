@@ -40,7 +40,7 @@
 <div class="form-group[{if $aErrors.oxuser__oxfname}] text-danger[{/if}]">
     <label class="control-label col-lg-3[{if $oView->isFieldRequired(oxuser__oxfname)}] req[{/if}]">[{oxmultilang ident="FIRST_NAME"}]</label>
     <div class="col-lg-9">
-        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxfname]" value="[{if isset( $invadr.oxuser__oxfname )}][{$invadr.oxuser__oxfname}][{else}][{$oxcmp_user->oxuser__oxfname->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxfname)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxfname]" pattern="[a-zA-Z]+" required value="[{if isset( $invadr.oxuser__oxfname )}][{$invadr.oxuser__oxfname}][{else}][{$oxcmp_user->oxuser__oxfname->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxfname)}] required=""[{/if}]>
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxfname}]
         <div class="help-block"></div>
     </div>
@@ -49,7 +49,7 @@
 <div class="form-group[{if $aErrors.oxuser__oxlname}] text-danger[{/if}]">
     <label class="control-label col-lg-3[{if $oView->isFieldRequired(oxuser__oxlname)}] req[{/if}]">[{oxmultilang ident="LAST_NAME"}]</label>
     <div class="col-lg-9">
-        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxlname]" value="[{if isset( $invadr.oxuser__oxlname )}][{$invadr.oxuser__oxlname}][{else}][{$oxcmp_user->oxuser__oxlname->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxlname)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxlname]" pattern="[a-zA-Z]+" required value="[{if isset( $invadr.oxuser__oxlname )}][{$invadr.oxuser__oxlname}][{else}][{$oxcmp_user->oxuser__oxlname->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxlname)}] required=""[{/if}]>
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxlname}]
         <div class="help-block"></div>
     </div>
@@ -92,10 +92,10 @@
 <div class="form-group[{if $aErrors.oxuser__oxzip}] text-danger[{/if}]">
     <label class="control-label col-xs-12 col-lg-3[{if $oView->isFieldRequired(oxuser__oxzip) || $oView->isFieldRequired(oxuser__oxcity)}] req[{/if}]">[{oxmultilang ident="POSTAL_CODE_AND_CITY"}]</label>
     <div class="col-xs-5 col-lg-3">
-        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxzip]" value="[{if isset( $invadr.oxuser__oxzip )}][{$invadr.oxuser__oxzip}][{else}][{$oxcmp_user->oxuser__oxzip->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxzip)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxzip]" required value="[{if isset( $invadr.oxuser__oxzip )}][{$invadr.oxuser__oxzip}][{else}][{$oxcmp_user->oxuser__oxzip->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxzip)}] required=""[{/if}]>
     </div>
     <div class="col-xs-7 col-lg-6">
-        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxcity]" value="[{if isset( $invadr.oxuser__oxcity )}][{$invadr.oxuser__oxcity}][{else}][{$oxcmp_user->oxuser__oxcity->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxcity)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxcity]" required value="[{if isset( $invadr.oxuser__oxcity )}][{$invadr.oxuser__oxcity}][{else}][{$oxcmp_user->oxuser__oxcity->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxcity)}] required=""[{/if}]>
     </div>
     <div class="col-lg-offset-3 col-md-9 col-xs-12">
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxzip}]
@@ -156,7 +156,7 @@
 <div class="form-group[{if $aErrors.oxuser__oxfon}] text-danger"[{/if}]">
     <label class="control-label col-lg-3 req">[{oxmultilang ident="PHONE"}]</label>
     <div class="col-lg-9">
-        <input class="form-control" type="text" maxlength="128" name="invadr[oxuser__oxfon]" value="[{if isset( $invadr.oxuser__oxfon )}][{$invadr.oxuser__oxfon}][{else}][{$oxcmp_user->oxuser__oxfon->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxfon)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="128" name="invadr[oxuser__oxfon]" required value="[{if isset( $invadr.oxuser__oxfon )}][{$invadr.oxuser__oxfon}][{else}][{$oxcmp_user->oxuser__oxfon->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxfon)}] required=""[{/if}]>
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxfon}]
         <div class="help-block"></div>
     </div>
