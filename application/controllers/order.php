@@ -520,7 +520,8 @@ foreach($content as $item){
 
       //in case anything else save the Order(paypal)
 
-  if ($oSession->getVariable('paymentid') == 'oxpaypal'){
+  if ($oSession->getVariable('paymentid') == 'oxidpaypal'){
+    oxRegistry::getSession()->setVariable('oxxoref', null);
      return $this->saveOrder();
   }
 
