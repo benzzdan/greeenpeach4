@@ -241,8 +241,8 @@
 
         <script type="text/javascript">
           // Conekta.setLanguague("es");
-          //Conekta.setPublishableKey("key_YE6ssvEq3VJHMVU78oX5CrQ"); //prod
-          Conekta.setPublishableKey("key_Gakvrs1xGbr5qsjR3XUT7CQ"); //sandbox
+          Conekta.setPublishableKey("key_YE6ssvEq3VJHMVU78oX5CrQ"); //prod
+          //Conekta.setPublishableKey("key_Gakvrs1xGbr5qsjR3XUT7CQ"); //sandbox
 
 
           var conektaSuccessResponseHandler = function(token){
