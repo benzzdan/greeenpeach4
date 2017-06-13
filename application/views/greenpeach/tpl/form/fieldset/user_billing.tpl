@@ -75,25 +75,24 @@
 </div>
 
 <div class="form-group[{if $aErrors.oxuser__oxstreet}] text-danger[{/if}]">
-    <label class="control-label col-xs-12 col-lg-3[{if $oView->isFieldRequired(oxuser__oxstreet) || $oView->isFieldRequired(oxuser__oxstreetnr)}] req[{/if}]">Calle</label>
+    <label class="control-label col-xs-12 col-lg-3[{if $oView->isFieldRequired(oxuser__oxstreet) }] req[{/if}]">Calle</label>
     <div class="col-lg-9">
-        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxstreet]" value="[{if isset( $invadr.oxuser__oxstreet )}][{$invadr.oxuser__oxstreet}][{else}][{$oxcmp_user->oxuser__oxstreet->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreet)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxstreet]" value="[{if isset( $invadr.oxuser__oxstreet )}][{$invadr.oxuser__oxstreet}][{else}][{$oxcmp_user->oxuser__oxstreet->value}][{/if}]" required="">
     </div>
     <div class="col-lg-offset-3 col-lg-9 col-xs-12">
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreet}]
-        [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreetnr}]
-        [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreetint}]
         <div class="help-block"></div>
     </div>
 </div>
-<div class="form-group text-danger">
-    <label class="control-label col-xs-12 col-lg-3 req">Exterior</label>
+<div class="form-group" >
+    <label class="control-label col-xs-12 col-lg-3 [{if $oView->isFieldRequired(oxuser__oxstreetnr) || $oView->isFieldRequired(oxuser__oxstreetnr)}] req[{/if}] [{if $aErrors.oxuser__oxstreetnr}] text-danger[{/if}]">Exterior</label>
     <div class="col-lg-3">
-        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetnr]" pattern="[a-zA-Z0-9]+" required value="[{if isset( $invadr.oxuser__oxstreetnr )}][{$invadr.oxuser__oxstreetnr}][{else}][{$oxcmp_user->oxuser__oxstreetnr->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreetnr)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetnr]" value="[{if isset( $invadr.oxuser__oxstreetnr )}][{$invadr.oxuser__oxstreetnr}][{else}][{$oxcmp_user->oxuser__oxstreetnr->value}][{/if}]">
+        [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreetnr}]
     </div>
-    <label id="interior" class="control-label col-xs-12 col-lg-3 req">Interior</label>
+    <label id="interior" class="control-label col-xs-12 col-lg-3">Interior</label>
     <div class="col-lg-3">
-        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetint]" pattern="[a-zA-Z0-9]+" required value="[{if isset( $invadr.oxuser__oxstreetint )}][{$invadr.oxuser__oxstreetint}][{else}][{$oxcmp_user->oxuser__oxstreetint->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreetint)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetint]"  value="[{if isset( $invadr.oxuser__oxstreetint )}][{$invadr.oxuser__oxstreetint}][{else}][{$oxcmp_user->oxuser__oxstreetint->value}][{/if}]">
     </div>
 </div>
 
@@ -164,7 +163,7 @@
 <div class="form-group[{if $aErrors.oxuser__oxfon}] text-danger"[{/if}]">
     <label class="control-label col-lg-3 req">[{oxmultilang ident="PHONE"}]</label>
     <div class="col-lg-9">
-        <input class="form-control" type="text" maxlength="128" name="invadr[oxuser__oxfon]" required value="[{if isset( $invadr.oxuser__oxfon )}][{$invadr.oxuser__oxfon}][{else}][{$oxcmp_user->oxuser__oxfon->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxfon)}] required=""[{/if}]>
+        <input class="form-control" type="text" maxlength="128" name="invadr[oxuser__oxfon]" value="[{if isset( $invadr.oxuser__oxfon )}][{$invadr.oxuser__oxfon}][{else}][{$oxcmp_user->oxuser__oxfon->value}][{/if}]" required>
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxfon}]
         <div class="help-block"></div>
     </div>
