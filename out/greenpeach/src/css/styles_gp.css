@@ -1254,3 +1254,8 @@ body.fixed-header #header #mainnav.fadeIn {
       text-align: left;
     max-width: 49px;
 }
+
+
+#paymentNextStepBottom {
+  max-width: 184px !important;
+}
