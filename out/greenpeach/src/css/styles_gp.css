@@ -4,6 +4,20 @@
 @media only screen and (max-width: 380px){
 
 
+
+.opps {
+
+  width: 322px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    overflow: hidden;
+    border: 1px solid #b0afb5;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f5365;
+
+}
+
   #lightbox .modal-content {
     display: inline-block;
     text-align: center;
@@ -1257,5 +1271,5 @@ body.fixed-header #header #mainnav.fadeIn {
 
 
 #paymentNextStepBottom {
-  max-width: 184px !important;
+  max-width: 180px !important;
 }

@@ -147,7 +147,7 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-lg-3" for="[{$oxcmp_user->oxuser__oxstateid->value}]">[{oxmultilang ident="STATE"}]</label>
+        <label class="control-label col-lg-3 req" for="[{$oxcmp_user->oxuser__oxstateid->value}]">[{oxmultilang ident="STATE"}]</label>
         <div class="col-lg-9">
             [{include file="form/fieldset/state.tpl"
             countrySelectId="invCountrySelect"
