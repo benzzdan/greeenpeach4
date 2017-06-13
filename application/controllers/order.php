@@ -407,7 +407,7 @@ foreach($content as $item){
 
     }catch(\Conekta\ErrorList $errorList){
       foreach($errorList->details as &$errorDetail){
-        echo $errorDetail->getMessage() . "\r\n";
+        echo "<div class='alert alert-danger'>" . $errorDetail->getMessage() . "</div>";
       }
     }
 
@@ -512,7 +512,7 @@ foreach($content as $item){
         } catch (\Conekta\Handler $error){
           echo $error->getMessage();
         } catch(\Conekta\ErrorList $error){
-          echo "<div class='alert alert-info'>" . $error->getMessage() . "</div>";
+          echo "<div class='alert alert-danger'>" . $error->getMessage() . "</div>";
         }
 
   }
