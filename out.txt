@@ -285,6 +285,9 @@ oxUser::__set_state(array(
    'oxuser__oxstreetnr' => 
   oxField::__set_state(array(
      'rawValue' => ';lk',
+  )),  'oxuser__oxstreetint' => 
+  oxField::__set_state(array(
+     'rawValue' => ';lk',
   )),
    'oxuser__oxaddinfo' => 
   oxField::__set_state(array(

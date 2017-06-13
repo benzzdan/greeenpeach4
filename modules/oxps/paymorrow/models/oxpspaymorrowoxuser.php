@@ -215,6 +215,14 @@ class OxpsPaymorrowOxUser extends OxpsPaymorrowOxUser_parent
     public function getUserPaymorrowStreetNumber()
     {
         return $this->oxuser__oxstreetnr->value;
+    }   /**
+     * Get user billing address street number int.
+     *
+     * @return string
+     */
+    public function getUserPaymorrowStreetNumberInt()
+    {
+        return $this->oxuser__oxstreetint->value;
     }
 
     /**
@@ -302,6 +310,7 @@ class OxpsPaymorrowOxUser extends OxpsPaymorrowOxUser_parent
                 'pm_customer_dateOfBirth'               => 'oxuser__oxbirthdate',
                 'pm_customer_billingAddress_street'     => 'oxuser__oxstreet',
                 'pm_customer_billingAddress_houseNo'    => 'oxuser__oxstreetnr',
+                'pm_customer_billingAddress_houseNoInt'    => 'oxuser__oxstreetint',
                 'pm_customer_billingAddress_postalCode' => 'oxuser__oxzip',
                 'pm_customer_billingAddress_city'       => 'oxuser__oxcity',
             )

@@ -1193,6 +1193,7 @@ class oxUser extends oxBase
         $sDelAddress .= $this->oxuser__oxlname;
         $sDelAddress .= $this->oxuser__oxstreet;
         $sDelAddress .= $this->oxuser__oxstreetnr;
+        $sDelAddress .= $this->oxuser__oxstreetint;
         $sDelAddress .= $this->oxuser__oxaddinfo;
         $sDelAddress .= $this->oxuser__oxustid;
         $sDelAddress .= $this->oxuser__oxcity;

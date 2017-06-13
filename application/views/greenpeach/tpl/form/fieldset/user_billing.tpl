@@ -75,17 +75,25 @@
 </div>
 
 <div class="form-group[{if $aErrors.oxuser__oxstreet}] text-danger[{/if}]">
-    <label class="control-label col-xs-12 col-lg-3[{if $oView->isFieldRequired(oxuser__oxstreet) || $oView->isFieldRequired(oxuser__oxstreetnr)}] req[{/if}]">[{oxmultilang ident="STREET_AND_STREETNO"}]</label>
-    <div class="col-xs-8 col-lg-6">
+    <label class="control-label col-xs-12 col-lg-3[{if $oView->isFieldRequired(oxuser__oxstreet) || $oView->isFieldRequired(oxuser__oxstreetnr)}] req[{/if}]">Calle</label>
+    <div class="col-lg-9">
         <input class="form-control" type="text" maxlength="255" name="invadr[oxuser__oxstreet]" value="[{if isset( $invadr.oxuser__oxstreet )}][{$invadr.oxuser__oxstreet}][{else}][{$oxcmp_user->oxuser__oxstreet->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreet)}] required=""[{/if}]>
-    </div>
-    <div class="col-xs-4 col-lg-3">
-        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetnr]" value="[{if isset( $invadr.oxuser__oxstreetnr )}][{$invadr.oxuser__oxstreetnr}][{else}][{$oxcmp_user->oxuser__oxstreetnr->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreetnr)}] required=""[{/if}]>
     </div>
     <div class="col-lg-offset-3 col-lg-9 col-xs-12">
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreet}]
         [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreetnr}]
+        [{include file="message/inputvalidation.tpl" aErrors=$aErrors.oxuser__oxstreetint}]
         <div class="help-block"></div>
+    </div>
+</div>
+<div class="form-group text-danger">
+    <label class="control-label col-xs-12 col-lg-3 req">Exterior</label>
+    <div class="col-lg-3">
+        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetnr]" pattern="[a-zA-Z0-9]+" required value="[{if isset( $invadr.oxuser__oxstreetnr )}][{$invadr.oxuser__oxstreetnr}][{else}][{$oxcmp_user->oxuser__oxstreetnr->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreetnr)}] required=""[{/if}]>
+    </div>
+    <label id="interior" class="control-label col-xs-12 col-lg-3 req">Interior</label>
+    <div class="col-lg-3">
+        <input class="form-control" type="text" maxlength="16" name="invadr[oxuser__oxstreetint]" pattern="[a-zA-Z0-9]+" required value="[{if isset( $invadr.oxuser__oxstreetint )}][{$invadr.oxuser__oxstreetint}][{else}][{$oxcmp_user->oxuser__oxstreetint->value}][{/if}]"[{if $oView->isFieldRequired(oxuser__oxstreetint)}] required=""[{/if}]>
     </div>
 </div>
 

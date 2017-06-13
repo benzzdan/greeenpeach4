@@ -35,6 +35,7 @@ class oxRequiredAddressFields
         'oxuser__oxfname',
         'oxuser__oxlname',
         'oxuser__oxstreetnr',
+        'oxuser__oxstreetint',
         'oxuser__oxstreet',
         'oxuser__oxzip',
         'oxuser__oxcity'

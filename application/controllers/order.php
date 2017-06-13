@@ -348,6 +348,7 @@ foreach($content as $item){
       $oUser = $this->getUser();
       $street = $oUser->oxuser__oxstreet->value;
       $exterior = $oUser->oxuser__oxstreetnr->value;
+      $interior = $oUser->oxuser__oxstreetint->value;
       $city = $oUser->oxuser__oxcity->value;
       $id = $oUser->oxuser__oxstateid->value;
       $state = $oUser->getStateTitle($id);
@@ -378,8 +379,8 @@ foreach($content as $item){
             "phone" => $phone,
             "receiver" => $fname,
             "address" => array(
-              "street1" => $street,
-              "street2" => $exterior,
+              "street1" => $street . " " . $exterior,
+              "street2" => $interior, //exterior esba aqui
               "city" => $city,
               "state" => $state,
               "country" => "MX",
@@ -449,6 +450,7 @@ foreach($content as $item){
         $email = $oUser->oxuser__oxusername->value;
         $street = $oUser->oxuser__oxstreet->value;
         $exterior = $oUser->oxuser__oxstreetnr->value;
+        $interior = $oUser->oxuser__oxstreetint->value;
         $city = $oUser->oxuser__oxcity->value;
         $id = $oUser->oxuser__oxstateid->value;
         $state = $oUser->getStateTitle($id);
@@ -476,8 +478,8 @@ foreach($content as $item){
               "phone" => $phone,
               "receiver" => $fname,
               "address" => array(
-                "street1" => $street,
-                "street2" => $exterior,
+                "street1" => $street . " " . $exterior,
+                "street2" => $interior,
                 "city" => $city,
                 "state" => $state,
                 "country" => "MX",

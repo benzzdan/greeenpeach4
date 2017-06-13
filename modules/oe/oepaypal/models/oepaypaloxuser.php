@@ -86,6 +86,7 @@ class oePayPalOxUser extends oePayPalOxUser_parent
         $aUserData = array();
         $aUserData[] = getStr()->html_entity_decode($this->oxuser__oxstreet->value);
         $aUserData[] = getStr()->html_entity_decode($this->oxuser__oxstreetnr->value);
+        $aUserData[] = getStr()->html_entity_decode($this->oxuser__oxstreetint->value);
         $aUserData[] = getStr()->html_entity_decode($this->oxuser__oxcity->value);
 
         $aStreet = $this->_splitShipToStreetPayPalUser($oDetails->getShipToStreet());
@@ -148,6 +149,7 @@ class oePayPalOxUser extends oePayPalOxUser_parent
         $this->oxuser__oxcompany = new oxField($aUserData['oxcompany']);
         $this->oxuser__oxstreet = new oxField($aUserData['oxstreet']);
         $this->oxuser__oxstreetnr = new oxField($aUserData['oxstreetnr']);
+        $this->oxuser__oxstreetint = new oxField($aUserData['oxstreetint']);
         $this->oxuser__oxcity = new oxField($aUserData['oxcity']);
         $this->oxuser__oxzip = new oxField($aUserData['oxzip']);
         $this->oxuser__oxcountryid = new oxField($aUserData['oxcountryid']);
@@ -292,6 +294,7 @@ class oePayPalOxUser extends oePayPalOxUser_parent
 
         $this->oxuser__oxstreet = new oxField($aStreet['street']);
         $this->oxuser__oxstreetnr = new oxField($aStreet['streetnr']);
+        $this->oxuser__oxstreetint = new oxField($aStreet['streetnrint']);
         $this->oxuser__oxcity = new oxField($aPayPalData['SHIPTOCITY']);
         $this->oxuser__oxzip = new oxField($aPayPalData['SHIPTOZIP']);
 

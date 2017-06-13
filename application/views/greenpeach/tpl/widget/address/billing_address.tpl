@@ -2,7 +2,7 @@
 [{if $oxcmp_user->oxuser__oxaddinfo->value}] [{$oxcmp_user->oxuser__oxaddinfo->value}]<br>[{/if}]
 [{if $oxcmp_user->oxuser__oxustid->value}] [{oxmultilang ident="VAT_ID_NUMBER"}] [{$oxcmp_user->oxuser__oxustid->value}]<br> [{/if}]
 [{if $oxcmp_user->oxuser__oxsal->value || $oxcmp_user->oxuser__oxfname->value || $oxcmp_user->oxuser__oxlname->value}][{$oxcmp_user->oxuser__oxsal->value|oxmultilangsal}]&nbsp;[{$oxcmp_user->oxuser__oxfname->value}]&nbsp;[{$oxcmp_user->oxuser__oxlname->value}]<br>[{/if}]
-[{if $oxcmp_user->oxuser__oxstreet->value || $oxcmp_user->oxuser__oxstreetnr->value}][{$oxcmp_user->oxuser__oxstreet->value}]&nbsp;[{$oxcmp_user->oxuser__oxstreetnr->value}]<br>[{/if}]
+[{if $oxcmp_user->oxuser__oxstreet->value || $oxcmp_user->oxuser__oxstreetnr->value || $oxcmp_user->oxuser__oxstreetint->value}][{$oxcmp_user->oxuser__oxstreet->value}]&nbsp;[{$oxcmp_user->oxuser__oxstreetnr->value}]&nbsp;[{$oxcmp_user->oxuser__oxstreetint->value}][{/if}]<br>
 [{if $oxcmp_user->oxuser__oxstateid->value}][{$oxcmp_user->getStateTitle()}] [{/if}]
 [{if $oxcmp_user->oxuser__oxzip->value || $oxcmp_user->oxuser__oxcity->value}][{$oxcmp_user->oxuser__oxzip->value}]&nbsp;[{$oxcmp_user->oxuser__oxcity->value}]<br>[{/if}]
 [{if $oxcmp_user->oxuser__oxcountry->value}][{$oxcmp_user->oxuser__oxcountry->value}]<br><br>[{/if}]

@@ -1248,3 +1248,9 @@ body.fixed-header #header #mainnav.fadeIn {
 #beneficios {
   margin-left: 5% !important;
 }
+
+
+#interior {
+      text-align: left;
+    max-width: 49px;
+}

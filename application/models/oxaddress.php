@@ -91,6 +91,7 @@ class oxAddress extends oxBase
         $sLastName = $this->oxaddress__oxlname->value;
         $sStreet = $this->oxaddress__oxstreet->value;
         $sStreetNr = $this->oxaddress__oxstreetnr->value;
+        $sStreetNr = $this->oxaddress__oxstreetint->value;
         $sCity = $this->oxaddress__oxcity->value;
 
         //format it
@@ -187,6 +188,7 @@ class oxAddress extends oxBase
         $sDelAddress .= $this->oxaddress__oxlname;
         $sDelAddress .= $this->oxaddress__oxstreet;
         $sDelAddress .= $this->oxaddress__oxstreetnr;
+        $sDelAddress .= $this->oxaddress__oxstreetint;
         $sDelAddress .= $this->oxaddress__oxaddinfo;
         $sDelAddress .= $this->oxaddress__oxcity;
         $sDelAddress .= $this->oxaddress__oxcountryid;

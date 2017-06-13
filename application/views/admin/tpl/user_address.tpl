@@ -93,6 +93,15 @@
                 <input type="text" class="editinput" size="28" maxlength="[{$edit->oxaddress__oxstreet->fldmax_length}]" name="editval[oxaddress__oxstreet]" value="[{$edit->oxaddress__oxstreet->value }]" [{ $readonly}]> <input type="text" class="editinput" size="5" maxlength="[{$edit->oxaddress__oxstreetnr->fldmax_length}]" name="editval[oxaddress__oxstreetnr]" value="[{$edit->oxaddress__oxstreetnr->value }]" [{ $readonly}]>
                 [{ oxinputhelp ident="HELP_GENERAL_STREETNUM" }]
                 </td>
+            </tr>            
+            <tr>
+                <td class="edittext">
+                Interior
+                </td>
+                <td class="edittext">
+                <input type="text" class="editinput" size="28" maxlength="[{$edit->oxaddress__oxstreet->fldmax_length}]" name="editval[oxaddress__oxstreet]" value="[{$edit->oxaddress__oxstreet->value }]" [{ $readonly}]> <input type="text" class="editinput" size="5" maxlength="[{$edit->oxaddress__oxstreetint->fldmax_length}]" name="editval[oxaddress__oxstreetint]" value="[{$edit->oxaddress__oxstreetint->value }]" [{ $readonly}]>
+                [{ oxinputhelp ident="HELP_GENERAL_STREETNUM" }]
+                </td>
             </tr>
             <tr>
                 <td class="edittext">

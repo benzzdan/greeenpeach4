@@ -127,6 +127,15 @@ function chkInsert()
                 <input type="text" class="editinput" size="28" maxlength="[{$edit->oxuser__oxstreet->fldmax_length}]" name="editval[oxuser__oxstreet]" value="[{$edit->oxuser__oxstreet->value }]" [{ $readonly }]> <input type="text" class="editinput" size="5" maxlength="[{$edit->oxuser__oxstreetnr->fldmax_length}]" name="editval[oxuser__oxstreetnr]" value="[{$edit->oxuser__oxstreetnr->value }]" [{ $readonly }]>
                 [{ oxinputhelp ident="HELP_USER_MAIN_STRNR" }]
                 </td>
+            </tr>      
+            <tr>
+                <td class="edittext">
+                [Interior
+                </td>
+                <td class="edittext">
+                <input type="text" class="editinput" size="28" maxlength="[{$edit->oxuser__oxstreet->fldmax_length}]" name="editval[oxuser__oxstreet]" value="[{$edit->oxuser__oxstreet->value }]" [{ $readonly }]> <input type="text" class="editinput" size="5" maxlength="[{$edit->oxuser__oxstreetint->fldmax_length}]" name="editval[oxuser__oxstreetint]" value="[{$edit->oxuser__oxstreetint->value }]" [{ $readonly }]>
+                [{ oxinputhelp ident="HELP_USER_MAIN_STRNR" }]
+                </td>
             </tr>
             <tr>
                 <td class="edittext">

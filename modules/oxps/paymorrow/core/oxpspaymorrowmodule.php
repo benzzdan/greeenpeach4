@@ -278,6 +278,7 @@ class OxpsPaymorrowModule extends oxModule
                 array(
                     'customer_billingAddress_street'  => 'oxuser__oxstreet',
                     'customer_billingAddress_houseNo' => 'oxuser__oxstreetnr',
+                    'customer_billingAddress_houseNoInt' => 'oxuser__oxstreetint',
                     'customer_billingAddress_city'    => 'oxuser__oxcity',
                 )
             );

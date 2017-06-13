@@ -787,6 +787,7 @@ class oxOrder extends oxBase
         $this->oxorder__oxbilllname = clone $oUser->oxuser__oxlname;
         $this->oxorder__oxbillstreet = clone $oUser->oxuser__oxstreet;
         $this->oxorder__oxbillstreetnr = clone $oUser->oxuser__oxstreetnr;
+        $this->oxorder__oxbillstreetint = clone $oUser->oxuser__oxstreetint;
         $this->oxorder__oxbilladdinfo = clone $oUser->oxuser__oxaddinfo;
         $this->oxorder__oxbillustid = clone $oUser->oxuser__oxustid;
         $this->oxorder__oxbillcity = clone $oUser->oxuser__oxcity;
@@ -806,6 +807,7 @@ class oxOrder extends oxBase
             $this->oxorder__oxdellname = clone $oDelAdress->oxaddress__oxlname;
             $this->oxorder__oxdelstreet = clone $oDelAdress->oxaddress__oxstreet;
             $this->oxorder__oxdelstreetnr = clone $oDelAdress->oxaddress__oxstreetnr;
+            $this->oxorder__oxdelstreetnr = clone $oDelAdress->oxaddress__oxstreetint;
             $this->oxorder__oxdeladdinfo = clone $oDelAdress->oxaddress__oxaddinfo;
             $this->oxorder__oxdelcity = clone $oDelAdress->oxaddress__oxcity;
             $this->oxorder__oxdelcountryid = clone $oDelAdress->oxaddress__oxcountryid;
@@ -1515,6 +1517,7 @@ class oxOrder extends oxBase
                 $this->_oUser->oxuser__oxlname = clone $this->oxorder__oxbilllname;
                 $this->_oUser->oxuser__oxstreet = clone $this->oxorder__oxbillstreet;
                 $this->_oUser->oxuser__oxstreetnr = clone $this->oxorder__oxbillstreetnr;
+                $this->_oUser->oxuser__oxstreetint = clone $this->oxorder__oxbillstreetint;
                 $this->_oUser->oxuser__oxaddinfo = clone $this->oxorder__oxbilladdinfo;
                 $this->_oUser->oxuser__oxustid = clone $this->oxorder__oxbillustid;
 

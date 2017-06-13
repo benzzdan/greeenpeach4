@@ -324,6 +324,8 @@ class fcPayOneUser extends fcPayOneUser_parent {
                 }
                 if ($aResponse['streetnumber']) {
                     $this->oxuser__oxstreetnr = new oxField($aResponse['streetnumber']);
+                } if ($aResponse['streetnumberint']) {
+                    $this->oxuser__oxstreetint = new oxField($aResponse['streetnumberint']);
                 }
                 if ($aResponse['zip']) {
                     $this->oxuser__oxzip = new oxField($aResponse['zip']);

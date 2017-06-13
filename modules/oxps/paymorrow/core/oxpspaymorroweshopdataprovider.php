@@ -339,6 +339,7 @@ class OxpsPaymorrowEshopDataProvider extends oxSuperCfg //implements EshopDataPr
         // Billing address fields
         $aData['customer_billingAddress_street']     = self::toUtf( $oUser->getUserPaymorrowStreet() );
         $aData['customer_billingAddress_houseNo']    = self::toUtf( $oUser->getUserPaymorrowStreetNumber() );
+        $aData['customer_billingAddress_houseNoInt'] = self::toUtf( $oUser->getUserPaymorrowStreetNumberInt() );
         $aData['customer_billingAddress_postalCode'] = self::toUtf( $oUser->getUserPaymorrowZipCode() );
         $aData['customer_billingAddress_city']       = self::toUtf( $oUser->getUserPaymorrowCity() );
         $aData['customer_billingAddress_country']    = self::toUtf( $oUser->getUserPaymorrowCountry() );

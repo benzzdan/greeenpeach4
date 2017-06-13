@@ -60,7 +60,7 @@
                                         [{$order->oxorder__oxbillcompany->value}]<br>
                                         [{$order->oxorder__oxbillsal->value|oxmultilangsal}] [{$order->oxorder__oxbillfname->value}] [{$order->oxorder__oxbilllname->value}]<br>
                                         [{if $order->oxorder__oxbilladdinfo->value}][{$order->oxorder__oxbilladdinfo->value}]<br>[{/if}]
-                                        [{$order->oxorder__oxbillstreet->value}] [{$order->oxorder__oxbillstreetnr->value}]<br>
+                                        [{$order->oxorder__oxbillstreet->value}] [{$order->oxorder__oxbillstreetnr->value}] [{$order->oxorder__oxbillstreetint->value}]<br>
                                         [{$order->oxorder__oxbillstateid->value}]
                                         [{$order->oxorder__oxbillzip->value}] [{$order->oxorder__oxbillcity->value}]<br>
                                         [{$order->oxorder__oxbillcountry->value}]<br>
@@ -84,7 +84,7 @@
                                             [{$order->oxorder__oxdelcompany->value}]<br>
                                             [{$order->oxorder__oxdelsal->value|oxmultilangsal}] [{$order->oxorder__oxdelfname->value}] [{$order->oxorder__oxdellname->value}]<br>
                                             [{if $order->oxorder__oxdeladdinfo->value}][{$order->oxorder__oxdeladdinfo->value}]<br>[{/if}]
-                                            [{$order->oxorder__oxdelstreet->value}] [{$order->oxorder__oxdelstreetnr->value}]<br>
+                                            [{$order->oxorder__oxdelstreet->value}] [{$order->oxorder__oxdelstreetnr->value}] [{$order->oxorder__oxbillstreetint->value}]<br>
                                             [{$order->oxorder__oxdelstateid->value}]
                                             [{$order->oxorder__oxdelzip->value}] [{$order->oxorder__oxdelcity->value}]<br>
                                             [{$order->oxorder__oxdelcountry->value}]
@@ -92,7 +92,7 @@
                                             [{$order->oxorder__oxbillcompany->value}]<br>
                                             [{$order->oxorder__oxbillsal->value|oxmultilangsal}] [{$order->oxorder__oxbillfname->value}] [{$order->oxorder__oxbilllname->value}]<br>
                                             [{if $order->oxorder__oxbilladdinfo->value}][{$order->oxorder__oxbilladdinfo->value}]<br>[{/if}]
-                                            [{$order->oxorder__oxbillstreet->value}] [{$order->oxorder__oxbillstreetnr->value}]<br>
+                                            [{$order->oxorder__oxbillstreet->value}] [{$order->oxorder__oxbillstreetnr->value}] [{$order->oxorder__oxbillstreetint->value}]<br>
                                             [{$order->oxorder__oxbillstateid->value}]
                                             [{$order->oxorder__oxbillzip->value}] [{$order->oxorder__oxbillcity->value}]<br>
                                             [{$order->oxorder__oxbillcountry->value}]<br>
@@ -152,7 +152,7 @@
                             [{/if}]
                             <br>
                             <p>
-                                <b>[{oxmultilang ident="PRODUCT_NO" suffix="COLON"}] [{$basketproduct->oxarticles__oxartnum->value}]</b>
+                                <b>[{oxmultilang ident="PRODUCT_NO"}] [{$basketproduct->oxarticles__oxartnum->value}]</b>
                             </p>
                             [{if $oViewConf->getShowGiftWrapping()}]
                                 [{assign var="oWrapping" value=$basketitem->getWrapping()}]

@@ -185,6 +185,7 @@ class fcPayOneOrderView extends fcPayOneOrderView_parent {
         $oUser->oxuser__oxcompany = new oxField('');
         $oUser->oxuser__oxstreet = new oxField($sStreet);
         $oUser->oxuser__oxstreetnr = new oxField($sStreetNr);
+        $oUser->oxuser__oxstreetint = new oxField($sStreetNrInt);
         $oUser->oxuser__oxaddinfo = new oxField($sAddInfo);
         $oUser->oxuser__oxcity = new oxField($aResponse['add_paydata[shipping_city]']);
         $oUser->oxuser__oxzip = new oxField($aResponse['add_paydata[shipping_zip]']);
