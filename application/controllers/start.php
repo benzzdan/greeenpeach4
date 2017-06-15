@@ -414,7 +414,7 @@ class Start extends oxUBase
         $comentario = $_POST["comentario"];
 
 
-        $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
+        $message = "Datos Contacto:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
         $subject = "Contacto";
         $to = "ventas@greenpeach.mx"; // this is your Email address
 
