@@ -367,11 +367,13 @@
                     </div>
 
                     [{if $oDetailsProduct->oxarticles__oxweight->value}]
+                      [{if $catName !== 'Empacados'}]
                         <div class="weight">
                             [{block name="details_productmain_weight"}]
                                 [{oxmultilang ident="WEIGHT" suffix="COLON"}] [{$oDetailsProduct->oxarticles__oxweight->value}] [{oxmultilang ident="KG"}]
                             [{/block}]
                         </div>
+                        [{/if}]
                     [{/if}]
 
                     [{block name="details_productmain_vpe"}]

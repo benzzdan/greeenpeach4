@@ -117,6 +117,7 @@ $aLang = array(
 'ARTICLE_MAIN_ACTIVE' => 'Activo',
 'ARTICLE_MAIN_ACTIVEFROM' => 'Desde',
 'ARTICLE_MAIN_ACTIVETO' => 'Para',
+'ARTICLE_EXTEND_SHOWCUSTOMAGREEMENT' => 'Confirmar términos y condiciones',
 'ARTICLE_MAIN_ACTIVFROMTILL' => 'O Activo',
 'ARTICLE_MAIN_ALDPRICE' => 'Alt. Precios',
 'ARTICLE_MAIN_ALLOWCUST' => 'Permitir edición personalizada',
