@@ -69,9 +69,6 @@
                     <div class="row">
                         [{if $sidebar && $sidebar != "Right"}]
                             <div class="col-xs-12 col-md-3 [{$oView->getClassName()}]">
-                                <div id="sidebar">
-                                    [{include file="layout/sidebar.tpl"}]
-                                </div>
                             </div>
                         [{/if}]
 

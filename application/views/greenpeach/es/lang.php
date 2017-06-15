@@ -34,4 +34,5 @@ $aLang = array(
 'DD_USER_SHIPPING_LABEL_STATE'                          => 'Estado:',
 'DD_USER_SHIPPING_SELECT_ADDRESS'                       => 'seleccionar',
 'DD_USER_SHIPPING_ADD_DELIVERY_ADDRESS'                 => 'agrega dirección de envio',
+'PAYMENT_METHOD'										=> 'Método Pago'
 );
