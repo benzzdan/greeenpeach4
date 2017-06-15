@@ -893,7 +893,7 @@ if(isset($_POST["email"]) && !empty($_POST["email"]) && isset($_POST["nombre"]) 
   $empresa = $_POST["empresa"];
 
   $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $cel . "<br>" . "Ciudad: " . $ciudad;
-  $subject = "Contacto";
+  $subject = "Contacto Distribuidor";
   $to = "ventas@greenpeach.mx"; // this is your Email address
 
   $oEmail = oxNew('oxEmail');
@@ -932,7 +932,7 @@ public function contacto2_fnc(){
     $comentario = $_POST["comentario"];
 
 
-    $message = "Datos distribuidor:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
+    $message = "Datos Contacto:" . "<br><br>" . "Nombre: " . $nombre . "<br>". "Apellidos: " . $apellidos ."<br>" .  "Email: ". $email . "<br>" . "Celular: " . $tel . "<br><br><br>" . $comentario;
     $subject = "Contacto";
     $to = "ventas@greenpeach.mx"; // this is your Email address
 
