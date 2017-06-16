@@ -1,9 +1,13 @@
 
 
 <div class="slider1">
-  <img alt="green peach superfoods" src="[{$oViewConf->getImageUrl()}]slider1_movil.png" style="width:100%;" class="ssslide"/>
+  <img alt="green peach superfoods" src="[{$oViewConf->getImageUrl()}]slider1_movil.jpg" style="width:100%;" class="ssslide"/>
 
-  <img alt="green peach superfoods" src="[{$oViewConf->getImageUrl()}]slider2_movil.png" style="width:100%;" class="ssslide"/>
+  <img alt="green peach superfoods" src="[{$oViewConf->getImageUrl()}]slider2_movil.jpg" style="width:100%;" class="ssslide"/>
+  
+  <img alt="green peach superfoods" src="[{$oViewConf->getImageUrl()}]slider3_movil.jpg" style="width:100%;" class="ssslide"/>
+  
+  <img alt="green peach superfoods" src="[{$oViewConf->getImageUrl()}]slider4_movil.jpg" style="width:100%;" class="ssslide"/>
 </div>
 
 
